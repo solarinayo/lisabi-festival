@@ -28,7 +28,7 @@
       }
       h1.hero-title,
       h2.large.hero-title {
-        font-size: max(150px, 20.83vw);
+        font-size: max(10px, 2.83vw);
         padding-right: 13.89vw;
         width: max-content;
         white-space: nowrap;

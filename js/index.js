@@ -338,3 +338,50 @@ gsap.to("#myvi", {
 });
 
 // FIRST SECTION ANIMATIONS END
+
+// MENU
+
+// POPUP FUNCTION
+$("a[data-popup]").on("click", function (e) {
+  e.preventDefault();
+  const targetId = $(this).data("popup");
+  const $targetPopup = $("#" + targetId);
+
+  // If the target is already active, remove it (toggle off)
+  if ($targetPopup.hasClass("active")) {
+    $targetPopup.removeClass("active");
+  } else {
+    // Otherwise, close all and activate the target
+    $(".popup").removeClass("active");
+    $targetPopup.addClass("active");
+  }
+});
+
+$(".close-button").on("click", function () {
+  $(".popup").removeClass("active");
+});
+$(document).ready(function () {
+  $(".accordion .detail").hide().first().show();
+  $(".accordion .title").first().addClass("active");
+  $(".accordion .title").on("click", function () {
+    const $currentDetail = $(this).next(".detail");
+    if ($currentDetail.is(":visible")) {
+      return;
+    }
+    $(".accordion .detail").slideUp();
+    $currentDetail.slideDown();
+    $(".accordion .title").removeClass("active");
+    $(this).addClass("active");
+  });
+});
+$(".menu-container").on("click", function () {
+  const type = $(this).attr("class").split(" ").pop(); // Get the type (drinks, food, snacks)
+  const $menu = $(`.inner-menu[data-type='${type}']`);
+
+  // Remove active from all containers and inner-menus
+  $(".menu-container, .inner-menu").removeClass("active");
+
+  // Add active to clicked container and its corresponding inner-menu
+  $(this).addClass("active");
+  $menu.addClass("active");
+});
