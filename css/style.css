@@ -209,13 +209,7 @@
         flex: 3;
         height: 100%;
       }
-      .left-sidebar p,
-      .right-sidebar a:last-of-type,
-      .right-sidebar .lightgreen-yellow-bg,
-      .right-sidebar .pink-purple-bg {
-        border-left: 2px solid black;
-        border-right: 2px solid black;
-      }
+     
       /* HEADER END */
       /* UTILITY START */
       /* BACKGROUND THEN PATTERN */
@@ -358,7 +352,7 @@
       .pinned-hero #main-durian-left {
         width: 50.07vw;
         height: auto;
-        left: -6.94vw;
+        left: 2.24vw;
         bottom: 0;
       }
       .pinned-hero #main-green-durian-left {
