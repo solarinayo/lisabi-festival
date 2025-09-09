@@ -10,3158 +10,11 @@
     <meta property="og:description" content="Experience Malaysia’s national drink, Teh Tarik – with roots spanning over 80 years and crafted with 11 premium tea leaves from 5 global regions.">
     <meta property="og:image" content="images/ttn-logo-square.png">
     <title>Teh Tarik Nation | Make Teh Tarik Great Again!</title>
-    <style type="text/css">
-      /* GENERAL START */
-      :root {
-        --orange: #ff9721;
-        --raisin-black: #282425;
-        --yellow: #f9c822;
-        --lightgreen: #00a64e;
-        --pink: #f6a4af;
-        --lightblue: #8fd4d5;
-        --red: #d6322f;
-      }
-      @font-face {
-        font-family: "Niramit";
-        src: url("fonts/niramit.otf") format("opentype"); /* Adjust path if needed */
-      }
-      @font-face {
-        font-family: "Holen Vintage";
-        src: url("fonts/Holen%20Vintage.otf") format("opentype"); /* Adjust path if needed */
-      }
-      h1,
-      h2.large {
-        font-size: 15.97vw;
-        font-weight: 400;
-        line-height: 0.83;
-        letter-spacing: -4px;
-        font-family: "Holen Vintage", sans-serif;
-        margin: 0;
-        color: var(--raisin-black);
-      }
-      h1.hero-title,
-      h2.large.hero-title {
-        font-size: max(150px, 20.83vw);
-        padding-right: 13.89vw;
-        width: max-content;
-        white-space: nowrap;
-        margin: 2.36vw 0 0;
-        clip-path: inset(-50% 0 10% 0);
-      }
-      h1 .line,
-      h2 .line {
-        transform-origin: bottom left;
-      }
-      h2,
-      .breaking-texts-container,
-      .teh-tarik-malaysian #textpath {
-        font-size: max(35px, 6.94vw);
-        font-weight: 400;
-        line-height: 0.9;
-        letter-spacing: -4px;
-        font-family: "Holen Vintage", sans-serif;
-        margin: 0;
-        overflow: hidden;
-        color: var(--raisin-black);
-      }
-      h2.medium,
-      .breaking-texts-container,
-      .teh-tarik-malaysian #textpath {
-        font-size: 10.42vw;
-      }
-      .teh-tarik-malaysian #textpath {
-        font-size: max(150px, 10.42vw);
-      }
-      h3 {
-        font-size: max(40px, 4.17vw);
-        font-weight: 400;
-        line-height: 1;
-        letter-spacing: -2px;
-        font-family: "Holen Vintage", sans-serif;
-        margin: 0;
-        color: var(--raisin-black);
-      }
-      h4 {
-        font-size: max(20px, 2.78vw);
-        font-weight: 400;
-        line-height: 1.125;
-        letter-spacing: -1.5px;
-        font-family: "Holen Vintage", sans-serif;
-        margin: 0;
-        color: var(--raisin-black);
-      }
-      h5 {
-        font-family: "Holen Vintage", sans-serif;
-        font-size: max(16px, 1.67vw);
-        font-weight: 700;
-        line-height: 1.167;
-        letter-spacing: -0.5px;
-        margin: 0;
-        color: var(--raisin-black);
-      }
-      h6 {
-        font-size: max(18px, 1.67vw);
-        line-height: 1.167;
-        font-weight: 700;
-        margin: 0;
-        color: var(--raisin-black);
-      }
-      p {
-        font-weight: 700;
-        margin: 0;
-      }
-      small {
-        font-size: max(10px, 0.69vw);
-        line-height: 1.2;
-      }
-      a,
-      a:hover {
-        color: var(--raisin-black);
-        text-decoration: none;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        font-size: max(14px, 1.25vw);
-        font-weight: 700;
-        line-height: 1.25;
-        letter-spacing: -0.5px;
-        margin: 0;
-        font-family: "Niramit", sans-serif;
-        color: var(--raisin-black);
-        background-color: var(--yellow);
-        overflow-x: hidden;
-        --sb-track-color: white;
-        --sb-thumb-color: var(--raisin-black);
-        --sb-size: 8px;
-      }
-      body::-webkit-scrollbar {
-        width: var(--sb-size);
-      }
-      body::-webkit-scrollbar-track {
-        background: var(--sb-track-color);
-        border-radius: 4px;
-      }
-      body::-webkit-scrollbar-thumb {
-        background: var(--sb-thumb-color);
-        border-radius: 4px;
-      }
-      @supports not selector(::-webkit-scrollbar) {
-        body {
-          scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
-        }
-      }
-      /* GENERAL END */
-      /* HEADER START */
-      .sidebars {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 101;
-      }
-      .mobile-menus.sidebars {
-        display: none;
-      }
-      .left-sidebar,
-      .right-sidebar {
-        background: white;
-        display: flex;
-        align-items: center;
-        width: 100vh;
-        width: 100lvh;
-        height: 3.47vw;
-        rotate: 90deg;
-        transform-origin: top left;
-        transform: translateY(-100%);
-        border: 2px solid black;
-      }
-      .left-sidebar img:first-child {
-        padding: 6px 13px;
-      }
-      .left-sidebar p {
-        height: 100%;
-        padding-inline: max(15px, 1.46vw);
-        display: flex;
-        align-items: center;
-      }
-      .left-sidebar .lightgreen-yellow-bg {
-        height: 100%;
-        flex: 1;
-      }
-      .right-sidebar {
-        transform: translateY(calc(8px - 100vw));
-        position: absolute;
-        top: 0;
-      }
-      .right-sidebar a {
-        padding-left: 40px;
-        display: flex;
-        gap: 40px;
-        height: 100%;
-        align-items: center;
-      }
-      .right-sidebar a:after {
-        content: "";
-        display: block;
-        height: 100%;
-        width: 30px;
-        background-image: url(images/black-menu-pattern.svg);
-        background-size: 300%;
-      }
-      .right-sidebar .yellow-lightgreen-bg {
-        flex: 2;
-        height: 100%;
-      }
-      .right-sidebar .lightgreen-yellow-bg,
-      .right-sidebar .lightblue-purple-bg {
-        flex: 1;
-        height: 100%;
-      }
-      .right-sidebar .pink-purple-bg {
-        flex: 3;
-        height: 100%;
-      }
-      .left-sidebar p,
-      .right-sidebar a:last-of-type,
-      .right-sidebar .lightgreen-yellow-bg,
-      .right-sidebar .pink-purple-bg {
-        border-left: 2px solid black;
-        border-right: 2px solid black;
-      }
-      /* HEADER END */
-      /* UTILITY START */
-      /* BACKGROUND THEN PATTERN */
-      .lightgreen-yellow-bg {
-        background-color: var(--lightgreen);
-        background-image: url(images/yellow-pattern.svg);
-      }
-      .yellow-lightgreen-bg {
-        background-color: var(--yellow);
-        background-image: url(images/lightgreen-pattern.svg);
-      }
-      .lightblue-purple-bg {
-        background-color: var(--lightblue);
-        background-image: url(images/purple-pattern.svg);
-      }
-      .pink-purple-bg {
-        background-color: var(--pink);
-        background-image: url(images/purple-pattern.svg);
-      }
-      .typewriter-box:before {
-        content: "";
-        display: block;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(images/typewriter-box-top-corner.svg);
-        top: -1.9vw;
-        left: 0;
-        height: 2vw;
-        width: 3.19vw;
-        position: absolute;
-      }
-      .typewriter-box {
-        display: flex;
-        flex-direction: column;
-        margin-top: 2vw;
-        background-color: var(--yellow);
-        background-size: contain;
-        background-position: right;
-        background-repeat: no-repeat;
-        position: relative;
-      }
-      .typewriter-box.beige:before {
-        left: unset;
-        right: -2px;
-        background-image: url(images/typewriter-box-top-corner-beige.svg);
-      }
-      .typewriter-box.beige {
-        background-color: #f6d3b3;
-      }
-      .typewriter-box.red {
-        background-color: #e14d39;
-        margin-top: 0;
-        padding-inline: 10px;
-        rotate: -3deg;
-      }
-      .typewriter-box.red:before {
-        background-image: url(images/red-triangle.svg);
-        height: 0.63vw;
-        width: 0.97vw;
-        top: -0.53vw;
-      }
-      .typewriter-box.inline {
-        display: inline-flex;
-        white-space: pre;
-        flex-direction: row;
-        padding: 0.83vw 1.25vw;
-      }
-      .typewriter-box.small:before {
-        height: 1vw;
-        width: 1.6vw;
-        top: -0.9vw;
-      }
-      .typewriter-box.small {
-        flex-direction: row;
-        margin-top: 1vw;
-        padding: 0.35vw 1.32vw;
-      }
-      .mobile-only,
-      .phone-only {
-        display: none;
-      }
-      /* UTILITY END */
-      /* FIRST SECTION */
-    .pinned-hero {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  overflow: hidden;
-  height: 110vh;
-  height: 110lvh;
-
-  /* Replace color with image */
-  background-image: url("images/back.png");
-  background-size: cover;       /* make image cover full section */
-  background-position: center;  /* center the image */
-  background-repeat: no-repeat; /* prevent tiling */
-}
-      h1.hero-title,
-      h2.hero-title {
-        animation: scrollLeft 15s linear infinite;
-        display: inline-block;
-        white-space: nowrap;
-      }
-      @keyframes scrollLeft {
-        0% {
-          transform: translateX(0%);
-        }
-        100% {
-          transform: translateX(-50%);
-        }
-      }
-      .pinned-hero .fact-box {
-        margin-left: 75vw;
-        max-width: 16ch;
-      }
-      .pinned-hero img#main-circle {
-        width: 44.4vw;
-        position: absolute;
-        left: 50%;
-        bottom: -25%;
-        transform: translateX(-50%);
-        animation: slowRotateWithX 60s linear infinite;
-      }
-      @keyframes slowRotateWithX {
-        0% {
-          transform: translateX(-50%) rotate(0deg);
-        }
-        100% {
-          transform: translateX(-50%) rotate(-360deg);
-        }
-      }
-      .pinned-hero .mountains {
-        position: absolute;
-      }
-      .pinned-hero #main-plant-right {
-        width: 64.58vw;
-        right: -8.54vw;
-        bottom: 0;
-      }
-      .pinned-hero #main-durian-left {
-        width: 50.07vw;
-        height: auto;
-        left: -6.94vw;
-        bottom: 0;
-      }
-      .pinned-hero #main-green-durian-left {
-        width: 50.07vw;
-        height: auto;
-        left: -6.94vw;
-        bottom: 0;
-      }
-      .pinned-hero .monkey-container {
-        position: absolute;
-        bottom: -8.94vw;
-        left: 55%;
-        transform: translateX(-50%);
-      }
-      .pinned-hero img#main-teh-tarik,
-      .pinned-hero img#teh-tarik-front {
-        width: 50vw;
-        max-height: 95vh;
-        max-height: 95lvh;
-        object-fit: contain;
-      }
-      .pinned-hero img#teh-tarik-front {
-        position: absolute;
-        left: 0;
-        z-index: 100;
-      }
-      .pinned-hero .monkey-container #monkey {
-        position: absolute;
-        right: 10%;
-        z-index: 100;
-        top: 40%;
-        width: 10.97vw;
-        transform-origin: top left;
-        animation: hanging 3s linear infinite alternate;
-      }
-      @keyframes hanging {
-        0% {
-          transform: rotate(10deg);
-        }
-        100% {
-          transform: rotate(-10deg);
-        }
-      }
-      .pinned-hero #lcw {
-        right: 10%;
-        bottom: 25%;
-        width: 18.78vw;
-      }
-     .pinned-hero {
-  position: relative; /* so absolutely-positioned children can align */
-}
-
-.pinned-hero {
-  position: relative;       /* so absolute children are positioned correctly */
-  min-height: 100vh;        /* give container height */
-  overflow: visible;        /* don’t clip the image */
-}
-
-.pinned-hero #myvi {
-  position: absolute;
-  width: 40vw;              /* scales with screen */
-  max-width: 250px;         /* prevent it from being too large */
-  bottom: 23%;              /* % works better for mobile */
-  left: 20%;
-  transform: rotate(10deg);
-  z-index: 5;               /* ensure it’s above background */
-  display: block;           /* force it to render */
-}
-
-
-      .pinned-hero #motorbike {
-        left: 2vw;
-        bottom: 0;
-        width: 11.53vw;
-      }
-      .pinned-hero #tapir {
-        left: 10vw;
-        bottom: 25vh;
-        bottom: 25lvh;
-        width: max(140px, 12vw);
-        rotate: 26deg;
-      }
-      .pinned-hero #main-green-coconut {
-        width: 28.4vw;
-        right: 18.06vw;
-        bottom: 0;
-      }
-      .bouncer {
-        position: absolute;
-        top: 0;
-        left: 0;
-        font-size: 3vw;
-        will-change: transform;
-        transform: translate(-50%, -50%);
-        max-width: max(120px, 10vw);
-        max-height: max(120px, 10vw);
-      }
-      #sugar1 {
-        top: -50%;
-        left: 30vw;
-      }
-      #sugar8 {
-        top: -50%;
-        left: 6vw;
-      }
-      /* FIRST SECTION END */
-
-      /* SECOND SECTION */
-      .overflow-container {
-        overflow: hidden;
-      }
-      .pinned-horizontal-section {
-        display: flex;
-        width: max-content;
-      }
-      .pinned-horizontal-section > div {
-        height: 100vh;
-        height: 100lvh;
-        background-size: cover;
-      }
-      .pinned-horizontal-section .left-section {
-        background-image: url(images/recognise-green-bg.webp);
-        width: 100vw;
-        z-index: 10;
-      }
-      .pinned-horizontal-section .text-content {
-        display: flex;
-        flex-direction: column;
-        height: calc(100%);
-        padding: 5.56vw 7.64vw;
-      }
-      #teh-tarik-aneh {
-        position: absolute;
-        left: 55vw;
-        height: 100vh;
-        height: 100lvh;
-        max-width: 55.56vw;
-        object-fit: contain;
-        z-index: 10;
-      }
-      .pinned-horizontal-section .middle-section {
-        background-image: url(images/recognise-mid-bg.webp);
-        width: 25vw;
-      }
-      .pinned-horizontal-section .right-section {
-        background-image: url(images/recognise-yellow-bg.webp);
-        width: 90vw;
-        z-index: 1;
-      }
-      .unofficial-teh-tarik {
-        display: none;
-        position: absolute;
-        z-index: 10;
-        bottom: 2.56vw;
-        right: 3.56vw;
-      }
-      .unofficial-teh-tarik img.unofficial-teh-tarik-img {
-        width: 27.43vw;
-        z-index: 2;
-        position: relative;
-      }
-      .unofficial-teh-tarik img.rotating {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 0;
-        width: 83%;
-        animation: slowRotateWithX 60s linear infinite;
-      }
-      .pinned-horizontal-section .typewriter-box {
-        background-image: url(images/face-starfish.webp);
-        max-width: 55vw;
-        min-height: max(260px, 20vw);
-        padding: max(30px, 2.92vw) max(120px, 11.11vw) max(16px, 1.39vw)
-          max(30px, 3.06vw);
-        transform: translateX(1vw) rotate(-3deg);
-      }
-      .pinned-horizontal-section .typewriter-box h3 {
-        margin-bottom: 20px;
-      }
-      .pinned-horizontal-section small {
-        margin-top: auto;
-      }
-      /* SECOND SECTION END */
-      /* THIRD SECTION */
-      .national-importance {
-        position: relative;
-        background-color: var(--red);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        overflow: hidden;
-      }
-      .national-importance .text-content {
-        padding: 5.56vw 10.76vw;
-        display: flex;
-        flex-direction: column;
-        gap: 1.39vw;
-      }
-      .national-importance h2 img {
-        height: 5vw;
-        scale: 1.4;
-        padding-inline: 1.56vw;
-      }
-      .national-importance .national-blue-mountain,
-      .national-importance .national-green-mountain {
-        position: absolute;
-        bottom: 0;
-        z-index: 0;
-      }
-      .national-importance .national-blue-mountain {
-        left: -15vw;
-        width: 40vw;
-      }
-      .national-importance .national-green-mountain {
-        width: 70vw;
-        right: -15vw;
-      }
-      .national-importance .yellow-mountain {
-        width: 100vw;
-        z-index: 10;
-        position: relative;
-      }
-      .national-importance .yellow-mountain-container {
-        margin-top: 25vw;
-        position: relative;
-        bottom: -1vw;
-      }
-      .national-importance .yellow-mountain-container .motorbike {
-        position: absolute;
-        width: max(90px, 13vw);
-        left: 10vw;
-        rotate: -39deg;
-        top: 14vh;
-        top: 14lvh;
-        z-index: 10;
-      }
-      .national-importance .hornbill-container,
-      .national-importance .hornbill-bg {
-        position: absolute;
-        left: 50%;
-        top: -70%;
-        transform: translate(-50%, 0);
-        transition: transform 0.3s;
-      }
-      .national-importance.active .hornbill-container,
-      .national-importance.active .hornbill-bg {
-        transform: translate(-50%, -100%);
-      }
-      .national-importance .hornbill-container {
-        width: 31.56vw;
-        height: 39.5vw;
-        top: 30%;
-      }
-      .national-importance .hornbill,
-      .national-importance .hornbill-beak {
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-      }
-      .national-importance .hornbill-container {
-        perspective: 1000px;
-      }
-      .national-importance .hornbill-beak {
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-      img.hornbill-logo {
-        position: absolute;
-        right: -7vw;
-        top: 6vw;
-        width: 14vw;
-        rotate: 7deg;
-        transform: rotateY(50deg);
-        transition: all 0.5s 0.3s;
-        transform-style: preserve-3d;
-        opacity: 0;
-      }
-      .national-importance.active img.hornbill-logo {
-        transform: rotateY(0deg) !important;
-        opacity: 1 !important;
-        transition-delay: 0s;
-      }
-      .national-importance .hornbill-bg {
-        width: 32.15vw;
-        animation: slowRotateWithX 60s linear infinite;
-      }
-      #right-here {
-        position: absolute;
-        right: 1vw;
-        rotate: 2deg;
-        opacity: 0;
-        scale: 0.5;
-        width: fit-content;
-        padding: 10px 20px;
-        transition: all 0.3s ease-in;
-      }
-      .national-importance.active #right-here {
-        opacity: 1;
-        scale: 1;
-      }
-      #right-here .Typewriter__cursor {
-        display: none;
-      }
-      #right-here.typewriter-box:before {
-        transform: scaleY(-1) translateY(-95%);
-        bottom: 0;
-        top: unset;
-      }
-      .sugar-rain {
-        position: absolute;
-        top: -10vw;
-      }
-      .sugar-rain.size-1 {
-        width: max(80px, 10vw);
-      }
-      .sugar-rain.size-2 {
-        width: max(45px, 7vw);
-      }
-      .sugar-rain.speed-1 {
-        animation: rainDrop 13s linear infinite;
-      }
-      .sugar-rain.speed-2 {
-        animation: rainDrop 7s linear infinite;
-      }
-      .sugar-rain.speed-3 {
-        animation: rainDrop 3s linear infinite;
-      }
-      img.sugar-rain:nth-of-type(1) {
-        animation-delay: 1s;
-      }
-      img.sugar-rain:nth-of-type(2) {
-        animation-delay: 2s;
-      }
-      img.sugar-rain:nth-of-type(3) {
-        animation-delay: 1.5s;
-      }
-      img.sugar-rain:nth-of-type(4) {
-        animation-delay: 4.2s;
-      }
-      img.sugar-rain:nth-of-type(5) {
-        animation-delay: 0.1s;
-      }
-      img.sugar-rain:nth-of-type(6) {
-        animation-delay: 0.7s;
-      }
-      img.sugar-rain:nth-of-type(7) {
-        animation-delay: 2.5s;
-      }
-      img.sugar-rain:nth-of-type(8) {
-        animation-delay: 1s;
-      }
-      img.sugar-rain:nth-of-type(9) {
-        animation-delay: 0s;
-      }
-      @keyframes rainDrop {
-        0% {
-          transform: translateY(0) rotate(-20deg);
-        }
-        50% {
-          transform: translateY(60vw) rotate(0);
-        }
-        100% {
-          transform: translateY(120vw) rotate(20deg);
-        }
-      }
-      /* THIRD SECTION END */
-      /* FOURTH SECTION */
-      .that-one-company {
-        background-color: var(--orange);
-        padding-top: max(30px, 3.33vw);
-        position: relative;
-        overflow: hidden;
-        /* background-image: url(/wp-content/uploads/2025/04/that-one-company-bg.webp); */
-        background-size: contain;
-        background-position: bottom;
-        background-repeat: no-repeat;
-        z-index: 10;
-      }
-      .that-one-company .top-portion {
-        padding-inline: 6.94vw;
-      }
-      .that-one-company h2 {
-        text-align: center;
-      }
-      .that-one-company h2 img {
-        height: 0.9em;
-        width: auto;
-        vertical-align: middle;
-        display: inline-block;
-      }
-      .that-one-company h2 img.one-o {
-        padding-bottom: 2.6vw;
-      }
-      .that-one-company h2 img.company-o {
-        margin-inline: -4.8%;
-        scale: 1.4;
-        padding-bottom: 1.5625vw;
-      }
-      .that-one-company h4 {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        max-width: 35vw;
-        padding-left: 2.78vw;
-      }
-      .that-one-company h4 .typewriter-box {
-        display: inline-flex;
-        flex-direction: row;
-        white-space: pre;
-        rotate: -3deg;
-        transform-origin: top left;
-      }
-      .pouring-cup-container {
-        position: absolute;
-        right: -10%;
-        top: 50vw;
-        z-index: 10;
-      }
-      .pouring-leaf {
-        position: absolute;
-        left: 25%;
-        top: 20%;
-        max-width: max(40px, 7vw) !important;
-      }
-      .pouring-cup-container img:first-child,
-      .pouring-cup-container .cover-cup {
-        width: 30vw;
-      }
-      .pouring-cup-container .cover-cup {
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-      .pouring-cup-container .stream-container {
-        position: absolute;
-        width: 7.8vw;
-        height: 59.5vw;
-        top: -39%;
-        left: -99%;
-        rotate: 60deg;
-        z-index: 2;
-      }
-      .pouring-cup-container .stream-container {
-        width: 7.5vw;
-      }
-      .that-one-company .bottom-portion h2 {
-        margin-top: 20.67vw;
-      }
-      .bottom-portion {
-        position: relative;
-      }
-      .bottom-portion .purple-card {
-        position: absolute;
-        width: 16.67vw;
-        aspect-ratio: 1;
-        top: 10vw;
-        right: -50vw;
-        transition: all 2s;
-        z-index: 20;
-      }
-      .that-one-company:has(.poured) .purple-card {
-        right: 10vw;
-        rotate: 8deg;
-      }
-      .bottom-boxes {
-        display: flex;
-        gap: 37px;
-        margin-top: 7.32vw;
-      }
-      .bottom-boxes > div {
-        width: 50%;
-      }
-      .bottom-boxes .yellow-box {
-        background-color: var(--yellow);
-        padding: 4.17vw 12.28vw 16vw 5.83vw;
-      }
-      .bottom-boxes .red-box {
-        background-color: var(--red);
-        margin-block: 9.65vw 7.71vw;
-        position: relative;
-      }
-      .bottom-boxes .red-box:after {
-        height: 7.71vw;
-        width: 70%;
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left: 30%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url(images/yellow-pattern-under-red-box.webp);
-        transform: translateY(100%);
-      }
-      .bottom-boxes .red-box img {
-        position: absolute;
-      }
-      .bottom-boxes .red-box img:first-child {
-        width: 24vw;
-        top: -20%;
-        left: 34%;
-        animation: slowRotate 60s linear infinite;
-      }
-      @keyframes slowRotate {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(-360deg);
-        }
-      }
-      .bottom-boxes .red-box img:last-child {
-        right: -30vw;
-        top: 50%;
-        height: 68%;
-        transform: translateY(-50%);
-        transition: right 2s 1s;
-      }
-      .that-one-company:has(.poured) .bottom-boxes .red-box img:last-child {
-        right: -10vw;
-      }
-      img.pouring-photos {
-        position: absolute;
-        bottom: 0;
-        width: 100vw;
-        object-fit: cover;
-        left: 0;
-      }
-      img.pouring-photos:not(.person) {
-        z-index: 10;
-      }
-      /* FOURTH SECTION END */
-      /* FIFTH SECTION */
-      .humbly-priced {
-        background: url(images/red-pattern.svg) #e14d39;
-        background-size: cover;
-        overflow: hidden;
-        position: relative;
-      }
-      .humbly-priced .rotating-teh-tarik-container {
-        position: absolute;
-        height: 100%;
-        right: 0;
-        width: 50vw;
-        object-fit: contain;
-      }
-      .humbly-priced .rotating-teh-tarik {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-      }
-      .humbly-priced .text-content {
-        padding: max(60px, 6.46vw) 20.83vw 0 max(80px, 5.83vw);
-        margin-bottom: 12.85vw;
-      }
-      .humbly-priced h4 {
-        margin-bottom: 1vw;
-      }
-      .humbly-priced h2 img {
-        /* padding-bottom: 1.1vw; */
-        height: 0.9em;
-        width: auto;
-        vertical-align: middle;
-        display: inline-block;
-        animation: slowRotate 30s linear infinite;
-      }
-      .island-section {
-        position: relative;
-      }
-      .island-section .background {
-        height: 16.39vw;
-        animation: mountainShuffle 6s ease-in-out infinite reverse;
-      }
-      .island-section .foreground {
-        height: 10.42vw;
-        position: absolute;
-        bottom: 0;
-        animation: mountainShuffle 6s ease-in-out infinite;
-      }
-      @keyframes mountainShuffle {
-        0% {
-          transform: translateX(0px) scale(1);
-        }
-        25% {
-          transform: translateX(-8px) scale(1.01);
-        }
-        50% {
-          transform: translateX(0px) scale(1);
-        }
-        75% {
-          transform: translateX(10px) scale(1);
-        }
-        100% {
-          transform: translateX(0px) scale(1);
-        }
-      }
-      .island-section .text-box {
-        position: absolute;
-      }
-      .island-section .pink-box {
-        background-color: pink;
-        left: 13vw;
-        bottom: 7vw;
-        padding: 1.3vw 1.82vw;
-        max-width: 17.7vw;
-        rotate: -12deg;
-      }
-      .island-section .pink-box .typewriter-box {
-        rotate: -6deg;
-      }
-      .island-section .lightgreen-box {
-        top: -5vw;
-        right: 9vw;
-        background-color: #90cec7;
-        padding: 1.67vw 2.08vw 2.78vw;
-        display: flex;
-        flex-direction: column;
-        gap: 0.56vw;
-        max-width: 25vw;
-        rotate: -16deg;
-      }
-      .island-section .lightgreen-box div:has(.greenbox-text-content) {
-        display: flex;
-        align-items: flex-start;
-        gap: 1.81vw;
-      }
-      .island-section .lightgreen-box .greenbox-text-content h4 {
-        margin-block: -6% 0;
-      }
-      .island-section .lightgreen-box img {
-        width: 6.42vw;
-      }
-      .island-section .yellow-box {
-        display: flex;
-        background-color: var(--yellow);
-        max-width: 28vw;
-        top: 10%;
-        rotate: 12deg;
-        left: 50%;
-        transform: translateX(-50%);
-        gap: max(10px, 1.04vw);
-        padding: 2.43vw 2.78vw;
-      }
-      .island-section .yellow-box img {
-        width: 5.9vw;
-      }
-      /* FIFTH SECTION END */
-      /* SIXTH SECTION */
-      .television-section {
-        background-color: #ed9fa5;
-        background-image: url(images/television-bg.webp);
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-        background-position: bottom;
-        overflow: hidden;
-      }
-      .television-section > h4 {
-        margin-block: 3.75vw;
-        text-align: center;
-      }
-      .television-frame {
-        height: 51.11vw;
-        padding: 2vw 32vw 5vw 12vw;
-        position: relative;
-      }
-      .television-frame::before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 12vw;
-        transform: translateY(-95%);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: bottom;
-        background-image: url(images/television-antenna.webp);
-      }
-      .television-frame:after {
-        content: "";
-        display: block;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        background-size: cover;
-        width: 100%;
-        height: 51vw;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: bottom;
-        background-image: url(images/television-frame.webp);
-      }
-      .cards-container {
-        position: relative;
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-      }
-      .cards-container:after {
-        background-image: url(images/tv-filter.webp);
-        height: 100%;
-        width: 100%;
-        content: "";
-        position: absolute;
-        opacity: 0.3;
-        background-size: cover;
-      }
-      .television-card {
-        display: flex;
-        flex-direction: column;
-        border: 1px solid black;
-        width: fit-content;
-        position: absolute;
-      }
-      .television-card:nth-child(1) {
-        top: 10%;
-        left: 12%;
-        rotate: -2deg;
-      }
-      .television-card:nth-child(2) {
-        bottom: 60%;
-        right: 2%;
-        rotate: 5deg;
-      }
-      .television-card:nth-child(3) {
-        bottom: 48%;
-        left: 25%;
-        rotate: -5deg;
-      }
-      .television-card:nth-child(4) {
-        bottom: 35%;
-        right: -5%;
-        rotate: 15deg;
-      }
-      .television-card:nth-child(5) {
-        bottom: 25%;
-        left: 10%;
-        rotate: 10deg;
-      }
-      .television-card:nth-child(6) {
-        bottom: 5%;
-        right: 5%;
-        rotate: -5deg;
-      }
-      .television-card:nth-child(7) {
-        bottom: 0;
-        left: 20%;
-        rotate: -19deg;
-      }
-      .television-card h4 {
-        padding: 1.04vw 2.08vw;
-        text-align: center;
-      }
-      .television-card img {
-        object-fit: cover;
-        height: max(30px, 3.78vw);
-      }
-      /* SIXTH SECTION END */
-      /* SEVENTH SECTION */
-      .drink-like-no-other {
-        overflow: hidden;
-      }
-      .drink-heading {
-        text-align: center;
-        margin-block: 4.17vw 2.78vw;
-      }
-      .drink-like-no-other .bottom-portion {
-        position: relative;
-        display: flex;
-      }
-      .drink-like-no-other .bottom-portion > div {
-        flex: 1;
-        padding: 3.19vw 4.44vw 11.6vw;
-      }
-      .drink-like-no-other .bottom-portion .green-box {
-        background-color: #009949;
-      }
-      .drink-like-no-other .bottom-portion .green-box h3 {
-        padding-left: 1.39vw;
-      }
-      .drink-like-no-other .bottom-portion .pattern-box {
-        background-color: #009949;
-        background-image: url(images/yellow-pattern.svg);
-        background-size: 100%;
-        position: relative;
-      }
-      .drink-like-no-other .bottom-portion .pattern-box img {
-        position: absolute;
-        width: 100%;
-        height: auto;
-        bottom: 0;
-        left: 0;
-      }
-      .drink-like-no-other .bottom-portion .red-box {
-        background-color: #d6322f;
-      }
-      .drink-like-no-other .bottom-portion img {
-        position: absolute;
-      }
-      .drink-like-no-other .bottom-portion .floating-cup {
-        left: calc(50% - 14.5vw);
-        width: 29vw;
-        bottom: 0;
-      }
-      .drink-like-no-other .bottom-portion .floating-cup-leaf {
-        left: 45%;
-        bottom: 10%;
-        transform: translateX(-50%) rotate(-20deg);
-        transition: all 0.5s;
-        width: 22vw;
-      }
-      .drink-like-no-other .bottom-portion .floating-cup-starfish {
-        right: 45%;
-        bottom: 30%;
-        transform: translateX(50%) rotate(-20deg);
-        transition: all 0.5s;
-        width: 9.4vw;
-      }
-      .drink-like-no-other.landed .bottom-portion .floating-cup-leaf {
-        left: 42%;
-        bottom: 20%;
-        transform: translateX(-50%) rotate(-30deg);
-      }
-      .drink-like-no-other.landed .bottom-portion .floating-cup-starfish {
-        right: 42%;
-        bottom: 38%;
-        transform: translateX(50%) rotate(-10deg);
-      }
-      /* SEVENTH SECTION END */
-      /* EIGHTH SECTION */
-      .gold-standard {
-        background-color: #c17f33;
-      }
-      .gold-standard .top-portion {
-        padding: max(30px, 3.47vw) 5.83vw;
-      }
-      .gold-standard .top-portion .typewriter-box {
-        min-width: 10vw;
-      }
-      .gold-standard .top-portion .typewriter-box.yellow {
-        rotate: -3deg;
-      }
-      .gold-standard .top-portion .typewriter-box.beige {
-        left: 3vw;
-      }
-      .gold-standard .bottom-portion {
-        z-index: 1;
-        overflow: hidden;
-      }
-      .gold-standard .bottom-portion h2 {
-        padding: 4.03vw 5.11vw;
-      }
-      .gold-standard .bottom-portion .text-box .parallax-bg {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 1.12;
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        background-image: url(images/gold-standard-bg.webp);
-        background-size: cover;
-      }
-      .gold-standard .bottom-portion .text-box {
-        margin-left: 50vw;
-        max-width: 22.36vw;
-        margin-bottom: 30vw;
-      }
-      .gold-standard .bottom-portion .text-box .typewriter-box {
-        rotate: -3deg;
-        margin-bottom: 2vw;
-        align-items: center;
-        gap: 1vw;
-      }
-      .gold-standard .bottom-portion .text-box .typewriter-box:after {
-        content: "";
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-image: url(images/mouth-vector.webp);
-        width: max(24px, 2.64vw);
-        height: max(32px, 3.4vw);
-        order: -1;
-      }
-      /* EIGHTH SECTION END */
-      /* NINTH SECTION */
-      .five-gen {
-        padding: 4.17vw 0 5.56vw;
-        background-image: url(images/five-gen-bg.webp);
-        background-size: cover;
-        background-position: center;
-        min-height: 100vh;
-        min-height: 100lvh;
-      }
-      .five-gen > h6 {
-        text-align: center;
-        margin-bottom: max(8vh, 4vw);
-        margin-bottom: max(8lvh, 4vw);
-      }
-      .staggered-cards-container,
-      .staggered-card {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 31.67vw;
-        text-align: center;
-      }
-      .staggered-card {
-        position: absolute;
-        text-align: center;
-        display: flex;
-        width: 24.58vw;
-        border-radius: 10px;
-        flex-direction: column;
-        justify-content: space-between;
-        overflow: hidden;
-      }
-      .staggered-card h4 {
-        padding: 2.22vw 1.81vw 0;
-      }
-      .staggered-card:nth-child(1) {
-        rotate: -5deg;
-      }
-      .staggered-card:nth-child(2) {
-        rotate: -4deg;
-      }
-      .staggered-card:nth-child(3) {
-        rotate: -3deg;
-      }
-      .staggered-card:nth-child(4) {
-        rotate: -2deg;
-      }
-      .staggered-card:nth-child(5) {
-        rotate: -1deg;
-      }
-      /* .staggered-card:nth-child(6) {
-} */
-      .staggered-card:nth-child(7) {
-        rotate: 1deg;
-      }
-      .staggered-card:nth-child(8) {
-        rotate: 2deg;
-      }
-      .staggered-card:nth-child(9) {
-        rotate: 3deg;
-      }
-      .staggered-card:nth-child(10) {
-        rotate: 4deg;
-      }
-      .staggered-card:nth-child(11) {
-        rotate: 5deg;
-      }
-      .staggered-card img:not(.footer) {
-        max-width: 70%;
-        max-height: 70%;
-      }
-      .staggered-card img.footer {
-        width: 100%;
-      }
-      /* NINTH SECTION END */
-      /* TENTH SECTION */
-      .proudly-malaysian {
-        overflow: hidden;
-      }
-      .proudly-malaysian .top-portion {
-        position: relative;
-        background-color: #ed9fa5;
-        /* overflow-x: hidden; */
-        padding-bottom: 20vh;
-        padding-bottom: 20lvh;
-      }
-      .proudly-malaysian .top-portion .text-content {
-        padding: 5.14vw 6.11vw 0;
-      }
-      .proudly-malaysian .text-content h4 {
-        margin-bottom: 1.67vw;
-      }
-      .proudly-malaysian .head-with-eyeball {
-        opacity: 0;
-        pointer-events: none;
-        position: absolute !important;
-      }
-      .proudly-malaysian .line .head-with-eyeball {
-        opacity: 1;
-        pointer-events: auto;
-      }
-      .proudly-malaysian .head-with-eyeball > img {
-        height: 0.8em;
-      }
-      .head-with-eyeball .eyeball {
-        display: flex !important;
-        align-items: center;
-        justify-content: center;
-        position: absolute !important;
-        width: 1.8vw;
-        height: 1.8vw;
-        background: white;
-        border-radius: 50%;
-      }
-      .head-with-eyeball .left.eyeball {
-        left: 40%;
-        top: 46%;
-      }
-      .head-with-eyeball .right.eyeball {
-        left: 60%;
-        top: 46%;
-      }
-      .head-with-eyeball .iris {
-        width: 30%;
-        height: auto;
-        aspect-ratio: 1;
-        background-color: black;
-        border-radius: 50%;
-        transition: transform 0.3s ease-out;
-      }
-      .touching-hands {
-        display: flex;
-        align-items: center;
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        height: 100lvh;
-      }
-      .touching-hands .hand {
-        height: 62.36vw;
-        width: 50.1vw;
-        object-fit: contain;
-        top: 0;
-      }
-      .touching-hands .left.hand,
-      .touching-hands .left.foreground {
-        left: 0;
-      }
-      .touching-hands .right.hand,
-      .touching-hands .right.foreground {
-        right: 0;
-      }
-      .touching-hands .foreground {
-        position: absolute;
-        bottom: 0;
-        height: 10vw;
-      }
-      .touching-hands .left.foreground {
-        width: 34vw;
-      }
-      .touching-hands .right.foreground {
-        width: 42vw;
-      }
-      .touching-hands .touching-star {
-        left: 50%;
-        top: -5%;
-        position: absolute;
-        transform: translate(-50%, 20%) scale(0);
-        transform-origin: center;
-      }
-      .proudly-malaysian .bottom-portion {
-        margin-top: -35vh;
-        margin-top: -35lvh;
-      }
-      .proudly-malaysian .bottom-portion .text-content {
-        padding: 4vw 6vw;
-        display: flex;
-        gap: 2vw;
-      }
-      .proudly-malaysian .bottom-portion .text-content h6 {
-        max-width: 15vw;
-        z-index: 20;
-      }
-      .proudly-malaysian .bottom-portion .single-chilli {
-        position: absolute;
-        z-index: 10;
-        animation: spinningChilli 12s linear infinite;
-      }
-      @keyframes spinningChilli {
-        0% {
-          rotate: 0;
-        }
-        100% {
-          rotate: 360deg;
-        }
-      }
-      .proudly-malaysian .bottom-portion .single-chilli:nth-child(1) {
-        left: -10%;
-        top: 50%;
-        display: none;
-        width: 30vw;
-      }
-      .proudly-malaysian .bottom-portion .single-chilli:nth-child(2) {
-        right: 30%;
-        top: -10%;
-        width: 24vw;
-      }
-      .proudly-malaysian .bottom-portion .single-chilli:nth-child(3) {
-        right: 20%;
-        top: 10%;
-        width: 14vw;
-        scale: -1 1;
-      }
-      .proudly-malaysian .bottom-portion .single-chilli:nth-child(4) {
-        right: 5%;
-        top: 5%;
-        width: 14vw;
-      }
-      .proudly-malaysian .bottom-portion .exploding-lady {
-        display: flex;
-        justify-content: center;
-        overflow: hidden;
-        background-color: var(--red);
-      }
-      .proudly-malaysian .bottom-portion .mushroom-cloud {
-        width: 100%;
-        z-index: 2;
-        position: relative;
-      }
-      .proudly-malaysian .bottom-portion .flame {
-        position: absolute;
-        z-index: 0;
-        bottom: 0;
-        animation: flameFlicker 12s infinite ease-in-out;
-        transform-origin: bottom center;
-        object-fit: contain;
-      }
-      .proudly-malaysian .bottom-portion .left.flame {
-        left: 0;
-        width: 45vw;
-      }
-      .proudly-malaysian .bottom-portion .right.flame {
-        right: 0;
-        width: 50vw;
-      }
-      @keyframes flameFlicker {
-        0% {
-          transform: scale(1);
-          opacity: 1;
-        }
-        20% {
-          transform: scale(0.97);
-          opacity: 0.98;
-        }
-        50% {
-          transform: scale(1.05);
-          opacity: 0.94;
-        }
-        80% {
-          transform: scale(0.96);
-          opacity: 1;
-        }
-        100% {
-          transform: scale(1);
-          opacity: 1;
-        }
-      }
-      .lady-with-flame-container {
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        bottom: 0;
-        z-index: 3;
-      }
-      .proudly-malaysian .bottom-portion .center.flame {
-        /* left: 50%; */
-        top: 0;
-        margin-top: -20%;
-        width: 50vw;
-        z-index: 1;
-        animation: flameFlicker 8s infinite ease-in-out;
-      }
-      .lady-with-flame-container .chilli-teh {
-        position: absolute;
-        width: 43vw;
-        /* rotate: -6deg; */
-        z-index: 2;
-      }
-      .lady-with-flame-container .middle-lady {
-        width: 65vw;
-        z-index: 3;
-      }
-      /* TENTH SECTION END */
-      /* ELEVENTH SECTION */
-      .teh-tarik-malaysian {
-        overflow: hidden;
-        background-color: var(--orange);
-      }
-      .teh-tarik-malaysian .top-pattern {
-        height: max(30px, 4vw);
-        width: 100%;
-        background-image: url(images/red-yellow-pattern.svg);
-        background-size: contain;
-        background-repeat: repeat;
-      }
-      .teh-tarik-malaysian > p {
-        max-width: 30vw;
-        margin: 2vw auto 5vw;
-        text-align: center;
-      }
-      .teh-tarik-malaysian .dining-teh-tarik,
-      .teh-tarik-malaysian .bottom-boxes {
-        position: absolute;
-        z-index: 2;
-        width: 100%;
-        bottom: 0;
-      }
-      .teh-tarik-malaysian .bottom-boxes > div {
-        border: 1px solid black;
-      }
-      .teh-tarik-malaysian .bottom-boxes .pink-box {
-        background-color: var(--pink);
-        display: flex;
-      }
-      .teh-tarik-malaysian .bottom-boxes .pink-box h6 {
-        max-width: 13ch;
-        margin: 2.57vw 5vw 0 auto;
-      }
-      .teh-tarik-malaysian .dining-teh-tarik {
-        z-index: 3;
-        width: 80%;
-        left: 10%;
-        bottom: -8%;
-      }
-      /* .teh-tarik-malaysian:after {
-  content: "";
-  width: 100vw;
-  height: 100vh;
-  position: sticky;
-  left: 0;
-  top: 0;
-  display: block;
-  background-image: url(images/eating-on-teh-tarik.webp);
-} */
-      .teh-tarik-malaysian .container {
-        display: flex;
-        justify-content: center;
-        height: 100vh;
-        height: 100lvh;
-        align-items: center;
-        position: relative;
-      }
-      .teh-tarik-malaysian svg {
-        width: 100%;
-        height: auto;
-        position: absolute;
-        top: 0;
-        overflow: visible;
-        transform: translate(
-          0,
-          120%
-        ); /* Scaling to avoid seeing letter at the start and end */
-      }
-      .teh-tarik-malaysian textPath {
-        fill: currentColor;
-        letter-spacing: -0.05em;
-        text-transform: uppercase;
-      }
-      .bottom-boxes .yellow-box img {
-        display: none;
-      }
-      /* ELEVENTH SECTION END */
-      /* TWELVETH SECTION */
-      .malaysia-pride {
-        background-image: url(images/malaysia-pride-bg.webp);
-        background-size: cover;
-        background-position: center;
-        padding: 3.8vw 7vw;
-        position: relative;
-      }
-      .malaysia-pride h2.medium {
-        padding-bottom: 10vw;
-        position: relative;
-        z-index: 2;
-      }
-      .malaysia-pride h2.medium .line {
-        display: flex !important;
-        align-items: center;
-      }
-      .malaysia-pride .slant-card-container {
-        position: relative;
-      }
-      .malaysia-pride .slant-text {
-        width: fit-content;
-        padding: 0.9vw 1.11vw;
-      }
-      .malaysia-pride .green-text {
-        background-color: #009949;
-        rotate: -4.5deg;
-      }
-      .malaysia-pride .pink-text {
-        position: absolute;
-        right: -5vw;
-        top: 0;
-        rotate: 4.5deg;
-        background-color: #ed9fa5;
-      }
-      .malaysia-pride .purple-text {
-        background-color: #8085b4;
-        rotate: 2.5deg;
-        margin-left: 17.36vw;
-      }
-      .malaysia-pride img.buatan-malaysia {
-        display: none;
-        position: absolute;
-        height: 1.2em;
-      }
-      .malaysia-pride .foreground-cards {
-        position: absolute;
-      }
-      .malaysia-pride .foreground-cards.purple-woman {
-        display: none;
-        right: -20%;
-        bottom: -42%;
-        width: 51.18vw;
-      }
-      .malaysia-pride .foreground-cards.merchant-card {
-        display: none;
-        right: 20%;
-        bottom: -10%;
-        width: 20.83vw;
-      }
-      .malaysia-pride .foreground-cards.behind-the-back {
-        right: 40%;
-        bottom: -25%;
-        width: 33vw;
-      }
-      .malaysia-pride,
-      .its-official {
-        overflow-x: hidden;
-      }
-      h2.large.sliding:before {
-        content: "";
-        width: 100%;
-        height: 4.38vw;
-        background-image: url(images/long-red-pattern.webp);
-        background-size: cover;
-      }
-      .its-official {
-        z-index: 10;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        rotate: -3deg;
-        margin-block: -3vw;
-      }
-      img#official-logo {
-        width: 16vw;
-        position: absolute;
-        z-index: 1000;
-        top: 30%;
-        left: 64%;
-        rotate: 13deg;
-      }
-      h2.large.sliding {
-        position: relative;
-        width: fit-content;
-        z-index: 10;
-        white-space: nowrap;
-        padding-block: 3.13vw;
-        background-color: var(--yellow);
-        animation: scrollLeft 15s linear infinite;
-      }
-      /* TWELVETH SECTION END */
-      /* THIRTHEENTH SECTION */
-      .breaking-text-section .container {
-        height: 100%;
-        width: 100%;
-      }
-      .breaking-text-section {
-        background-color: #8085b4;
-        min-height: 100vh;
-        min-height: 100lvh;
-        position: relative;
-        overflow: hidden;
-      }
-      .breaking-texts-container {
-        text-align: center;
-        padding-block: 10vw;
-        left: 0;
-        min-height: 100vh;
-        min-height: 100lvh;
-        overflow: visible;
-      }
-      .breaking-texts-container > div {
-        display: flex;
-        justify-content: center;
-      }
-      .breaking-texts-container span {
-        position: relative;
-        display: inline-block;
-      }
-      .breaking-texts-container span:last-of-type {
-        transform-origin: bottom right;
-      }
-      .breaking-text-section .teh-tarik-with-cap {
-        position: absolute;
-        bottom: -53%;
-        left: calc(50vw - 13.5vw);
-        width: 27vw;
-      }
-      .breaking-text-section .breaking-image {
-        position: absolute;
-        bottom: -14vh;
-        bottom: -14lvh;
-        left: 50%;
-        transform: translateX(-50%);
-        max-width: 13.89vw !important;
-      }
-      /* THIRTHEENTH SECTION END */
-      /* 14TH SECTION */
-      .into-the-world {
-        background-color: #90cec7;
-        overflow: hidden;
-      }
-      .into-the-world .top-portion {
-        position: relative;
-        text-align: center;
-        padding-block: 5.5vw;
-      }
-      .into-the-world .top-portion h3 {
-        padding-inline: 25vw;
-        margin-bottom: 1.5vw;
-      }
-      .into-the-world .top-portion h2,
-      .into-the-world .top-portion h3 {
-        position: relative;
-        z-index: 2;
-      }
-      .into-the-world .top-portion img {
-        position: absolute;
-      }
-      .into-the-world .top-portion img.starfish {
-        z-index: 0;
-        width: 12.3vw;
-        left: 10vw;
-        bottom: 5vw;
-      }
-      .into-the-world .top-portion img.leaf {
-        right: 8.33vw;
-        top: 6.94vw;
-        rotate: 30deg;
-        width: 12.85vw;
-        z-index: 2;
-      }
-      .into-the-world .bottom-portion {
-        display: flex;
-      }
-      .into-the-world .bottom-portion > div {
-        flex: 1;
-      }
-      .into-the-world .bottom-portion .yellow-box {
-        background-color: var(--yellow);
-      }
-      .into-the-world .bottom-portion .yellow-box h6 {
-        max-width: 25ch;
-        margin: 3.2vw 5.8vw 5.56vw;
-      }
-      .into-the-world .bottom-portion .yellow-box::after {
-        content: "";
-        display: block;
-        height: 6.94vw;
-        width: 100%;
-        border: 1px solid black;
-        background-image: url(images/darkblue-pattern.svg);
-        background-color: #90cec7;
-        background-size: cover;
-      }
-      .into-the-world .bottom-portion .red-box {
-        background-color: var(--red);
-      }
-      .into-the-world .bottom-portion .red-box h6 {
-        margin-left: auto;
-        max-width: 18ch;
-        margin: 3.2vw 5.8vw 0 auto;
-      }
-      .into-the-world .bottom-portion .red-box #spinning-cups {
-        position: absolute;
-        width: 80vw;
-        left: 50%;
-        bottom: -10vw;
-        transform: translate(-50%, 50%);
-        z-index: 2;
-        animation: cupsSlowRotate 30s linear infinite;
-      }
-      @keyframes cupsSlowRotate {
-        0% {
-          transform: translate(-50%, 50%) rotate(0deg);
-        }
-        100% {
-          transform: translate(-50%, 50%) rotate(-360deg);
-        }
-      }
-      .into-the-world .bottom-portion .red-box .card {
-        position: relative;
-        display: flex;
-        background-color: #f6d3b3;
-        width: fit-content;
-        rotate: -6deg;
-        margin-top: 4vw;
-        margin-left: auto;
-        z-index: 2;
-      }
-      .into-the-world .bottom-portion .red-box .card h4 {
-        margin: 1.04vw 1.1vw;
-        max-width: 18ch;
-      }
-      .into-the-world .bottom-portion .red-box .card::after {
-        content: "";
-        display: block;
-        width: max(50px, 5.28vw);
-        border: 1px solid black;
-        background-image: url(images/small-purple-pattern.svg);
-        background-color: var(--yellow);
-        background-size: cover;
-      }
-      /* 14TH SECTION END */
-      /* 15TH SECTION */
-      .three-cards-section {
-        position: relative;
-        overflow: hidden;
-      }
-      .three-cards-section .large-card {
-        height: 100vh;
-        height: 100lvh;
-        width: 100%;
-        padding-top: 2.64vw;
-        padding-inline: 9.38vw;
-      }
-      .three-cards-section .large-card h2 {
-        text-align: center;
-      }
-      .three-cards-section .green-card {
-        background-color: #33a357;
-      }
-      .three-cards-section .red-card {
-        position: absolute;
-        top: 0;
-        background-color: var(--red);
-        clip-path: circle(0% at 50% 100%);
-      }
-      .three-cards-section .yellow-card {
-        position: absolute;
-        top: 0;
-        background-color: var(--yellow);
-        clip-path: circle(0% at 50% 100%);
-        transition: clip-path ease-out 0.3s;
-      }
-      .three-cards-section .yellow-card.large-card h6 {
-        display: flex;
-        gap: 22vw;
-        justify-content: center;
-      }
-      .three-cards-section .props {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-        top: 0;
-      }
-      .three-cards-section .props .yellow-mountain {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 80vw;
-        object-fit: contain;
-      }
-      .three-cards-section .props .purple-mountain {
-        object-fit: contain;
-        position: absolute;
-        width: 70vw;
-        bottom: 0;
-        right: 0;
-      }
-      .three-cards-section .props .cup {
-        position: absolute;
-        left: 50%;
-        top: 57vh;
-        top: 57lvh;
-        transform: translate(-50%, 0);
-        min-width: 18.75vw;
-        height: 60vh;
-        height: 60lvh;
-        object-fit: contain;
-      }
-      .three-cards-section .props .props-images {
-        position: absolute;
-        animation: floatNatural 10s ease-in-out infinite;
-        transition: bottom 0.7s ease-in-out;
-      }
-      .three-cards-section .props .props-images.alternate {
-        animation: floatNatural 5s ease-in-out infinite;
-      }
-      @keyframes floatNatural {
-        0% {
-          transform: translateY(0px) rotate(0deg);
-        }
-        25% {
-          transform: translateY(-5px) rotate(1deg);
-        }
-        50% {
-          transform: translateY(-10px) rotate(0deg);
-        }
-        75% {
-          transform: translateY(-5px) rotate(-1deg);
-        }
-        100% {
-          transform: translateY(0px) rotate(0deg);
-        }
-      }
-      .three-cards-section .first.green-props {
-        right: 15.56vw;
-        bottom: 2.57vw;
-        rotate: -15deg;
-        width: max(140px, 14vw);
-      }
-      .three-cards-section .second.green-props {
-        left: 20vw;
-        bottom: 1vw;
-        width: max(130px, 13vw);
-      }
-      .three-cards-section .third.green-props {
-        left: 5vw;
-        bottom: 5vw;
-        rotate: -3deg;
-        width: max(40px, 4.17vw);
-      }
-      .three-cards-section .first.red-props {
-        right: 7vw;
-        bottom: -3.61vw;
-        width: max(100px, 9.8vw);
-      }
-      .three-cards-section .second.red-props {
-        right: 24vw;
-        bottom: 2.6vw;
-        width: max(100px, 10vw);
-      }
-      .three-cards-section .third.red-props {
-        left: 16vw;
-        bottom: 2.92vw;
-        width: max(150px, 15.6vw);
-      }
-      .three-cards-section .first.yellow-props {
-        right: 18.33vw;
-        bottom: 0;
-        width: max(100px, 10vw);
-      }
-      .three-cards-section .second.yellow-props {
-        left: 18vw;
-        bottom: 18.33vw;
-        width: max(50px, 5.07vw);
-      }
-      .three-cards-section .third.yellow-props {
-        left: 5vw;
-        bottom: 2vw;
-        width: max(70px, 7.6vw);
-        rotate: -23deg;
-      }
-      .three-cards-section.red-active .green-props,
-      .three-cards-section:not(.red-active) .red-props,
-      .three-cards-section.yellow-active .red-props,
-      .three-cards-section:not(.yellow-active) .yellow-props {
-        bottom: -100vh !important;
-        bottom: -100lvh !important;
-      }
-      /* 15TH SECTION END */
-      /* FOOTER */
-      footer {
-        background-color: white;
-        overflow: hidden;
-      }
-      footer .top-portion {
-        padding-inline: 2.8vw;
-      }
-      footer .footer-logo {
-        width: 93vw;
-        padding: 3vw;
-      }
-      footer .footer-menu {
-        display: flex;
-      }
-      footer .footer-menu > * {
-        padding: 1.1vw 1.5vw;
-        border: 1px solid black;
-      }
-      footer .footer-menu > .left-column {
-        width: 28vw;
-        background-color: #8085b4;
-        padding-left: 3vw;
-      }
-      footer .footer-menu > a {
-        position: relative;
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        gap: 3.47vw;
-        justify-content: space-between;
-        align-items: flex-start;
-      }
-      footer .footer-menu > a:after {
-        content: "";
-        position: absolute;
-        bottom: 1.67vw;
-        right: 1.67vw;
-        width: 2.64vw;
-        height: 2.64vw;
-        background-image: url(images/plus-button.svg);
-        background-size: cover;
-        border-radius: 50%;
-        transition: rotate 0.3s;
-      }
-      footer .footer-menu > a:hover:after {
-        rotate: 45deg;
-      }
-      footer .footer-menu a img {
-        height: 4.51vw;
-        width: auto;
-      }
-      footer .footer-menu > a:last-child {
-        padding-right: 3vw;
-      }
-      footer .footer-menu .yellow {
-        background-color: var(--yellow);
-      }
-      footer .footer-menu .red {
-        background-color: var(--red);
-      }
-      footer .footer-menu .green {
-        background-color: #009949;
-      }
-      footer .bottom-portion {
-        display: flex;
-        padding: 1.04vw 6vw;
-        background-color: #f6d3b3;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 0.83vw;
-        z-index: 100;
-      }
-      footer .bottom-portion a {
-        font-weight: 800;
-      }
-      footer .bottom-portion .left {
-        display: flex;
-        gap: 1.67vw;
-        align-items: center;
-      }
-      footer .bottom-portion .left .social-media-icons {
-        display: flex;
-        gap: 8px;
-        align-items: center;
-      }
-      footer .bottom-portion .left .social-media-icons img {
-        height: 1.11vw;
-        aspect-ratio: 1;
-      }
-      footer .bottom-portion .right {
-        display: flex;
-        gap: 1.67vw;
-      }
-      /* FOOTER END */
-      /* POPUPS */
-      a[data-popup] {
-        cursor: pointer;
-      }
-      .popup {
-        position: fixed;
-        transition: transform 0.3s;
-        z-index: 99;
-        width: 100vw;
-        min-height: 80vh;
-        min-height: 80lvh;
-        display: flex;
-      }
-      .popup#menu-button {
-        display: flex;
-        transform: translateX(100vw);
-        height: 100vh;
-        height: 100lvh;
-        padding-inline: 3.47vw;
-      }
-      .popup#menu-button h2 {
-        rotate: 90deg;
-        padding-right: 1vw;
-        top: -12vw;
-        width: fit-content;
-        left: 0;
-        white-space: nowrap;
-        position: absolute;
-        transform-origin: bottom left;
-        padding-bottom: 6vw;
-      }
-      .popup#menu-button > div {
-        transition: flex 0.3s;
-      }
-      .popup#menu-button > div:not(.inner-menu) {
-        position: relative;
-        /* width: calc(100% / 3); */
-        flex: 1;
-        cursor: pointer;
-      }
-      .popup#menu-button > div:not(.inner-menu).active {
-        flex: 1.5;
-      }
-      .popup#menu-button .inner-menu {
-        display: flex;
-        flex-direction: column;
-      }
-      .popup#menu-button .active.inner-menu {
-        flex: 2;
-      }
-      .popup#menu-button .inner-menu img {
-        display: none;
-        width: 100%;
-      }
-      .popup#menu-button .active.inner-menu img {
-        display: block;
-      }
-      .popup#menu-button > div:not(.inner-menu):after {
-        content: "";
-        display: block;
-        bottom: max(14px, 1.39vw);
-        right: max(35px, 2.78vw);
-        position: absolute;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: bottom;
-      }
-      .popup#menu-button .drinks,
-      .popup#menu-button .inner-menu[data-type="drinks"] {
-        background-color: var(--yellow);
-      }
-      .popup#menu-button .drinks:after {
-        background-image: url(images/footer-drink.webp);
-        width: max(70px, 7.4vw);
-        height: max(150px, 15vw);
-      }
-      .popup#menu-button .food,
-      .popup#menu-button .inner-menu[data-type="food"] {
-        background-color: #ed9fa5;
-      }
-      .popup#menu-button .food:after {
-        background-image: url(images/footer-plate.webp);
-        width: max(100px, 10.76vw);
-        height: max(70px, 7.22vw);
-      }
-      .popup#menu-button .snacks,
-      .popup#menu-button .inner-menu[data-type="snacks"] {
-        background-color: var(--red);
-      }
-      .popup#menu-button .snacks:after {
-        background-image: url(images/footer-toast.webp);
-        width: max(110px, 11.11vw);
-        height: max(70px, 7.22vw);
-      }
-      .active.popup#menu-button {
-        transform: translateX(0);
-      }
-      .popup .close-button {
-        width: max(90px, 9.38vw);
-        height: max(90px, 9.38vw);
-        border-radius: 50%;
-        background-image: url(images/close-button.svg);
-        background-size: cover;
-        flex: none;
-        cursor: pointer;
-      }
-      .popup .long-pattern {
-        position: absolute;
-        width: 100%;
-        height: 4.38vw;
-        left: 0;
-        bottom: 5vh;
-        bottom: 5lvh;
-      }
-      .popup#join-us,
-      .popup#contact-us,
-      .popup#cater-from-us {
-        padding: 3vw 5.83vw;
-        transform: translateY(100vh);
-        transform: translateY(100lvh);
-      }
-      .active.popup#join-us,
-      .active.popup#contact-us,
-      .active.popup#cater-from-us {
-        transform: translateY(20vh);
-        transform: translateY(20lvh);
-      }
-      .popup .left-portion {
-        padding-right: 15.56vw;
-      }
-      .popup .popup-email h6 {
-        margin-top: 1.39vw;
-        background-color: white;
-        padding: 0.56vw 0.83vw;
-        rotate: -1.5deg;
-        width: fit-content;
-        white-space: nowrap;
-      }
-      .popup .popup-email h6:before {
-        content: "";
-        background-image: url(images/white-top-arrow.svg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 1.46vw;
-        width: 2.08vw;
-        position: absolute;
-        display: block;
-        top: -1.39vw;
-        left: -1px;
-      }
-      .popup .right-portion {
-        padding-top: 1.39vw;
-        padding-right: 1.86vw;
-        margin-right: 3vw;
-      }
-      .popup .right-portion.accordion {
-        height: 60vh;
-        height: 60lvh;
-        overflow-y: scroll;
-        scrollbar-color: black transparent;
-      }
-      .popup .right-portion.accordion .title {
-        cursor: pointer;
-      }
-      .popup .right-portion.accordion li {
-        color: var(--raisin-black);
-      }
-      .popup#cater-from-us {
-        background-color: var(--yellow);
-      }
-      .popup#cater-from-us .right-portion {
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-      }
-      .popup#join-us {
-        background-color: var(--red);
-      }
-      .popup#contact-us {
-        background-color: #009949;
-      }
-      .popup#join-us .accordion .title,
-      .popup#join-us .accordion .detail {
-        padding: 12px 16px;
-      }
-      .popup#join-us .accordion .title {
-        display: flex;
-        gap: 2.08vw;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .popup#join-us .accordion .active.title:before {
-        rotate: 45deg;
-      }
-      .popup#join-us .accordion .title:before {
-        content: "";
-        display: block;
-        height: max(1em, 1.04vw);
-        width: max(1em, 1.04vw);
-        order: 2;
-        flex: none;
-        background-image: url(images/accordion-plus.svg);
-        background-size: cover;
-        transition: rotate 0.3s;
-      }
-      .popup#join-us .accordion .title:not(:first-child) {
-        border-top: 2px solid black;
-      }
-      .popup .active.inner-menu {
-        width: 62.5vw;
-        overflow: scroll;
-        scrollbar-width: none;
-      }
-      /* POPUPS END */
-
-      @media (max-width: 1239px) {
-        .mobile-only {
-          display: block;
-        }
-        /* 1ST SECTION */
-        .left-sidebar,
-        .right-sidebar {
-          height: 8vw;
-        }
-        .right-sidebar {
-          transform: translateY(-100vw);
-        }
-        /* .bouncer {
-    max-width: none;
-    max-height: none;
-  } */
-        h1.hero-title {
-          margin-block: 12vw;
-        }
-        .pinned-hero img#main-teh-tarik,
-        .pinned-hero img#teh-tarik-front {
-          max-height: none;
-          width: 82vw;
-        }
-        .pinned-hero .monkey-container {
-          left: 60%;
-          z-index: -1;
-        }
-        .pinned-hero .monkey-container #monkey {
-          right: 9vw;
-          width: 18vw;
-        }
-        .pinned-hero #lcw {
-          bottom: 45%;
-          width: 30vw;
-        }
-        .pinned-hero #main-plant-right {
-          width: 85vw;
-        }
-        .pinned-hero #main-durian-left,
-        .pinned-hero #main-green-durian-left {
-          width: 100vw;
-        }
-        .pinned-hero #main-green-coconut {
-          width: 50vw;
-        }
-        .pinned-hero #motorbike {
-          width: 20vw;
-        }
-        /* 1ST SECTION END */
-        #teh-tarik-aneh {
-          max-width: none;
-        }
-        .pinned-horizontal-section .middle-section {
-          width: 80vw;
-        }
-        .pinned-horizontal-section .text-content {
-          padding: 10vw;
-        }
-        .unofficial-teh-tarik {
-          bottom: 20%;
-          right: 12vw;
-        }
-        .unofficial-teh-tarik img.unofficial-teh-tarik-img {
-          width: 48vw;
-        }
-        .national-importance {
-          min-height: max(850px, 100vh);
-          min-height: max(850px, 100lvh);
-        }
-        .national-importance .text-content {
-          padding: max(50px, 5.56vw) max(40px, 10.76vw);
-        }
-        .national-importance .yellow-mountain-container {
-          position: absolute;
-        }
-        .national-importance .yellow-mountain-container .motorbike {
-          top: 10%;
-        }
-        .humbly-priced {
-          height: 100vh;
-          height: 100lvh;
-        }
-        .island-section {
-          position: absolute;
-          bottom: 0;
-          width: 100%;
-        }
-        .island-section .text-box {
-          max-width: 220px;
-          padding: 30px;
-        }
-        .island-section .pink-box {
-          left: 23vw;
-          bottom: 50vh;
-          bottom: 50lvh;
-        }
-        .island-section .lightgreen-box {
-          right: 30%;
-          top: unset;
-          bottom: 7vh;
-          bottom: 7lvh;
-        }
-        .island-section .yellow-box {
-          top: unset;
-          bottom: 30vh;
-          bottom: 30lvh;
-        }
-        .humbly-priced .rotating-teh-tarik {
-          object-fit: cover;
-          right: -40px;
-        }
-        .television-section {
-          height: 100vh;
-          height: 100lvh;
-        }
-        .television-section > h4 {
-          margin-block: 14vh;
-          margin-block: 14lvh;
-        }
-        .drink-heading {
-          display: flex;
-          height: 40vh;
-          height: 40lvh;
-          flex-direction: column;
-          justify-content: center;
-          gap: 26px;
-        }
-        .drink-like-no-other .bottom-portion {
-          flex-direction: column;
-        }
-        .drink-like-no-other .bottom-portion .pattern-box {
-          order: -1;
-        }
-        .drink-like-no-other .bottom-portion > div {
-          display: flex;
-          align-items: center;
-          height: 24vh;
-          height: 24lvh;
-          flex: none;
-          padding: 0 20vw;
-        }
-        .drink-like-no-other .bottom-portion .floating-cup {
-          left: calc(50% - 27vw);
-          width: 54vw;
-          bottom: unset;
-          top: -26vh;
-          top: -26lvh;
-        }
-        .drink-like-no-other .bottom-portion .floating-cup-leaf,
-        .drink-like-no-other.landed .bottom-portion .floating-cup-leaf {
-          bottom: calc(10% + 60vh);
-          bottom: calc(10% + 60lvh);
-        }
-        .drink-like-no-other .bottom-portion .floating-cup-starfish,
-        .drink-like-no-other.landed .bottom-portion .floating-cup-starfish {
-          bottom: calc(30% + 60vh);
-          bottom: calc(30% + 60lvh);
-        }
-        .gold-standard .top-portion,
-        .gold-standard .bottom-portion h2 {
-          padding-inline: 20vw;
-        }
-        .gold-standard .bottom-portion .text-box .parallax-bg {
-          bottom: 0;
-          top: unset;
-        }
-        .five-gen {
-          padding-block: 30vh;
-          padding-block: 30lvh;
-        }
-        .staggered-cards-container,
-        .staggered-card {
-          height: 40vh;
-          height: 40lvh;
-        }
-        .staggered-card {
-          width: 35vw;
-        }
-        .staggered-card h4 {
-          padding: 20px 20px 0;
-        }
-        .proudly-malaysian .top-portion .text-content {
-          padding: 12vw 12vw 0;
-        }
-        .touching-hands .hand {
-          top: 17%;
-          position: absolute;
-        }
-        .touching-hands .touching-star {
-          top: 0;
-        }
-        .proudly-malaysian .bottom-portion .text-content {
-          position: relative;
-          z-index: 10;
-          padding: 4vw 20vw;
-          flex-direction: column;
-          align-items: flex-start;
-        }
-        .proudly-malaysian .bottom-portion .text-content p {
-          max-width: 50%;
-        }
-        .teh-tarik-malaysian .dining-teh-tarik,
-        .teh-tarik-malaysian .bottom-boxes {
-          gap: 0;
-        }
-        .teh-tarik-malaysian .dining-teh-tarik {
-          display: none;
-        }
-        .teh-tarik-malaysian .bottom-boxes:before {
-          content: "";
-          width: 100%;
-          height: 30vh;
-          height: 30lvh;
-          background-image: url(images/eating-on-teh-tarik.webp);
-          background-size: cover;
-          position: absolute;
-          top: 0;
-          transform: translateY(-100%);
-        }
-        .bottom-boxes .yellow-box {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 5vw;
-        }
-        .bottom-boxes .yellow-box img {
-          width: 37vw;
-        }
-        .teh-tarik-malaysian .bottom-boxes .pink-box p {
-          margin: 20%;
-        }
-        .malaysia-pride {
-          padding-inline: 100px;
-        }
-        .malaysia-pride .slant-card-container {
-          display: flex;
-          flex-direction: column;
-          gap: 20px;
-        }
-        .malaysia-pride .slant-text {
-          position: relative;
-          margin-left: 0;
-        }
-        .malaysia-pride .slant-text.pink-text {
-          rotate: 0deg;
-        }
-        .malaysia-pride h2.medium {
-          padding-bottom: 10vw;
-        }
-        .breaking-texts-container {
-          font-size: 10.42vw !important;
-          padding-block: 40vh;
-          padding-block: 40lvh;
-        }
-        .into-the-world .top-portion {
-          padding-bottom: 50vw;
-        }
-        .into-the-world .bottom-portion:before {
-          content: "";
-          background-image: url(images/spinning-cups.webp);
-          background-size: cover;
-          height: 80vw;
-          width: 80vw;
-          left: 50%;
-          top: 0;
-          transform: translate(-50%, -50%);
-          position: absolute;
-          animation: cupsSlowRotateCenter 30s linear infinite;
-        }
-        @keyframes cupsSlowRotateCenter {
-          0% {
-            transform: translate(-50%, -50%) rotate(0deg);
-          }
-          100% {
-            transform: translate(-50%, -50%) rotate(-360deg);
-          }
-        }
-        .into-the-world .bottom-portion .red-box #spinning-cups {
-          display: none;
-        }
-        .into-the-world .bottom-portion {
-          flex-direction: column;
-        }
-        .into-the-world .bottom-portion > div {
-          z-index: 2;
-          padding-inline: 20vw;
-        }
-        .into-the-world .bottom-portion .yellow-box::after {
-          display: none;
-        }
-        .into-the-world .bottom-portion .red-box h6 {
-          margin: unset;
-        }
-        .into-the-world .bottom-portion h6 {
-          margin: 3.2vw 5.8vw 5.56vw !important;
-        }
-        .into-the-world .bottom-portion .red-box .card {
-          margin-bottom: 7vw;
-        }
-        .three-cards-section .large-card {
-          padding: 10vw 10vw 0;
-        }
-        .three-cards-section .props .cup {
-          width: 60vw;
-        }
-        .three-cards-section .props img:not(.cup) {
-          z-index: 2;
-        }
-        footer .footer-logo {
-          width: 100%;
-        }
-        footer .footer-menu {
-          display: grid;
-          grid-template: repeat(3, 1fr) / repeat(2, 50%);
-        }
-        footer .footer-menu .left-column {
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          grid-row: span 3;
-          padding: 3vw 20px;
-        }
-        footer .bottom-portion {
-          display: none;
-        }
-        footer .footer-menu > a {
-          aspect-ratio: 1.3;
-          padding: 3vw;
-        }
-        footer .footer-menu > a:after {
-          right: max(40px, 7vw);
-          height: max(30px, 15%);
-          width: auto;
-          aspect-ratio: 1;
-          bottom: 3vw;
-        }
-        footer .footer-menu a img {
-          height: max(55px, 30%);
-        }
-        footer .footer-menu .left-column .mobile-only {
-          display: flex;
-          flex-direction: column;
-          height: 100%;
-        }
-        footer .footer-menu .left-column .mobile-only .center {
-          margin-block: auto 20px;
-        }
-        footer .footer-menu .left-column .mobile-only .right {
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-        }
-        .social-media-icons {
-          display: flex;
-          gap: 14px;
-          margin-block: 20px;
-        }
-        footer .footer-menu .social-media-icons a img {
-          height: 30px;
-        }
-        .popup#join-us,
-        .popup#contact-us,
-        .popup#cater-from-us {
-          padding: 40px 100px;
-          transform: translateY(100vh);
-          transform: translateY(100lvh);
-          flex-direction: column;
-          gap: 50px;
-        }
-        .popup .long-pattern {
-          bottom: 0;
-        }
-        .popup .close-button {
-          position: absolute;
-          top: 40px;
-          right: 100px;
-        }
-        .popup#menu-button {
-          flex-direction: column;
-        }
-        .popup#menu-button h2 {
-          padding: 30px 60px;
-          rotate: 0deg;
-          top: 0;
-        }
-        .popup .active.inner-menu {
-          width: 100%;
-        }
-        .popup#menu-button .active.inner-menu {
-          flex: 4;
-        }
-      }
-      @media (max-width: 767px) {
-        .sidebars {
-          display: none;
-        }
-        .mobile-menus.sidebars {
-          display: block;
-          height: 100vh;
-          height: 100dvh;
-          pointer-events: none;
-        }
-        .mobile-menus.sidebars .left-sidebar,
-        .mobile-menus.sidebars .right-sidebar {
-          rotate: 0deg;
-          transform: translateY(0);
-          width: 100vw;
-          pointer-events: all;
-        }
-        .mobile-menus.sidebars .right-sidebar {
-          bottom: 0;
-          top: unset;
-        }
-        .mobile-menus.sidebars .right-sidebar p {
-          padding: 10px;
-        }
-        .mobile-menus.sidebars .left-sidebar a {
-          padding: 10px;
-          line-height: 1;
-          height: 100%;
-          border-left: 2px solid;
-        }
-        .popup#menu-button {
-          padding: 5.5vw 0;
-        }
-        .phone-only {
-          display: block;
-        }
-        h1.hero-title {
-          margin-block: 100px;
-        }
-        h1,
-        h2.large {
-          font-size: 14vw;
-          letter-spacing: 0;
-        }
-        h2,
-        .breaking-texts-container,
-        .teh-tarik-malaysian #textpath {
-          letter-spacing: 0;
-        }
-        .left-sidebar img:first-child {
-          height: 100%;
-        }
-        .left-sidebar,
-        .right-sidebar {
-          height: 42px;
-        }
-        
-        .pinned-hero .monkey-container {
-          bottom: 16vh;
-          bottom: 16lvh;
-        }
-        .pinned-hero #main-durian-left,
-        .pinned-hero #main-green-durian-left {
-          width: 160vw;
-          left: -50vw;
-        }
-        .pinned-hero #main-plant-right {
-          width: 145vw;
-        }
-        .pinned-hero #tapir {
-          bottom: 20vh;
-          bottom: 20lvh;
-        }
-        #sugar1 {
-          top: -110%;
-          left: 50vw;
-        }
-        #sugar8 {
-          top: -100%;
-          left: 16vw;
-        }
-        .pinned-hero img#main-teh-tarik,
-        .pinned-hero img#teh-tarik-front {
-          scale: 1.8;
-        }
-        #motion-path {
-          scale: 2;
-        }
-        .pinned-horizontal-section .text-content {
-          padding: 90px 40px 0;
-        }
-        .pinned-horizontal-section .typewriter-box {
-          max-width: none;
-          /* padding-bottom: 200px; */
-          background-size: 50%;
-          background-position: bottom right;
-        }
-        .pinned-horizontal-section small {
-          margin-top: 10vh;
-          margin-top: 10lvh;
-        }
-        .pinned-horizontal-section .middle-section {
-          width: 70vh;
-          width: 70lvh;
-        }
-        .unofficial-teh-tarik {
-          bottom: 10vh;
-          bottom: 10lvh;
-        }
-        .national-importance .text-content {
-          padding-inline: 20px;
-          padding-bottom: 50px;
-        }
-        img.hornbill-logo {
-          right: 0;
-          width: 130px;
-          top: 70px;
-        }
-        @keyframes rainDrop {
-          0% {
-            transform: translateY(0) rotate(-20deg);
-          }
-          50% {
-            transform: translateY(60vh) rotate(0);
-            transform: translateY(60lvh) rotate(0);
-          }
-          100% {
-            transform: translateY(120vh) rotate(20deg);
-            transform: translateY(120lvh) rotate(20deg);
-          }
-        }
-        .national-importance .hornbill-container {
-          width: 100vw;
-          height: 110vw;
-        }
-        .national-importance .yellow-mountain {
-          width: 160vw;
-        }
-        .sugar-rain {
-          top: -20vh;
-          top: -20lvh;
-        }
-        .national-importance .hornbill-bg {
-          width: 72vw;
-          top: -120%;
-        }
-        .that-one-company {
-          display: flex;
-          flex-direction: column;
-        }
-        .that-one-company .top-portion {
-          padding-inline: 20px;
-        }
-        .that-one-company h4 {
-          max-width: 78vw;
-        }
-        .pouring-cup-container {
-          top: 300px;
-          right: -30%;
-        }
-        .that-one-company .bottom-portion h2 {
-          margin-top: 50vw;
-        }
-        .bottom-boxes {
-          display: flex;
-          margin-top: 450px;
-          gap: 0;
-          flex-direction: column;
-          align-items: center;
-          position: relative;
-          z-index: 20;
-        }
-        .bottom-boxes > div {
-          width: 100%;
-          height: 30vh;
-          height: 30lvh;
-          margin: 0 !important;
-        }
-        .bottom-boxes .yellow-box {
-          display: none;
-        }
-        .teh-tarik-malaysian .bottom-boxes .pink-box h6 {
-          margin: auto;
-        }
-        img.pouring-photos {
-          bottom: 30vh;
-          bottom: 30lvh;
-          width: 200vw;
-          left: -50%;
-        }
-        .pouring-cup-container .stream-container {
-          width: 16.5vw;
-        }
-        .pouring-cup-container img:first-child,
-        .pouring-cup-container .cover-cup {
-          width: 35vw;
-        }
-        .bottom-boxes .red-box img:first-child {
-          width: 54vw;
-          top: 10%;
-          left: 10%;
-        }
-        .bottom-portion .purple-card {
-          width: 120px;
-          top: 25%;
-        }
-        .humbly-priced {
-          height: auto;
-        }
-        .humbly-priced .text-content {
-          padding-inline: 20px;
-        }
-        .island-section {
-          position: relative;
-          margin-top: 480px;
-        }
-        .island-section .pink-box {
-          bottom: 40vh;
-          bottom: 40lvh;
-        }
-        .island-section .yellow-box {
-          bottom: 24vh;
-          bottom: 24lvh;
-        }
-        .television-section {
-          height: 70vh;
-          height: 70lvh;
-          /* background-image: url(/wp-content/uploads/2025/04/television-mobile-bg.webp); */
-        }
-        .television-frame {
-          scale: 1.3;
-          left: 5%;
-        }
-        .television-card h4 {
-          font-size: 4vw;
-        }
-        .drink-like-no-other .bottom-portion .floating-cup-starfish {
-          transform-origin: right;
-        }
-        .drink-like-no-other .bottom-portion .floating-cup-starfish,
-        .drink-like-no-other .bottom-portion .floating-cup-leaf {
-          bottom: 56lvh !important;
-          transform: translateX(50%) rotate(-10deg) !important;
-          scale: 0;
-          transition: scale 0.3s;
-        }
-        .drink-like-no-other .bottom-portion .floating-cup-leaf {
-          right: 12% !important;
-          width: 110px !important;
-          left: unset !important;
-          rotate: 90deg !important;
-        }
-        .drink-like-no-other .bottom-portion .floating-cup-starfish {
-          left: 0% !important;
-          width: 100px !important;
-        }
-        .drink-like-no-other.landed .bottom-portion .floating-cup-leaf,
-        .drink-like-no-other.landed .bottom-portion .floating-cup-starfish {
-          bottom: inherit;
-          left: inherit;
-          transform: none;
-          scale: 1;
-        }
-        .drink-like-no-other .bottom-portion .floating-cup {
-          top: -18%;
-          height: 40vh;
-          object-fit: contain;
-          width: 100%;
-          object-position: center;
-          left: 0;
-        }
-        .drink-like-no-other .bottom-portion .green-box {
-          z-index: 2;
-        }
-        .drink-like-no-other .bottom-portion .pattern-box img {
-          bottom: -40px;
-        }
-        .drink-like-no-other .bottom-portion > div {
-          padding-inline: 20px;
-        }
-        .gold-standard .top-portion h4 {
-          font-size: 3vw;
-          letter-spacing: 0;
-        }
-        .gold-standard .top-portion,
-        .gold-standard .bottom-portion h2 {
-          padding-inline: 20px;
-        }
-        .gold-standard .bottom-portion .text-box {
-          margin-left: 20px;
-          max-width: 60vw;
-          margin-bottom: 30vh;
-          margin-bottom: 30lvh;
-        }
-        .five-gen {
-          background-image: url(images/five-gen-mobile-bg.webp);
-        }
-        .staggered-card {
-          width: auto;
-          aspect-ratio: 0.7;
-        }
-        .proudly-malaysian .head-with-eyeball {
-          display: none !important;
-        }
-        .proudly-malaysian .top-portion {
-          padding-bottom: 0;
-        }
-        .touching-hands .touching-star {
-          transform: translate(-50%, -4%) scale(0.1);
-        }
-        .proudly-malaysian .bottom-portion .text-content {
-          padding-inline: 20px;
-        }
-        .proudly-malaysian .bottom-portion .text-content h6 {
-          max-width: none;
-        }
-        .teh-tarik-malaysian > p {
-          max-width: 50vw;
-          margin: 22vw auto;
-        }
-        .teh-tarik-malaysian .bottom-boxes {
-          margin-top: 200px;
-          flex-direction: row;
-        }
-        .teh-tarik-malaysian .bottom-boxes:before {
-          background-position: 30%;
-        }
-        .teh-tarik-malaysian .container {
-          height: 70vh;
-          height: 70lvh;
-        }
-        .teh-tarik-malaysian #textpath {
-          font-size: 300px;
-        }
-        .malaysia-pride {
-          padding-inline: 50px;
-          overflow: hidden;
-          background-position: 20%;
-        }
-        .malaysia-pride .foreground-cards.behind-the-back {
-          right: unset;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 90vw;
-          margin-bottom: -20vw;
-          position: relative;
-        }
-        .breaking-text-section {
-          min-height: 0;
-        }
-        .breaking-texts-container {
-          font-size: 8.5vw !important;
-          padding-block: 30vh;
-          padding-block: 30lvh;
-          min-height: 0;
-        }
-        .breaking-text-section .teh-tarik-with-cap {
-          width: 37vw;
-          left: calc(50vw - 18.5vw);
-        }
-        .breaking-text-section .breaking-image {
-          max-width: 80px !important;
-        }
-        .into-the-world .top-portion {
-          padding-block: 60px 300px;
-        }
-        .into-the-world .top-portion h3 {
-          font-size: 20px;
-          text-wrap-style: pretty;
-          margin-bottom: 20px;
-        }
-        .into-the-world .bottom-portion:before {
-          width: 130vw;
-          height: 130vw;
-        }
-        .three-cards-section .large-card {
-          padding: 100px 20px 0;
-        }
-        .three-cards-section .large-card h2 {
-          font-size: 50px;
-        }
-        .three-cards-section .yellow-card.large-card h6 {
-          gap: 4px;
-        }
-        footer .footer-menu .left-column h3 {
-          font-size: 24px;
-        }
-        footer .footer-menu .left-column .mobile-only .center {
-          font-size: 10px;
-        }
-        footer .footer-menu > a {
-          padding-right: 20px;
-          aspect-ratio: unset;
-        }
-        .popup .close-button {
-          top: 0;
-          right: 40px;
-        }
-        .popup#join-us,
-        .popup#contact-us,
-        .popup#cater-from-us {
-          padding-inline: 60px;
-        }
-        .popup .right-portion {
-          max-height: 40vh;
-          max-height: 40lvh;
-          overflow-y: scroll;
-        }
-        footer .top-portion {
-          padding-inline: 0;
-        }
-        footer .footer-menu > a:after {
-          right: 20px;
-        }
-        footer .footer-menu {
-          margin-bottom: 40px;
-        }
-      }
-    </style>
+    
+    
+ <link rel="stylesheet" href="./css/style.css">
   </head>
+
 
 
 
@@ -3368,7 +221,7 @@
       <br>
           <br>
   <img src="images/lisab.png" alt="Lisabi" 
-     style="display:block; padding-top:50px; margin:0 auto; width:120px; max-width:30%; height:auto;">
+     style="display:block; padding-top:40px; margin:0 auto; width:120px; max-width:30%; height:auto;">
 
 
       <img alt="" id="main-circle" src="images/hero-banner-circle.webp">
@@ -3411,6 +264,1577 @@
     </div>
 
 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- NEW SECTION 16: Our Heritage Story -->
+<section class="heritage-story">
+  <div class="heritage-container">
+    <div class="heritage-bg">
+      <img src="images/heritage-pattern.webp" alt="Heritage Pattern" class="heritage-pattern">
+    </div>
+    
+    <div class="heritage-content">
+      <h1 class="heritage-title">80 YEARS OF<br>PERFECT BREWING</h1>
+      
+      <div class="timeline-container">
+        <div class="timeline-item" data-year="1940">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>The Beginning</h3>
+            <p>From humble street stalls to Malaysian hearts</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item" data-year="1970">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>The Perfection</h3>
+            <p>11 tea leaves sourced from 5 countries</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item" data-year="2000">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>The Innovation</h3>
+            <p>Modern techniques, traditional taste</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item" data-year="2024">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>The Nation</h3>
+            <p>Making Teh Tarik Great Again!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="floating-elements">
+      <img src="images/tea-leaf-1.webp" alt="Tea Leaf" class="floating-leaf leaf-1">
+      <img src="images/tea-leaf-2.webp" alt="Tea Leaf" class="floating-leaf leaf-2">
+      <img src="images/droplet.webp" alt="Milk Drop" class="floating-drop drop-1">
+      <img src="images/sugar-1.webp" alt="Sugar" class="floating-sugar sugar-heritage">
+    </div>
+  </div>
+</section>
+
+<!-- NEW SECTION 17: Ingredients Showcase -->
+<section class="ingredients-showcase">
+  <div class="ingredients-container">
+    <h1 class="ingredients-title">CRAFTED WITH<br>THE FINEST</h1>
+    
+    <div class="ingredients-grid">
+      <div class="ingredient-card tea-card">
+        <div class="ingredient-icon">
+          <img src="images/tea-leaf-1.webp" alt="Premium Tea">
+        </div>
+        <h3>11 PREMIUM TEAS</h3>
+        <p>Sourced from the finest gardens across 5 countries</p>
+        <div class="ingredient-bg tea-bg"></div>
+      </div>
+      
+      <div class="ingredient-card milk-card">
+        <div class="ingredient-icon">
+          <img src="images/cow.webp" alt="Fresh Milk">
+        </div>
+        <h3>CREAMY MILK</h3>
+        <p>Rich, smooth texture in every sip</p>
+        <div class="ingredient-bg milk-bg"></div>
+      </div>
+      
+      <div class="ingredient-card sugar-card">
+        <div class="ingredient-icon">
+          <img src="images/sugar-1.webp" alt="Pure Sugar">
+        </div>
+        <h3>PERFECT SWEETNESS</h3>
+        <p>Balanced to perfection, never too much</p>
+        <div class="ingredient-bg sugar-bg"></div>
+      </div>
+    </div>
+    
+    <div class="rotating-cup-showcase">
+      <img src="images/a.png" alt="Teh Tarik Cup" class="showcase-cup">
+    </div>
+  </div>
+</section>
+
+<!-- NEW SECTION 18: Community Love -->
+<section class="community-love">
+  <div class="community-container">
+    <h1 class="community-title">LOVED BY<br>MILLIONS</h1>
+    
+    <div class="testimonials-carousel">
+      <div class="testimonial-card active">
+        <div class="testimonial-avatar">
+          <div class="avatar-circle">👵</div>
+        </div>
+        <p>"Exactly like my late husband used to make. The taste brings back so many memories."</p>
+        <h4>Aunty Lim, 67</h4>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="testimonial-avatar">
+          <div class="avatar-circle">👨‍💼</div>
+        </div>
+        <p>"My daily fuel! Nothing beats a proper Teh Tarik after a long meeting."</p>
+        <h4>Ahmad, 34</h4>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="testimonial-avatar">
+          <div class="avatar-circle">👩‍🎓</div>
+        </div>
+        <p>"Study sessions aren't complete without this. It's liquid motivation!"</p>
+        <h4>Sarah, 22</h4>
+      </div>
+    </div>
+    
+    <div class="community-stats">
+      <div class="stat-item">
+        <h2 class="stat-number">2.5M+</h2>
+        <p>Cups Served Daily</p>
+      </div>
+      <div class="stat-item">
+        <h2 class="stat-number">50+</h2>
+        <p>Locations Nationwide</p>
+      </div>
+      <div class="stat-item">
+        <h2 class="stat-number">99%</h2>
+        <p>Customer Satisfaction</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="floating-hearts">
+    <div class="heart heart-1">❤️</div>
+    <div class="heart heart-2">💛</div>
+    <div class="heart heart-3">💚</div>
+    <div class="heart heart-4">❤️</div>
+    <div class="heart heart-5">💛</div>
+  </div>
+</section>
+
+<!-- NEW SECTION 19: The Art of Pulling -->
+<section class="art-of-pulling">
+  <div class="pulling-container">
+    <div class="pulling-left">
+      <h1>THE ART OF<br>THE PULL</h1>
+      <p>Watch as our skilled brewers perform the ancient dance of Teh Tarik - stretching the tea between cups to create that perfect froth and temperature.</p>
+      
+      <div class="pull-steps">
+        <div class="step-item">
+          <span class="step-number">1</span>
+          <p>Pour hot tea high</p>
+        </div>
+        <div class="step-item">
+          <span class="step-number">2</span>
+          <p>Create the perfect arc</p>
+        </div>
+        <div class="step-item">
+          <span class="step-number">3</span>
+          <p>Catch with precision</p>
+        </div>
+        <div class="step-item">
+          <span class="step-number">4</span>
+          <p>Repeat for perfection</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="pulling-right">
+      <div class="pulling-animation">
+        <div class="cup-top">
+          <img src="images/cup.webp" alt="Cup" class="animated-cup cup-source">
+        </div>
+        <div class="tea-stream">
+          <div class="stream-line"></div>
+        </div>
+        <div class="cup-bottom">
+          <img src="images/cup.webp" alt="Cup" class="animated-cup cup-target">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEW SECTION 20: Temperature Perfection -->
+<section class="temperature-section">
+  <div class="temp-container">
+    <div class="temp-thermometer">
+      <div class="thermometer">
+        <div class="thermometer-fill"></div>
+        <div class="temp-marker perfect-temp">
+          <span>85°C</span>
+          <p>PERFECT</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="temp-content">
+      <h1>SERVED AT THE<br>PERFECT 85°C</h1>
+      <p>Not too hot, not too cold. Our Teh Tarik is served at exactly 85°C - the temperature that unlocks maximum flavor while being comfortable to drink immediately.</p>
+      
+      <div class="temp-benefits">
+        <div class="benefit-item">
+          <div class="benefit-icon">🌡️</div>
+          <p>Optimal flavor extraction</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">☁️</div>
+          <p>Perfect foam creation</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">😋</div>
+          <p>Immediately drinkable</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="steam-effects">
+    <div class="steam steam-1"></div>
+    <div class="steam steam-2"></div>
+    <div class="steam steam-3"></div>
+  </div>
+</section>
+
+<!-- NEW SECTION 21: Franchise Opportunity -->
+<section class="franchise-opportunity">
+  <div class="franchise-container">
+    <div class="franchise-bg">
+      <div class="opportunity-pattern"></div>
+    </div>
+    
+    <h1 class="franchise-title">JOIN THE<br>TEAL TARIK REVOLUTION</h1>
+    
+    <div class="franchise-content">
+      <div class="franchise-left">
+        <h2>Own Your Slice of Malaysian Heritage</h2>
+        <p>Be part of something bigger. Bring authentic Teh Tarik to your community and build a business rooted in 80 years of tradition.</p>
+        
+        <div class="franchise-benefits">
+          <div class="benefit-card">
+            <h3>Proven Business Model</h3>
+            <p>80 years of perfected operations</p>
+          </div>
+          <div class="benefit-card">
+            <h3>Full Training & Support</h3>
+            <p>From setup to ongoing operations</p>
+          </div>
+          <div class="benefit-card">
+            <h3>Marketing Power</h3>
+            <p>National brand recognition</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="franchise-right">
+        <div class="franchise-form">
+          <h3>Start Your Journey</h3>
+          <div class="form-field">
+            <input type="text" placeholder="Your Name" class="franchise-input">
+          </div>
+          <div class="form-field">
+            <input type="email" placeholder="Email Address" class="franchise-input">
+          </div>
+          <div class="form-field">
+            <input type="text" placeholder="Preferred Location" class="franchise-input">
+          </div>
+          <button class="franchise-submit">GET FRANCHISE INFO</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="floating-money">
+    <div class="money-symbol">💰</div>
+    <div class="money-symbol">💵</div>
+    <div class="money-symbol">💰</div>
+  </div>
+</section>
+
+<!-- NEW SECTION 22: Footer/Contact -->
+<section class="final-footer">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="images/ttn-logo.svg" alt="Teh Tarik Nation" class="footer-logo-img">
+        <p>MALAYSIA'S MILK TEA SPECIALIST</p>
+      </div>
+      
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Visit Us</h4>
+          <p>1 Utama Shopping Centre<br>
+          Lot SK102, Second Floor<br>
+          47800 Petaling Jaya, Selangor</p>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <p>sipsupport@tehtariknation.com</p>
+          <p>+60 3-7726 8888</p>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#" class="social-link">📘 Facebook</a>
+            <a href="#" class="social-link">📷 Instagram</a>
+            <a href="#" class="social-link">🐦 Twitter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="footer-tagline">
+        <h1>MAKE TEH TARIK<br>GREAT AGAIN!</h1>
+      </div>
+      
+      <div class="footer-final">
+        <p>© 2024 Teh Tarik Nation. 80 Years of Tradition in Every Sip.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-decoration">
+    <img src="images/tea-leaf-1.webp" alt="Tea Leaf" class="footer-leaf leaf-final-1">
+    <img src="images/tea-leaf-2.webp" alt="Tea Leaf" class="footer-leaf leaf-final-2">
+    <img src="images/droplet.webp" alt="Milk Drop" class="footer-drop">
+  </div>
+</section>
+
+<style>
+/* NEW SECTION STYLES */
+
+/* Heritage Story Section */
+.heritage-story {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f4e4c1 0%, #e8d5b7 100%);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 100px 5%;
+}
+
+.heritage-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.heritage-title {
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-weight: bold;
+  color: #2c1810;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.timeline-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #d4af37;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.timeline-item {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  max-width: 200px;
+}
+
+.timeline-dot {
+  width: 30px;
+  height: 30px;
+  background: #d4af37;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  position: relative;
+  border: 5px solid white;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+}
+
+.timeline-dot::before {
+  content: attr(data-year);
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  color: #2c1810;
+  font-size: 18px;
+}
+
+.timeline-item::before {
+  content: attr(data-year);
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  color: #2c1810;
+  font-size: 18px;
+}
+
+.timeline-content h3 {
+  color: #2c1810;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.timeline-content p {
+  color: #6b4423;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.floating-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.floating-leaf, .floating-drop, .floating-sugar {
+  position: absolute;
+  opacity: 0.6;
+}
+
+.leaf-1 {
+  top: 20%;
+  left: 10%;
+  width: 60px;
+}
+
+.leaf-2 {
+  top: 60%;
+  right: 15%;
+  width: 80px;
+}
+
+.drop-1 {
+  top: 30%;
+  right: 25%;
+  width: 40px;
+}
+
+.sugar-heritage {
+  bottom: 30%;
+  left: 20%;
+  width: 50px;
+}
+
+/* Ingredients Showcase */
+.ingredients-showcase {
+  min-height: 100vh;
+  background: linear-gradient(45deg, #1a1a2e 0%, #16213e 100%);
+  padding: 100px 5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.ingredients-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ingredients-title {
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-weight: bold;
+  color: white;
+  margin-bottom: 80px;
+}
+
+.ingredients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
+.ingredient-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.ingredient-card:hover {
+  transform: translateY(-10px);
+}
+
+.ingredient-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.ingredient-icon img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.ingredient-card h3 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.ingredient-card p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.rotating-cup-showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase-cup {
+  width: 200px;
+  height: auto;
+  filter: drop-shadow(0 0 30px rgba(212, 175, 55, 0.5));
+}
+
+/* Community Love */
+.community-love {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+  padding: 100px 5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.community-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.community-title {
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-weight: bold;
+  color: white;
+  margin-bottom: 80px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.testimonials-carousel {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 40px 30px;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transform: scale(0.9);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card.active {
+  transform: scale(1);
+  opacity: 1;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+.testimonial-avatar {
+  margin-bottom: 20px;
+}
+
+.avatar-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff6b6b, #ffa500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 40px;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.testimonial-card h4 {
+  color: #666;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.community-stats {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.stat-item p {
+  color: white;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.floating-hearts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.heart {
+  position: absolute;
+  font-size: 30px;
+  opacity: 0.3;
+  animation: float 3s ease-in-out infinite alternate;
+}
+
+.heart-1 { top: 20%; left: 10%; animation-delay: 0s; }
+.heart-2 { top: 30%; right: 15%; animation-delay: 0.5s; }
+.heart-3 { top: 60%; left: 20%; animation-delay: 1s; }
+.heart-4 { top: 70%; right: 25%; animation-delay: 1.5s; }
+.heart-5 { bottom: 20%; left: 50%; animation-delay: 2s; }
+
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  100% { transform: translateY(-20px) rotate(5deg); }
+}
+
+/* Art of Pulling */
+.art-of-pulling {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2c1810 0%, #8b4513 100%);
+  padding: 100px 5%;
+  display: flex;
+  align-items: center;
+}
+
+.pulling-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.pulling-left h1 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: bold;
+  color: #d4af37;
+  margin-bottom: 40px;
+  line-height: 1.1;
+}
+
+.pulling-left p {
+  color: white;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 60px;
+}
+
+.pull-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.step-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: #d4af37;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #2c1810;
+  font-size: 20px;
+}
+
+.step-item p {
+  color: white;
+  font-size: 18px;
+  margin: 0;
+}
+
+.pulling-animation {
+  position: relative;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cup-top, .cup-bottom {
+  position: relative;
+}
+
+.animated-cup {
+  width: 120px;
+  height: auto;
+  filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.3));
+}
+
+.cup-source {
+  transform: rotate(45deg);
+}
+
+.cup-target {
+  transform: rotate(-10deg);
+}
+
+.tea-stream {
+  flex: 1;
+  width: 8px;
+  position: relative;
+  margin: 20px 0;
+}
+
+.stream-line {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #d4af37, transparent);
+  border-radius: 4px;
+  animation: pour 2s ease-in-out infinite;
+}
+
+@keyframes pour {
+  0%, 100% { opacity: 0.3; transform: scaleY(0.8); }
+  50% { opacity: 1; transform: scaleY(1.2); }
+}
+
+/* Temperature Section */
+.temperature-section {
+  min-height: 100vh;
+  background: linear-gradient(45deg, #e74c3c 0%, #f39c12 100%);
+  padding: 100px 5%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.temp-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.thermometer {
+  width: 60px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.thermometer-fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70%;
+  background: linear-gradient(to top, #e74c3c, #f39c12);
+  border-radius: 0 0 30px 30px;
+  animation: fill 3s ease-in-out infinite alternate;
+}
+
+@keyframes fill {
+  0% { height: 60%; }
+  100% { height: 80%; }
+}
+
+.perfect-temp {
+  position: absolute;
+  right: -80px;
+  top: 30%;
+  color: white;
+  text-align: left;
+}
+
+.perfect-temp span {
+  font-size: 36px;
+  font-weight: bold;
+  display: block;
+}
+
+.perfect-temp p {
+  font-size: 18px;
+  margin: 5px 0 0 0;
+  opacity: 0.9;
+}
+
+.temp-content h1 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: bold;
+  color: white;
+  margin-bottom: 40px;
+  line-height: 1.1;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.temp-content p {
+  color: white;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 60px;
+  opacity: 0.95;
+}
+
+.temp-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.benefit-icon {
+  font-size: 30px;
+}
+
+.benefit-item p {
+  color: white;
+  font-size: 18px;
+  margin: 0;
+  opacity: 0.95;
+}
+
+.steam-effects {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
+.steam {
+  width: 6px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  position: absolute;
+  animation: steam 2s ease-in-out infinite;
+}
+
+.steam-1 { left: 0; animation-delay: 0s; }
+.steam-2 { left: 15px; animation-delay: 0.5s; }
+.steam-3 { left: 30px; animation-delay: 1s; }
+
+@keyframes steam {
+  0%, 100% { opacity: 0.2; transform: translateY(0px) scaleY(1); }
+  50% { opacity: 0.8; transform: translateY(-20px) scaleY(1.5); }
+}
+
+/* Franchise Opportunity */
+.franchise-opportunity {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+  padding: 100px 5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.franchise-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.franchise-title {
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-weight: bold;
+  color: white;
+  margin-bottom: 80px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.franchise-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.franchise-left h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: white;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.franchise-left p {
+  color: white;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 50px;
+  opacity: 0.95;
+}
+
+.franchise-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.benefit-card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.benefit-card h3 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.benefit-card p {
+  color: white;
+  font-size: 16px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.franchise-form {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+}
+
+.franchise-form h3 {
+  color: #27ae60;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.franchise-input {
+  width: 100%;
+  padding: 15px 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 15px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.franchise-input:focus {
+  outline: none;
+  border-color: #27ae60;
+}
+
+.franchise-submit {
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(45deg, #27ae60, #2ecc71);
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.franchise-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(39, 174, 96, 0.3);
+}
+
+.floating-money {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.money-symbol {
+  position: absolute;
+  font-size: 40px;
+  opacity: 0.2;
+  animation: float 4s ease-in-out infinite alternate;
+}
+
+.money-symbol:nth-child(1) {
+  top: 20%;
+  left: 15%;
+  animation-delay: 0s;
+}
+
+.money-symbol:nth-child(2) {
+  top: 60%;
+  right: 20%;
+  animation-delay: 1s;
+}
+
+.money-symbol:nth-child(3) {
+  bottom: 25%;
+  left: 25%;
+  animation-delay: 2s;
+}
+
+/* Final Footer */
+.final-footer {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  padding: 100px 5% 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+  margin-bottom: 100px;
+}
+
+.footer-logo {
+  text-align: center;
+}
+
+.footer-logo-img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.footer-logo p {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+.footer-column h4 {
+  color: #3498db;
+  font-size: 22px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.footer-column p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  opacity: 1;
+  color: #3498db;
+  transform: translateX(10px);
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-tagline h1 {
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-weight: bold;
+  color: white;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  line-height: 1.1;
+}
+
+.footer-final p {
+  color: white;
+  font-size: 18px;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.footer-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.footer-leaf {
+  position: absolute;
+  opacity: 0.1;
+  width: 80px;
+  animation: float 6s ease-in-out infinite alternate;
+}
+
+.leaf-final-1 {
+  top: 15%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.leaf-final-2 {
+  top: 40%;
+  right: 15%;
+  animation-delay: 2s;
+}
+
+.footer-drop {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.1;
+  width: 60px;
+  animation: float 4s ease-in-out infinite alternate;
+  animation-delay: 1s;
+}
+
+/* Responsive Design */
+@media (max-width: 1240px) {
+  .pulling-container,
+  .temp-container,
+  .franchise-content,
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
+  }
+  
+  .timeline-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .timeline-container::before {
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: auto;
+    width: 4px;
+    height: auto;
+    transform: translateX(-50%);
+  }
+  
+  .ingredients-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .testimonials-carousel {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .community-stats {
+    gap: 40px;
+  }
+  
+  .pull-steps {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .footer-links {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .heritage-story,
+  .ingredients-showcase,
+  .community-love,
+  .art-of-pulling,
+  .temperature-section,
+  .franchise-opportunity,
+  .final-footer {
+    padding: 60px 20px;
+  }
+  
+  .timeline-item {
+    max-width: 300px;
+  }
+  
+  .franchise-form {
+    padding: 30px 20px;
+  }
+}
+</style>
+
+<script>
+// Additional JavaScript for new sections
+
+$(function() {
+  // Heritage Timeline Animation
+  gsap.from('.timeline-item', {
+    y: 50,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.2,
+    ease: 'power2.out',
+    scrollTrigger: {
+      trigger: '.heritage-story',
+      start: 'top 70%',
+      toggleActions: 'play none none none'
+    }
+  });
+
+  // Floating elements in heritage section
+  gsap.to('.floating-leaf, .floating-drop, .floating-sugar', {
+    y: '-=30',
+    duration: 3,
+    repeat: -1,
+    yoyo: true,
+    ease: 'sine.inOut',
+    stagger: 0.5
+  });
+
+  // Ingredients cards hover effect
+  $('.ingredient-card').on('mouseenter', function() {
+    gsap.to($(this), {
+      scale: 1.05,
+      duration: 0.3,
+      ease: 'power2.out'
+    });
+  }).on('mouseleave', function() {
+    gsap.to($(this), {
+      scale: 1,
+      duration: 0.3,
+      ease: 'power2.out'
+    });
+  });
+
+  // Rotating cup showcase
+  gsap.to('.showcase-cup', {
+    rotation: 360,
+    duration: 10,
+    repeat: -1,
+    ease: 'none'
+  });
+
+  // Testimonials carousel animation
+  let currentTestimonial = 0;
+  const testimonials = $('.testimonial-card');
+  
+  function rotateTestimonials() {
+    testimonials.removeClass('active');
+    testimonials.eq(currentTestimonial).addClass('active');
+    currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+  }
+  
+  // Auto-rotate testimonials every 4 seconds
+  setInterval(rotateTestimonials, 4000);
+
+  // Community stats counter animation
+  function animateCounters() {
+    $('.stat-number').each(function() {
+      const $this = $(this);
+      const text = $this.text();
+      const number = parseFloat(text.replace(/[^\d.]/g, ''));
+      const suffix = text.replace(/[\d.]/g, '');
+      
+      $({ counter: 0 }).animate({
+        counter: number
+      }, {
+        duration: 2000,
+        easing: 'swing',
+        step: function() {
+          if (suffix.includes('M')) {
+            $this.text((this.counter / 1).toFixed(1) + 'M+');
+          } else if (suffix.includes('%')) {
+            $this.text(Math.ceil(this.counter) + '%');
+          } else {
+            $this.text(Math.ceil(this.counter) + '+');
+          }
+        }
+      });
+    });
+  }
+
+  // Trigger counter animation when section comes into view
+  ScrollTrigger.create({
+    trigger: '.community-stats',
+    start: 'top 80%',
+    onEnter: animateCounters,
+    once: true
+  });
+
+  // Pulling animation
+  gsap.to('.cup-source', {
+    rotation: 35,
+    duration: 2,
+    repeat: -1,
+    yoyo: true,
+    ease: 'sine.inOut'
+  });
+
+  gsap.to('.cup-target', {
+    rotation: -20,
+    duration: 2,
+    repeat: -1,
+    yoyo: true,
+    ease: 'sine.inOut',
+    delay: 0.5
+  });
+
+  // Temperature thermometer fill animation
+  ScrollTrigger.create({
+    trigger: '.temperature-section',
+    start: 'top 60%',
+    onEnter: () => {
+      gsap.fromTo('.thermometer-fill', {
+        height: '0%'
+      }, {
+        height: '70%',
+        duration: 2,
+        ease: 'power2.out'
+      });
+    },
+    once: true
+  });
+
+  // Franchise form validation and animation
+  $('.franchise-input').on('focus', function() {
+    gsap.to($(this), {
+      scale: 1.02,
+      duration: 0.3,
+      ease: 'power2.out'
+    });
+  }).on('blur', function() {
+    gsap.to($(this), {
+      scale: 1,
+      duration: 0.3,
+      ease: 'power2.out'
+    });
+  });
+
+  $('.franchise-submit').on('click', function(e) {
+    e.preventDefault();
+    
+    // Simple validation
+    let isValid = true;
+    $('.franchise-input').each(function() {
+      if ($(this).val().trim() === '') {
+        isValid = false;
+        gsap.to($(this), {
+          borderColor: '#e74c3c',
+          duration: 0.3
+        });
+      }
+    });
+
+    if (isValid) {
+      // Success animation
+      gsap.to($(this), {
+        scale: 0.95,
+        duration: 0.1,
+        yoyo: true,
+        repeat: 1,
+        onComplete: () => {
+          $(this).text('THANK YOU! WE\'LL BE IN TOUCH');
+          $(this).css('background', 'linear-gradient(45deg, #27ae60, #2ecc71)');
+        }
+      });
+    }
+  });
+
+  // Footer elements animation
+  ScrollTrigger.create({
+    trigger: '.final-footer',
+    start: 'top 80%',
+    onEnter: () => {
+      gsap.from('.footer-column', {
+        y: 50,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: 'power2.out'
+      });
+    },
+    once: true
+  });
+
+  // Footer tagline animation
+  ScrollTrigger.create({
+    trigger: '.footer-tagline',
+    start: 'top 80%',
+    onEnter: () => {
+      const text = new SplitType('.footer-tagline h1', { types: 'words' });
+      gsap.from(text.words, {
+        y: 100,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.1,
+        ease: 'power2.out'
+      });
+    },
+    once: true
+  });
+
+  // Parallax effect for footer elements
+  gsap.to('.footer-leaf, .footer-drop', {
+    y: '-20%',
+    ease: 'none',
+    scrollTrigger: {
+      trigger: '.final-footer',
+      start: 'top bottom',
+      end: 'bottom top',
+      scrub: true
+    }
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
 
     
     <script data-cfasync="false" src="js/email-decode.min.js"></script><script src="js/jquery-3.7.1.min.js"></script>
@@ -3420,993 +1844,9 @@
     <script src="https://unpkg.com/split-type"></script>
     <script src="js/lenis.min.js"></script>
     <script src="js/core.js"></script>
+     <script src="js/index.js"></script>
     <script>
-      // GSAP & LENIS INIT
-gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
-if (window.innerWidth > 1240) {
-  const lenis = new Lenis();
-
-  lenis.on("scroll", ScrollTrigger.update);
-
-  gsap.ticker.add((time) => {
-    lenis.raf(time * 1000);
-  });
-
-  gsap.ticker.lagSmoothing(0);
-}
-
-// GLOBAL ANIMATIONS
-$(function () {
-  const observer = new IntersectionObserver(
-    (entries, obs) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const heading = entry.target;
-
-          // Split the heading into lines
-          const splitText = new SplitType(heading, { types: "lines" });
-          const lines = splitText.lines;
-
-          // Animate with GSAP
-          gsap.fromTo(
-            lines,
-            {
-              y: 30,
-              rotation: 30,
-            },
-            {
-              y: 0,
-              rotation: 0,
-              // autoAlpha: 1,
-              ease: "easeInOutExpo",
-              duration: 0.6,
-              stagger: 0.05,
-            }
-          );
-
-          // Unobserve after animation is triggered once
-          obs.unobserve(heading);
-        }
-      });
-    },
-    {
-      threshold: 0, // Adjust as needed
-    }
-  );
-
-  // Apply to all h1 and h2 elements
-  document.querySelectorAll("h1, h2:not(.no-anim)").forEach((heading) => {
-    observer.observe(heading);
-  });
-});
-
-$(function () {
-  const observer = new IntersectionObserver(
-    (entries, obs) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const element = entry.target;
-          const $element = $(element);
-
-          // Prevent retriggering
-          if (
-            !$element.hasClass("typewriter-initialized") &&
-            $element.is(":not(#right-here)")
-          ) {
-            $element.addClass("typewriter-initialized active"); // Add active class
-
-            const originalText = $element.text();
-            $element.text("");
-
-            const typewriter = new Typewriter(element, {
-              cursor: "|",
-            });
-
-            typewriter
-              .changeDelay(40)
-              .typeString(originalText)
-              .pauseFor(1000)
-              .callFunction(() => {
-                const cursor = element.querySelector(
-                  ".Typewriter__cursor"
-                );
-                if (cursor) {
-                  cursor.style.display = "none";
-                }
-              })
-              .start();
-          }
-
-          obs.unobserve(element); // Stop observing once triggered
-        }
-      });
-    },
-    {
-      threshold: 0.1, // Trigger when 10% of element is visible
-    }
-  );
-
-  $(".typewriter-box h3, span.typewriter-box, h6.typewriter-box").each(
-    function () {
-      observer.observe(this);
-    }
-  );
-});
-// GLOBAL ANIMATIONS END
-
-let resizeTimeout;
-
-function debounceResize(callback, delay = 300) {
-  clearTimeout(resizeTimeout);
-  resizeTimeout = setTimeout(callback, delay);
-}
-
-function killAllAnimations() {
-  // Kill all ScrollTriggers
-  ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-
-  // Kill all GSAP tweens and timelines
-  gsap.globalTimeline.clear();
-  gsap.killTweensOf("*");
-
-  // Optional: remove classes or reset styles if needed
-  document
-    .querySelectorAll(
-      ".typewriter-initialized, .active, .landed, .poured"
-    )
-    .forEach((el) => {
-      el.classList.remove(
-        "typewriter-initialized",
-        "active",
-        "landed",
-        "poured"
-      );
-    });
-}
-
-window.addEventListener("resize", () => {
-  debounceResize(() => {
-    if (window.innerWidth > 1240) {
-      // killAllAnimations(); // Uncomment if needed
-      window.location.reload(); // Or reinitialize scripts
-    }
-  }, 300);
-});
-
-// FIRST SECTION ANIMATIONS
-$(function () {
-  // Create pin for the hero section
-  ScrollTrigger.create({
-    trigger: ".pinned-hero",
-    start: "top top",
-    end: "+=1000",
-    pin: true,
-  });
-
-  // Make the SVG visible and sized appropriately
-  const svg = document.getElementById("motion-path");
-  svg.setAttribute("width", "100vw");
-  svg.setAttribute("height", "90%");
-  svg.setAttribute("viewBox", "0 0 1500 500"); // Adjusted to encompass all paths
-
-  // Configuration for sugar animations
-  const sugarAnimations = [
-    {
-      element: "#sugar2",
-      path: "#sugar-curve-1",
-      delay: -0.2, // Delayed start
-    },
-    {
-      element: "#sugar3",
-      path: "#sugar-curve-2",
-      delay: -0.2,
-    },
-    {
-      element: "#sugar4",
-      path: "#sugar-curve-2",
-      delay: 0,
-    },
-    {
-      element: "#sugar5",
-      path: "#sugar-curve-3",
-      delay: -0.15,
-    },
-    {
-      element: "#sugar6",
-      path: "#sugar-curve-3",
-      delay: 0.1, // Delayed start after sugar5
-    },
-    {
-      element: "#sugar7",
-      path: "#sugar-curve-4",
-      delay: 0, // Delayed start after sugar5
-    },
-  ];
-
-  // Set up animations for each sugar element
-  sugarAnimations.forEach((config) => {
-    const element = document.querySelector(config.element);
-
-    // Hide initially
-    gsap.set(element, {
-      scale: 0.8, // Optional: Scale the sugar images if needed
-      autoAlpha: 0,
-    });
-
-    // Calculate delay based on scroll progress
-    const delayedStart = `top+=${config.delay * 1000} top`;
-
-    // Create animation timeline with individual scroll trigger for each element
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".pin-spacer:has(.pinned-hero)",
-        start: delayedStart, // Different start position based on delay
-        end: "+=600",
-        scrub: true,
-      },
-    });
-
-    // Fade in
-    tl.to(element, {
-      autoAlpha: 1,
-      duration: 0.1,
-    });
-
-    // Animate along the path from beginning to end
-    tl.to(
-      element,
-      {
-        motionPath: {
-          path: config.path,
-          align: config.path,
-          start: 0, // Always start at beginning of path
-          end: 1, // End at end of path
-          alignOrigin: [0.5, 0.5],
-        },
-        ease: "none",
-        duration: 0.8,
-      },
-      0
-    );
-  });
-});
-
-// TEH TARIK SHAKE
-$(function () {
-  const $target = $(".monkey-container");
-
-  // Set transformOrigin once (no need to repeat it in every keyframe)
-  gsap.set($target, { transformOrigin: "center bottom" });
-
-  const shakeTween = gsap.to($target, {
-    duration: 2,
-    keyframes: [{ rotation: 1 }, { rotation: -1 }, { rotation: 0 }],
-    repeat: -1,
-    repeatDelay: 0,
-    ease: "none",
-    paused: true,
-  });
-
-  let scrollStopTimeout = null;
-  const scrollStopDelay = 150;
-
-  function onScroll() {
-    // Only call play() when it isn't already animating
-    if (!shakeTween.isActive()) shakeTween.play();
-
-    if (scrollStopTimeout) clearTimeout(scrollStopTimeout);
-    scrollStopTimeout = setTimeout(() => {
-      // Pause after scrolling stops for a bit
-      shakeTween.pause();
-    }, scrollStopDelay);
-  }
-
-  // Safe Lenis detection (avoids ReferenceError if lenis is undefined)
-  const hasLenis =
-    typeof window !== "undefined" &&
-    typeof window.lenis !== "undefined" &&
-    window.lenis &&
-    typeof window.lenis.on === "function";
-
-  if (hasLenis) {
-    window.lenis.on("scroll", onScroll);
-  } else {
-    // Passive listener for better performance
-    window.addEventListener("scroll", onScroll, { passive: true });
-  }
-
-  // Optional: pause when tab is hidden (saves cycles)
-  document.addEventListener("visibilitychange", () => {
-    if (document.hidden) {
-      shakeTween.pause();
-    }
-  });
-});
-
-$(function () {
-  function animateParallax(id, xAmount, yAmount, rotation) {
-    gsap.to(id, {
-      x: xAmount,
-      y: yAmount,
-      rotate: rotation,
-      scale: "1.03",
-      scrollTrigger: {
-        trigger: ".pin-spacer:has(.pinned-hero)",
-        start: "top top",
-        end: "+=1300",
-        scrub: true,
-      },
-      ease: "easeOutExpo",
-    });
-  }
-
-  animateParallax("#main-durian-left", "2vw");
-  animateParallax("#main-green-durian-left", "1.5vw");
-  animateParallax("#main-plant-right", "-5vw");
-  animateParallax("#main-green-coconut", "-2vw");
-  animateParallax("#lcw", "-3vw", "-5vw");
-  animateParallax("#motorbike", "10vw", "0");
-  animateParallax("#tapir", "10vw", "8vh", "0.5rad");
-  // animateParallax("#myvi", "-5vw", "5%", "0");
-  animateParallax("#sugar1", "-15vw", "120vh", "0");
-  animateParallax("#sugar8", "10vw", "100vh", "0");
-});
-
-gsap.to("#myvi", {
-  x: "-5vw",
-  y: "5%",
-  rotation: 0,
-  duration: 2.5, // 2.5s forward + 2.5s back = 5s total
-  repeat: -1,
-  yoyo: true,
-  ease: "easeOutExpo",
-  overwrite: true, // in case anything tries to animate it elsewhere
-});
-
-// FIRST SECTION ANIMATIONS END
-// SECOND SECTION ANIMATIONS
-$(document).ready(function () {
-  // Initialize the horizontal scroll
-  function initHorizontalScroll() {
-    const $container = $(".overflow-container");
-    const $pinnedSection = $(".pinned-horizontal-section");
-    const totalWidth = $pinnedSection.outerWidth() - $(window).width();
-
-    // Create a ScrollTrigger for the main horizontal scroll
-    let scrollTrigger = ScrollTrigger.create({
-      trigger: $container[0],
-      start: "top top",
-      end: `+=${totalWidth}`,
-      pin: true,
-      scrub: 1,
-      anticipatePin: 1,
-      invalidateOnRefresh: true,
-      onUpdate: (self) => {
-        // Move the pinned section horizontally
-        gsap.set($pinnedSection, {
-          x: -totalWidth * self.progress,
-        });
-
-        // Move #teh-tarik-aneh right by 30vw as scroll progresses
-        gsap.set("#teh-tarik-aneh", {
-          x: 35 * self.progress + "vw",
-        });
-      },
-    });
-  }
-  initHorizontalScroll();
-});
-
-// SECOND SECTION ANIMATIONS END
-// THIRD SECTION ANIMATIONS
-$(function () {
-  function animateParallax(id, xAmount, yAmount, rotate) {
-    gsap.to(id, {
-      x: xAmount,
-      y: yAmount,
-      rotation: rotate,
-      scale: "1.1",
-      scrollTrigger: {
-        trigger: ".national-importance",
-        start: "top top",
-        end: "50% 30%",
-        scrub: true,
-      },
-      ease: "easeOutExpo",
-    });
-  }
-
-  animateParallax(".national-green-mountain", "-15vw");
-  animateParallax(".national-blue-mountain", "14vw");
-  animateParallax(
-    ".yellow-mountain-container .motorbike",
-    "220%",
-    "-120%",
-    "-10deg"
-  );
-  ScrollTrigger.create({
-    trigger: ".national-importance",
-    start: "50% 90%", // When top of element hits bottom 20% of viewport
-    toggleClass: { targets: ".national-importance", className: "active" },
-    markers: false, // Set to true for debugging
-    onEnter: () => $(".national-importance").addClass("active"),
-    onLeaveBack: () => $(".national-importance").removeClass("active"),
-  });
-});
-
-// THIRD SECTION ANIMATIONS END
-// FOURTH SECTION ANIMATIONS
-$(function () {
-  function movingLeaves(id, xAmount, yAmount) {
-    gsap.from(id, {
-      x: xAmount,
-      y: yAmount,
-      rotate: "30deg",
-      scale: "1.1",
-      scrollTrigger: {
-        trigger: ".pouring-cup-container",
-        start: "top 80%",
-        end: "bottom 50%",
-        scrub: true,
-      },
-      ease: "easeInOutExpo",
-    });
-  }
-
-  // Animate leaves
-  movingLeaves("#pouring-leaf-1", "-53vw", "-43vw");
-  movingLeaves("#pouring-leaf-2", "-48vw", "-64.5vw");
-  movingLeaves("#pouring-leaf-3", "-36vw", "-47.5vw");
-  movingLeaves("#pouring-leaf-4", "-23vw", "-35vw");
-  movingLeaves("#pouring-leaf-5", "-20vw", "-27vw");
-  movingLeaves("#pouring-leaf-6", "-16.3vw", "-32.8vw");
-  movingLeaves("#pouring-leaf-7", "-5vw", "-46vw");
-  movingLeaves("#pouring-leaf-8", "-3vw", "-28vw");
-  movingLeaves("#pouring-leaf-9", "7.5vw", "-37.5vw");
-  movingLeaves("#pouring-leaf-10", "13vw", "-38vw");
-  movingLeaves("#pouring-leaf-11", "18vw", "-44vw");
-
-  // Delay control for class toggle
-  let canAddPoured = true;
-  let pouredRemovedAt = null;
-
-  const cupTween = gsap.fromTo(
-    ".pouring-cup-container",
-    {
-      rotate: -24,
-      transformOrigin: "bottom left",
-    },
-    {
-      rotate: -55,
-      ease: "easeInOutExpo",
-      scrollTrigger: {
-        trigger: ".pouring-cup-container",
-        start: "bottom 90%",
-        end: "bottom 50%",
-        scrub: true,
-        onUpdate: (self) => {
-          const el = document.querySelector(".stream-container");
-
-          if (self.progress === 1) {
-            const now = Date.now();
-            // Wait 1s after removal before re-adding
-            if (
-              canAddPoured &&
-              (!pouredRemovedAt || now - pouredRemovedAt >= 1000)
-            ) {
-              el.classList.add("poured");
-            }
-          }
-
-          if (self.progress < 1 && el.classList.contains("poured")) {
-            el.classList.remove("poured");
-            pouredRemovedAt = Date.now();
-            canAddPoured = false;
-            // Unlock re-adding after 1s
-            setTimeout(() => {
-              canAddPoured = true;
-            }, 1000);
-          }
-        },
-      },
-    }
-  );
-});
-
-// FOURTH SECTION ANIMATIONS END
-// FIFTH SECTION ANIMATIONS
-$(function () {
-  const floatSettings = [
-    {
-      selector: ".humbly-priced .pink-box",
-      y: "-1vw",
-      x: "2vw",
-      rotation: -1.5,
-    },
-    {
-      selector: ".humbly-priced .yellow-box",
-      y: "1vw",
-      x: "-1vw",
-      rotation: -12,
-    },
-    {
-      selector: ".humbly-priced .lightgreen-box",
-      y: "-0.5vw",
-      x: "1.5vw",
-      rotation: -0.8,
-    },
-  ];
-  floatSettings.forEach((config) => {
-    const elements = $(config.selector);
-    elements.each(function () {
-      const el = $(this);
-      const floatAnim = gsap.to(el, {
-        y: `+=${config.y}`,
-        x: `+=${config.x}`,
-        rotation: `+=${config.rotation}`,
-        scale: 1.01,
-        repeat: -1,
-        yoyo: true,
-        ease: "sine.inOut",
-        duration: 3,
-        paused: true,
-      });
-      let scrollTimeout;
-      ScrollTrigger.create({
-        trigger: ".humbly-priced",
-        start: "top 80%",
-        end: "bottom top",
-        onUpdate: () => {
-          if (!floatAnim.isActive()) {
-            floatAnim.play();
-          }
-          clearTimeout(scrollTimeout);
-          scrollTimeout = setTimeout(() => {
-            floatAnim.pause();
-          }, 500);
-        },
-        onLeave: () => floatAnim.pause(),
-        onLeaveBack: () => floatAnim.pause(),
-      });
-    });
-  });
-});
-
-$(function () {
-  gsap.to(".rotating-teh-tarik", {
-    rotate: -15,
-    x: 2,
-    scale: 1.1,
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".humbly-priced",
-      start: "top bottom",
-      end: "bottom top",
-      scrub: true,
-    },
-  });
-});
-
-// FIFTH SECTION ANIMATIONS END
-// SIXTH SECTION ANIMATIONS
-$(function () {
-  gsap.from(".television-card", {
-    y: "-56vw",
-    ease: "bounce.out",
-    duration: 1.5,
-    stagger: -0.2,
-    scrollTrigger: {
-      trigger: ".television-section",
-      start: "top bottom",
-      end: "bottom top",
-      toggleActions: "play none none none", // Play once on enter
-    },
-  });
-});
-
-// SIXTH SECTION ANIMATIONS END
-// SEVENTH SECTION ANIMATIONS
-$(function () {
-  const triggerSection = document.querySelector(".drink-like-no-other");
-  gsap.from("img.floating-cup", {
-    y: "-100vh",
-    ease: "easeIn",
-    duration: 1.5,
-    scrollTrigger: {
-      trigger: triggerSection,
-      start: "top bottom",
-      end: "bottom bottom",
-      scrub: true,
-      onUpdate: (self) => {
-        if (
-          self.progress === 1 &&
-          !triggerSection.classList.contains("landed")
-        ) {
-          triggerSection.classList.add("landed");
-        } else if (
-          self.progress < 1 &&
-          triggerSection.classList.contains("landed")
-        ) {
-          triggerSection.classList.remove("landed");
-        }
-      },
-    },
-  });
-});
-
-// SEVENTH SECTION ANIMATIONS END
-// EIGHTH SECTION ANIMATIONS
-$(function () {
-  const yValue = window.innerWidth < 1240 ? "20vh" : "80vh";
-
-  gsap.from(".gold-standard .bottom-portion .parallax-bg", {
-    y: yValue,
-    ease: "easeIn",
-    duration: 1.5,
-    scrollTrigger: {
-      trigger: ".gold-standard .bottom-portion",
-      start: "top bottom",
-      end: "bottom top",
-      scrub: true,
-    },
-  });
-});
-
-// EIGHTH SECTION ANIMATIONS END
-// NINTH SECTION ANIMATIONS
-$(function () {
-  const yValue = window.innerWidth < 1240 ? 2 : 5;
-  const $cards = $(".staggered-card");
-  const totalCards = $cards.length;
-  const middleIndex = Math.floor(totalCards / 2);
-  const spacing = yValue; // horizontal spacing in vw
-  const scrollDistance = "+=5000";
-
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".five-gen",
-      start: "top top",
-      end: scrollDistance,
-      scrub: true,
-      pin: true,
-    },
-  });
-
-  $cards.each(function (i) {
-    const $card = $(this);
-    const offsetFromCenter = i - middleIndex;
-
-    // Generate a random y offset between -2vh and 2vh
-    const randomY = (Math.random() * 4 - 2).toFixed(2); // value between -2 and 2
-
-    tl.fromTo(
-      $card,
-      {
-        y: "100vh",
-        x: "0vw",
-      },
-      {
-        y: `${randomY}vh`,
-        x: `${offsetFromCenter * spacing}vw`,
-        duration: 1,
-        ease: "power5.in",
-      },
-      i * 0.7
-    );
-  });
-
-  gsap.fromTo(
-    ".staggered-cards-container",
-    {
-      y: "5%", // The `circles` div starts at 5% of its height on the y-axis
-    },
-    {
-      y: "-5%", // And ends at -5% of its height on the y-axis
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".five-gen",
-        start: "top top",
-        end: scrollDistance,
-        scrub: true,
-      },
-    }
-  );
-});
-
-// NINTH SECTION ANIMATIONS END
-// TENTH SECTION ANIMATIONS
-$(function () {
-  const $eyeballs = $(".eyeball");
-
-  $(document).on("mousemove", function (e) {
-    $eyeballs.each(function () {
-      const $eye = $(this);
-      const $iris = $eye.find(".iris");
-
-      const eyeOffset = $eye.offset();
-      const eyeCenterX = eyeOffset.left + $eye.width() / 2;
-      const eyeCenterY = eyeOffset.top + $eye.height() / 2;
-
-      const dx = e.pageX - eyeCenterX;
-      const dy = e.pageY - eyeCenterY;
-
-      // Calculate angle and distance
-      const angle = Math.atan2(dy, dx);
-      const distance = Math.min(5, Math.hypot(dx, dy) / 10); // Limit how far the iris can go
-
-      const moveX = Math.cos(angle) * distance;
-      const moveY = Math.sin(angle) * distance;
-
-      $iris.css("transform", `translate(${moveX}px, ${moveY}px)`);
-    });
-  });
-});
-
-$(function () {
-  ScrollTrigger.create({
-    trigger: ".touching-hands",
-    start: "top top",
-    end: "+=1300",
-    scrub: true,
-  });
-  function moveHands(id, xAmount, yAmount, rotation) {
-    gsap.from(id, {
-      x: xAmount,
-      y: yAmount,
-      rotate: rotation,
-      scale: "1.03",
-      scrollTrigger: {
-        trigger: ".touching-hands",
-        start: "top 80%",
-        end: "top center",
-        scrub: true,
-      },
-      ease: "easeOutExpo",
-    });
-  }
-
-  moveHands(".left.hand", "-20vw");
-  moveHands(".right.hand", "20vw");
-
-  function scaleStar() {
-    const scrollSettings = {
-      trigger: ".touching-hands",
-      start: "top center",
-      end: "bottom bottom",
-      scrub: true,
-    };
-    gsap.to(".touching-star", {
-      scale: 14,
-      scrollTrigger: scrollSettings,
-      ease: "expo.in",
-    });
-    gsap.to(".touching-star path", {
-      fill: "#d6322f",
-      scrollTrigger: scrollSettings,
-      ease: "expo.in",
-    });
-  }
-  scaleStar();
-});
-
-$(function () {
-  const yValue = window.innerWidth < 1240 ? "-20vh" : "-40vh";
-  function chilliMoveY() {
-    gsap.to(".chilli-teh", {
-      y: yValue,
-      scrollTrigger: {
-        trigger: ".exploding-lady",
-        start: "center bottom",
-        end: "bottom bottom",
-        scrub: true,
-      },
-      ease: "easeInOutExpo",
-    });
-  }
-  chilliMoveY();
-});
-
-// TENTH SECTION ANIMATIONS END
-// ELEVENTH SECTION ANIMATIONS
-$(function () {
-  const root = document.querySelector(".teh-tarik-malaysian");
-
-  // Get the actual text content
-  const textPath = root.querySelector("#textpath");
-  const text = textPath.textContent.trim();
-
-  // Calculate text width using canvas
-  const textPathLength = getTextWidth(text) * 1;
-
-  // Calculate final offset percentage
-  const pathLength = root.querySelector("#path").getTotalLength();
-  const finalOffset = -((textPathLength * 100) / pathLength);
-
-  gsap.to(textPath, {
-    attr: { startOffset: finalOffset + "0%" }, // Here we are targeting an attribute value, not a CSS property
-    ease: "none", // Linear movement
-    scrollTrigger: {
-      trigger: ".teh-tarik-malaysian",
-      start: "top top",
-      end: "+=2000",
-      pin: ".teh-tarik-malaysian",
-      scrub: true, // Progresses with the scroll
-    },
-  });
-
-  // UTIL METHOD
-  function getTextWidth(text) {
-    const canvas =
-      getTextWidth.canvas ||
-      (getTextWidth.canvas = document.createElement("canvas"));
-    const context = canvas.getContext("2d");
-    const computedStyle = window.getComputedStyle(
-      document.querySelector("#textpath")
-    );
-    context.font = computedStyle.font;
-
-    return context.measureText(text).width;
-  }
-});
-
-// ELEVENTH SECTION ANIMATIONS END
-// THIRTHEENTH SECTION ANIMATIONS
-$(function () {
-  // Pin the whole section
-  const yValue = window.innerWidth < 1240 ? "-100vh" : "-70vh";
-  const pinning = window.innerWidth < 1240 ? false : true;
-  const positioning = window.innerWidth < 1240 ? "80% bottom" : "top top";
-  ScrollTrigger.create({
-    trigger: ".breaking-text-section",
-    start: positioning,
-    end: "+=500", // Adjust scroll range as needed
-    pin: pinning,
-    scrub: true,
-  });
-
-  const pairs = [
-    ["#breaking-text-1", "-20vw", "-30vh", -5, "center left"],
-    ["#breaking-text-2", "-25vw", "-15vh", -10, "bottom left"],
-    ["#breaking-text-3", "40vw", "-25vh", 5, "center"],
-    ["#breaking-text-4", "-20vw", "-10vh", -30, "center"],
-    ["#breaking-text-5", "20vw", "-15vh", 10, "center"],
-    ["#breaking-text-6", "-10vw", "-5vh", -50, "center"],
-    ["#breaking-text-7", "20vw", "-5vh", 30, "center"],
-    [".teh-tarik-with-cap", 0, yValue, 0, "center"],
-    [".first.breaking-image", "-40vw", "-20vh", 0, "center"],
-    [".second.breaking-image", "30vw", "-10vh", 0, "center"],
-    [".third.breaking-image", "-55vw", "-50vh", 0, "center"],
-    [".fourth.breaking-image", "25vw", "-110vh", 0, "center"],
-    [".fifth.breaking-image", "35vw", "-60vh", 0, "center"],
-    [".sixth.breaking-image", "-35vw", "-90vh", 0, "center"],
-    [".seventh.breaking-image", "0", "-110vh", 0, "center"],
-  ];
-
-  pairs.forEach(([selector, moveX, moveY, rotation, origin]) => {
-    gsap.to(selector, {
-      x: moveX,
-      y: moveY,
-      rotate: rotation,
-      transformOrigin: origin,
-      scrollTrigger: {
-        trigger: ".breaking-text-section",
-        start: positioning,
-        end: "+=500",
-        scrub: true,
-      },
-      ease: "power1.out",
-    });
-  });
-});
-
-// THIRTHEENTH SECTION ANIMATIONS END
-// 15TH SECTION ANIMATIONS
-$(function () {
-  ScrollTrigger.create({
-    trigger: ".three-cards-section",
-    start: "top top",
-    end: "+=2000",
-    pin: true,
-    pinSpacing: true,
-  });
-  gsap.to(".red-card", {
-    clipPath: "circle(150% at 50% 100%)",
-    ease: "power2.inOut",
-    scrollTrigger: {
-      trigger: ".pin-spacer:has(.three-cards-section)",
-      start: "top top",
-      end: "33% top",
-      scrub: true,
-      onUpdate: (self) => {
-        if (
-          self.progress >= 0.5 &&
-          !$(".three-cards-section").hasClass("red-active")
-        ) {
-          $(".three-cards-section").addClass("red-active");
-        } else if (
-          self.progress < 0.5 &&
-          $(".three-cards-section").hasClass("red-active")
-        ) {
-          $(".three-cards-section").removeClass("red-active");
-        }
-      },
-    },
-  });
-  gsap.to(".yellow-card", {
-    clipPath: "circle(150% at 50% 100%)",
-    ease: "power2.inOut",
-    scrollTrigger: {
-      trigger: ".pin-spacer:has(.three-cards-section)",
-      start: "33% top",
-      end: "66% top",
-      scrub: true,
-      onUpdate: (self) => {
-        if (
-          self.progress >= 0.5 &&
-          !$(".three-cards-section").hasClass("yellow-active")
-        ) {
-          $(".three-cards-section").addClass("yellow-active");
-        } else if (
-          self.progress < 0.5 &&
-          $(".three-cards-section").hasClass("yellow-active")
-        ) {
-          $(".three-cards-section").removeClass("yellow-active");
-        }
-      },
-    },
-  });
-});
-
-// 15TH SECTION ANIMATIONS END
-// POPUP FUNCTION
-$("a[data-popup]").on("click", function (e) {
-  e.preventDefault();
-  const targetId = $(this).data("popup");
-  const $targetPopup = $("#" + targetId);
-
-  // If the target is already active, remove it (toggle off)
-  if ($targetPopup.hasClass("active")) {
-    $targetPopup.removeClass("active");
-  } else {
-    // Otherwise, close all and activate the target
-    $(".popup").removeClass("active");
-    $targetPopup.addClass("active");
-  }
-});
-
-$(".close-button").on("click", function () {
-  $(".popup").removeClass("active");
-});
-
-$(document).ready(function () {
-  $(".accordion .detail").hide().first().show();
-  $(".accordion .title").first().addClass("active");
-  $(".accordion .title").on("click", function () {
-    const $currentDetail = $(this).next(".detail");
-    if ($currentDetail.is(":visible")) {
-      return;
-    }
-    $(".accordion .detail").slideUp();
-    $currentDetail.slideDown();
-    $(".accordion .title").removeClass("active");
-    $(this).addClass("active");
-  });
-});
-
-$(".menu-container").on("click", function () {
-  const type = $(this).attr("class").split(" ").pop(); // Get the type (drinks, food, snacks)
-  const $menu = $(`.inner-menu[data-type='${type}']`);
-
-  // Remove active from all containers and inner-menus
-  $(".menu-container, .inner-menu").removeClass("active");
-
-  // Add active to clicked container and its corresponding inner-menu
-  $(this).addClass("active");
-  $menu.addClass("active");
-});
-
-// POPUP FUNCTION END
     </script>
   
 
