@@ -312,15 +312,20 @@
       }
       /* UTILITY END */
       /* FIRST SECTION */
-      .pinned-hero {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        overflow: hidden;
-        height: 110vh;
-        height: 110lvh;
-        background-color: var(--yellow);
-      }
+    .pinned-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  overflow: hidden;
+  height: 110vh;
+  height: 110lvh;
+
+  /* Replace color with image */
+  background-image: url("images/back.png");
+  background-size: cover;       /* make image cover full section */
+  background-position: center;  /* center the image */
+  background-repeat: no-repeat; /* prevent tiling */
+}
       h1.hero-title,
       h2.hero-title {
         animation: scrollLeft 15s linear infinite;
@@ -415,12 +420,28 @@
         bottom: 25%;
         width: 18.78vw;
       }
-      .pinned-hero #myvi {
-        width: 9.17vw;
-        bottom: 18vw;
-        left: 24%;
-        rotate: 10deg;
-      }
+     .pinned-hero {
+  position: relative; /* so absolutely-positioned children can align */
+}
+
+.pinned-hero {
+  position: relative;       /* so absolute children are positioned correctly */
+  min-height: 100vh;        /* give container height */
+  overflow: visible;        /* don’t clip the image */
+}
+
+.pinned-hero #myvi {
+  position: absolute;
+  width: 40vw;              /* scales with screen */
+  max-width: 250px;         /* prevent it from being too large */
+  bottom: 23%;              /* % works better for mobile */
+  left: 20%;
+  transform: rotate(10deg);
+  z-index: 5;               /* ensure it’s above background */
+  display: block;           /* force it to render */
+}
+
+
       .pinned-hero #motorbike {
         left: 2vw;
         bottom: 0;
@@ -3349,6 +3370,7 @@
       <div class="left-bg-container">
         <img alt="" class="mountains" id="main-durian-left" src="images/hero-durian-left.webp">
         <img alt="" class="mountains" id="myvi" src="images/myvi.webp">
+        
       </div>
       <img alt="" class="mountains" id="main-plant-right" src="images/hero-plant-right.webp">
       <div class="monkey-container">
