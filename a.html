@@ -1,84 +1,3263 @@
 <!DOCTYPE html><html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Experience Lisabi Festival 26 – celebrating the rich cultural heritage of the Egba people. Join us for traditional music, dance, arts, and storytelling that honors our ancestral legacy.">
-    <link href="images/lisabi-logo-square.png" rel="icon" type="image/png">
-    
+    <meta name="description" content="Discover the rich heritage of Malaysian Teh Tarik – perfected over 8 decades, brewed from 11 tea leaves sourced from 5 countries. A taste of tradition in every cup.">
+    <link href="images/ttn-logo-square.png" rel="icon" type="image/png">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lisabifestival26.com/">
-    <meta property="og:title" content="Lisabi Festival 26 – Celebrating Egba Heritage and Culture">
-    <meta property="og:description" content="Join the grand celebration of Lisabi Festival 26, honoring the legendary hero and the rich traditions of the Egba people through music, dance, and cultural exhibitions.">
-    <meta property="og:image" content="images/lisabi-festival-hero.jpg">
-    
-    <title>Lisabi Festival 26 | Celebrating Our Heritage</title>
+    <meta property="og:url" content="https://tehtariknation.com/">
+    <meta property="og:title" content="Teh Tarik Nation – 80 Years of Tradition in Every Sip">
+    <meta property="og:description" content="Experience Malaysia’s national drink, Teh Tarik – with roots spanning over 80 years and crafted with 11 premium tea leaves from 5 global regions.">
+    <meta property="og:image" content="images/ttn-logo-square.png">
+    <title>Teh Tarik Nation | Make Teh Tarik Great Again!</title>
+    <style type="text/css">
+      /* GENERAL START */
+      :root {
+        --orange: #ff9721;
+        --raisin-black: #282425;
+        --yellow: #f9c822;
+        --lightgreen: #00a64e;
+        --pink: #f6a4af;
+        --lightblue: #8fd4d5;
+        --red: #d6322f;
+      }
+      @font-face {
+        font-family: "Niramit";
+        src: url("fonts/niramit.otf") format("opentype"); /* Adjust path if needed */
+      }
+      @font-face {
+        font-family: "Holen Vintage";
+        src: url("fonts/Holen%20Vintage.otf") format("opentype"); /* Adjust path if needed */
+      }
+      h1,
+      h2.large {
+        font-size: 15.97vw;
+        font-weight: 400;
+        line-height: 0.83;
+        letter-spacing: -4px;
+        font-family: "Holen Vintage", sans-serif;
+        margin: 0;
+        color: var(--raisin-black);
+      }
+      h1.hero-title,
+      h2.large.hero-title {
+        font-size: max(150px, 20.83vw);
+        padding-right: 13.89vw;
+        width: max-content;
+        white-space: nowrap;
+        margin: 2.36vw 0 0;
+        clip-path: inset(-50% 0 10% 0);
+      }
+      h1 .line,
+      h2 .line {
+        transform-origin: bottom left;
+      }
+      h2,
+      .breaking-texts-container,
+      .teh-tarik-malaysian #textpath {
+        font-size: max(35px, 6.94vw);
+        font-weight: 400;
+        line-height: 0.9;
+        letter-spacing: -4px;
+        font-family: "Holen Vintage", sans-serif;
+        margin: 0;
+        overflow: hidden;
+        color: var(--raisin-black);
+      }
+      h2.medium,
+      .breaking-texts-container,
+      .teh-tarik-malaysian #textpath {
+        font-size: 10.42vw;
+      }
+      .teh-tarik-malaysian #textpath {
+        font-size: max(150px, 10.42vw);
+      }
+      h3 {
+        font-size: max(40px, 4.17vw);
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: -2px;
+        font-family: "Holen Vintage", sans-serif;
+        margin: 0;
+        color: var(--raisin-black);
+      }
+      h4 {
+        font-size: max(20px, 2.78vw);
+        font-weight: 400;
+        line-height: 1.125;
+        letter-spacing: -1.5px;
+        font-family: "Holen Vintage", sans-serif;
+        margin: 0;
+        color: var(--raisin-black);
+      }
+      h5 {
+        font-family: "Holen Vintage", sans-serif;
+        font-size: max(16px, 1.67vw);
+        font-weight: 700;
+        line-height: 1.167;
+        letter-spacing: -0.5px;
+        margin: 0;
+        color: var(--raisin-black);
+      }
+      h6 {
+        font-size: max(18px, 1.67vw);
+        line-height: 1.167;
+        font-weight: 700;
+        margin: 0;
+        color: var(--raisin-black);
+      }
+      p {
+        font-weight: 700;
+        margin: 0;
+      }
+      small {
+        font-size: max(10px, 0.69vw);
+        line-height: 1.2;
+      }
+      a,
+      a:hover {
+        color: var(--raisin-black);
+        text-decoration: none;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-size: max(14px, 1.25vw);
+        font-weight: 700;
+        line-height: 1.25;
+        letter-spacing: -0.5px;
+        margin: 0;
+        font-family: "Niramit", sans-serif;
+        color: var(--raisin-black);
+        background-color: var(--yellow);
+        overflow-x: hidden;
+        --sb-track-color: white;
+        --sb-thumb-color: var(--raisin-black);
+        --sb-size: 8px;
+      }
+      body::-webkit-scrollbar {
+        width: var(--sb-size);
+      }
+      body::-webkit-scrollbar-track {
+        background: var(--sb-track-color);
+        border-radius: 4px;
+      }
+      body::-webkit-scrollbar-thumb {
+        background: var(--sb-thumb-color);
+        border-radius: 4px;
+      }
+      @supports not selector(::-webkit-scrollbar) {
+        body {
+          scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+        }
+      }
+      /* GENERAL END */
+      /* HEADER START */
+      .sidebars {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 101;
+      }
+      .mobile-menus.sidebars {
+        display: none;
+      }
+      .left-sidebar,
+      .right-sidebar {
+        background: white;
+        display: flex;
+        align-items: center;
+        width: 100vh;
+        width: 100lvh;
+        height: 3.47vw;
+        rotate: 90deg;
+        transform-origin: top left;
+        transform: translateY(-100%);
+        border: 2px solid black;
+      }
+      .left-sidebar img:first-child {
+        padding: 6px 13px;
+      }
+      .left-sidebar p {
+        height: 100%;
+        padding-inline: max(15px, 1.46vw);
+        display: flex;
+        align-items: center;
+      }
+      .left-sidebar .lightgreen-yellow-bg {
+        height: 100%;
+        flex: 1;
+      }
+      .right-sidebar {
+        transform: translateY(calc(8px - 100vw));
+        position: absolute;
+        top: 0;
+      }
+      .right-sidebar a {
+        padding-left: 40px;
+        display: flex;
+        gap: 40px;
+        height: 100%;
+        align-items: center;
+      }
+      .right-sidebar a:after {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 30px;
+        background-image: url(images/black-menu-pattern.svg);
+        background-size: 300%;
+      }
+      .right-sidebar .yellow-lightgreen-bg {
+        flex: 2;
+        height: 100%;
+      }
+      .right-sidebar .lightgreen-yellow-bg,
+      .right-sidebar .lightblue-purple-bg {
+        flex: 1;
+        height: 100%;
+      }
+      .right-sidebar .pink-purple-bg {
+        flex: 3;
+        height: 100%;
+      }
+      .left-sidebar p,
+      .right-sidebar a:last-of-type,
+      .right-sidebar .lightgreen-yellow-bg,
+      .right-sidebar .pink-purple-bg {
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+      }
+      /* HEADER END */
+      /* UTILITY START */
+      /* BACKGROUND THEN PATTERN */
+      .lightgreen-yellow-bg {
+        background-color: var(--lightgreen);
+        background-image: url(images/yellow-pattern.svg);
+      }
+      .yellow-lightgreen-bg {
+        background-color: var(--yellow);
+        background-image: url(images/lightgreen-pattern.svg);
+      }
+      .lightblue-purple-bg {
+        background-color: var(--lightblue);
+        background-image: url(images/purple-pattern.svg);
+      }
+      .pink-purple-bg {
+        background-color: var(--pink);
+        background-image: url(images/purple-pattern.svg);
+      }
+      .typewriter-box:before {
+        content: "";
+        display: block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(images/typewriter-box-top-corner.svg);
+        top: -1.9vw;
+        left: 0;
+        height: 2vw;
+        width: 3.19vw;
+        position: absolute;
+      }
+      .typewriter-box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2vw;
+        background-color: var(--yellow);
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+        position: relative;
+      }
+      .typewriter-box.beige:before {
+        left: unset;
+        right: -2px;
+        background-image: url(images/typewriter-box-top-corner-beige.svg);
+      }
+      .typewriter-box.beige {
+        background-color: #f6d3b3;
+      }
+      .typewriter-box.red {
+        background-color: #e14d39;
+        margin-top: 0;
+        padding-inline: 10px;
+        rotate: -3deg;
+      }
+      .typewriter-box.red:before {
+        background-image: url(images/red-triangle.svg);
+        height: 0.63vw;
+        width: 0.97vw;
+        top: -0.53vw;
+      }
+      .typewriter-box.inline {
+        display: inline-flex;
+        white-space: pre;
+        flex-direction: row;
+        padding: 0.83vw 1.25vw;
+      }
+      .typewriter-box.small:before {
+        height: 1vw;
+        width: 1.6vw;
+        top: -0.9vw;
+      }
+      .typewriter-box.small {
+        flex-direction: row;
+        margin-top: 1vw;
+        padding: 0.35vw 1.32vw;
+      }
+      .mobile-only,
+      .phone-only {
+        display: none;
+      }
+      /* UTILITY END */
+      /* FIRST SECTION */
+      .pinned-hero {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        overflow: hidden;
+        height: 110vh;
+        height: 110lvh;
+        background-color: var(--yellow);
+      }
+      h1.hero-title,
+      h2.hero-title {
+        animation: scrollLeft 15s linear infinite;
+        display: inline-block;
+        white-space: nowrap;
+      }
+      @keyframes scrollLeft {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+      .pinned-hero .fact-box {
+        margin-left: 75vw;
+        max-width: 16ch;
+      }
+      .pinned-hero img#main-circle {
+        width: 44.4vw;
+        position: absolute;
+        left: 50%;
+        bottom: -25%;
+        transform: translateX(-50%);
+        animation: slowRotateWithX 60s linear infinite;
+      }
+      @keyframes slowRotateWithX {
+        0% {
+          transform: translateX(-50%) rotate(0deg);
+        }
+        100% {
+          transform: translateX(-50%) rotate(-360deg);
+        }
+      }
+      .pinned-hero .mountains {
+        position: absolute;
+      }
+      .pinned-hero #main-plant-right {
+        width: 64.58vw;
+        right: -8.54vw;
+        bottom: 0;
+      }
+      .pinned-hero #main-durian-left {
+        width: 50.07vw;
+        height: auto;
+        left: -6.94vw;
+        bottom: 0;
+      }
+      .pinned-hero #main-green-durian-left {
+        width: 50.07vw;
+        height: auto;
+        left: -6.94vw;
+        bottom: 0;
+      }
+      .pinned-hero .monkey-container {
+        position: absolute;
+        bottom: -8.94vw;
+        left: 55%;
+        transform: translateX(-50%);
+      }
+      .pinned-hero img#main-teh-tarik,
+      .pinned-hero img#teh-tarik-front {
+        width: 50vw;
+        max-height: 95vh;
+        max-height: 95lvh;
+        object-fit: contain;
+      }
+      .pinned-hero img#teh-tarik-front {
+        position: absolute;
+        left: 0;
+        z-index: 100;
+      }
+      .pinned-hero .monkey-container #monkey {
+        position: absolute;
+        right: 10%;
+        z-index: 100;
+        top: 40%;
+        width: 10.97vw;
+        transform-origin: top left;
+        animation: hanging 3s linear infinite alternate;
+      }
+      @keyframes hanging {
+        0% {
+          transform: rotate(10deg);
+        }
+        100% {
+          transform: rotate(-10deg);
+        }
+      }
+      .pinned-hero #lcw {
+        right: 10%;
+        bottom: 25%;
+        width: 18.78vw;
+      }
+      .pinned-hero #myvi {
+        width: 9.17vw;
+        bottom: 18vw;
+        left: 24%;
+        rotate: 10deg;
+      }
+      .pinned-hero #motorbike {
+        left: 2vw;
+        bottom: 0;
+        width: 11.53vw;
+      }
+      .pinned-hero #tapir {
+        left: 10vw;
+        bottom: 25vh;
+        bottom: 25lvh;
+        width: max(140px, 12vw);
+        rotate: 26deg;
+      }
+      .pinned-hero #main-green-coconut {
+        width: 28.4vw;
+        right: 18.06vw;
+        bottom: 0;
+      }
+      .bouncer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 3vw;
+        will-change: transform;
+        transform: translate(-50%, -50%);
+        max-width: max(120px, 10vw);
+        max-height: max(120px, 10vw);
+      }
+      #sugar1 {
+        top: -50%;
+        left: 30vw;
+      }
+      #sugar8 {
+        top: -50%;
+        left: 6vw;
+      }
+      /* FIRST SECTION END */
 
- <link rel="stylesheet" href="./css/style.css">
-  <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+      /* SECOND SECTION */
+      .overflow-container {
+        overflow: hidden;
+      }
+      .pinned-horizontal-section {
+        display: flex;
+        width: max-content;
+      }
+      .pinned-horizontal-section > div {
+        height: 100vh;
+        height: 100lvh;
+        background-size: cover;
+      }
+      .pinned-horizontal-section .left-section {
+        background-image: url(images/recognise-green-bg.webp);
+        width: 100vw;
+        z-index: 10;
+      }
+      .pinned-horizontal-section .text-content {
+        display: flex;
+        flex-direction: column;
+        height: calc(100%);
+        padding: 5.56vw 7.64vw;
+      }
+      #teh-tarik-aneh {
+        position: absolute;
+        left: 55vw;
+        height: 100vh;
+        height: 100lvh;
+        max-width: 55.56vw;
+        object-fit: contain;
+        z-index: 10;
+      }
+      .pinned-horizontal-section .middle-section {
+        background-image: url(images/recognise-mid-bg.webp);
+        width: 25vw;
+      }
+      .pinned-horizontal-section .right-section {
+        background-image: url(images/recognise-yellow-bg.webp);
+        width: 90vw;
+        z-index: 1;
+      }
+      .unofficial-teh-tarik {
+        display: none;
+        position: absolute;
+        z-index: 10;
+        bottom: 2.56vw;
+        right: 3.56vw;
+      }
+      .unofficial-teh-tarik img.unofficial-teh-tarik-img {
+        width: 27.43vw;
+        z-index: 2;
+        position: relative;
+      }
+      .unofficial-teh-tarik img.rotating {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 0;
+        width: 83%;
+        animation: slowRotateWithX 60s linear infinite;
+      }
+      .pinned-horizontal-section .typewriter-box {
+        background-image: url(images/face-starfish.webp);
+        max-width: 55vw;
+        min-height: max(260px, 20vw);
+        padding: max(30px, 2.92vw) max(120px, 11.11vw) max(16px, 1.39vw)
+          max(30px, 3.06vw);
+        transform: translateX(1vw) rotate(-3deg);
+      }
+      .pinned-horizontal-section .typewriter-box h3 {
+        margin-bottom: 20px;
+      }
+      .pinned-horizontal-section small {
+        margin-top: auto;
+      }
+      /* SECOND SECTION END */
+      /* THIRD SECTION */
+      .national-importance {
+        position: relative;
+        background-color: var(--red);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+      }
+      .national-importance .text-content {
+        padding: 5.56vw 10.76vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1.39vw;
+      }
+      .national-importance h2 img {
+        height: 5vw;
+        scale: 1.4;
+        padding-inline: 1.56vw;
+      }
+      .national-importance .national-blue-mountain,
+      .national-importance .national-green-mountain {
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+      }
+      .national-importance .national-blue-mountain {
+        left: -15vw;
+        width: 40vw;
+      }
+      .national-importance .national-green-mountain {
+        width: 70vw;
+        right: -15vw;
+      }
+      .national-importance .yellow-mountain {
+        width: 100vw;
+        z-index: 10;
+        position: relative;
+      }
+      .national-importance .yellow-mountain-container {
+        margin-top: 25vw;
+        position: relative;
+        bottom: -1vw;
+      }
+      .national-importance .yellow-mountain-container .motorbike {
+        position: absolute;
+        width: max(90px, 13vw);
+        left: 10vw;
+        rotate: -39deg;
+        top: 14vh;
+        top: 14lvh;
+        z-index: 10;
+      }
+      .national-importance .hornbill-container,
+      .national-importance .hornbill-bg {
+        position: absolute;
+        left: 50%;
+        top: -70%;
+        transform: translate(-50%, 0);
+        transition: transform 0.3s;
+      }
+      .national-importance.active .hornbill-container,
+      .national-importance.active .hornbill-bg {
+        transform: translate(-50%, -100%);
+      }
+      .national-importance .hornbill-container {
+        width: 31.56vw;
+        height: 39.5vw;
+        top: 30%;
+      }
+      .national-importance .hornbill,
+      .national-importance .hornbill-beak {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+      .national-importance .hornbill-container {
+        perspective: 1000px;
+      }
+      .national-importance .hornbill-beak {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      img.hornbill-logo {
+        position: absolute;
+        right: -7vw;
+        top: 6vw;
+        width: 14vw;
+        rotate: 7deg;
+        transform: rotateY(50deg);
+        transition: all 0.5s 0.3s;
+        transform-style: preserve-3d;
+        opacity: 0;
+      }
+      .national-importance.active img.hornbill-logo {
+        transform: rotateY(0deg) !important;
+        opacity: 1 !important;
+        transition-delay: 0s;
+      }
+      .national-importance .hornbill-bg {
+        width: 32.15vw;
+        animation: slowRotateWithX 60s linear infinite;
+      }
+      #right-here {
+        position: absolute;
+        right: 1vw;
+        rotate: 2deg;
+        opacity: 0;
+        scale: 0.5;
+        width: fit-content;
+        padding: 10px 20px;
+        transition: all 0.3s ease-in;
+      }
+      .national-importance.active #right-here {
+        opacity: 1;
+        scale: 1;
+      }
+      #right-here .Typewriter__cursor {
+        display: none;
+      }
+      #right-here.typewriter-box:before {
+        transform: scaleY(-1) translateY(-95%);
+        bottom: 0;
+        top: unset;
+      }
+      .sugar-rain {
+        position: absolute;
+        top: -10vw;
+      }
+      .sugar-rain.size-1 {
+        width: max(80px, 10vw);
+      }
+      .sugar-rain.size-2 {
+        width: max(45px, 7vw);
+      }
+      .sugar-rain.speed-1 {
+        animation: rainDrop 13s linear infinite;
+      }
+      .sugar-rain.speed-2 {
+        animation: rainDrop 7s linear infinite;
+      }
+      .sugar-rain.speed-3 {
+        animation: rainDrop 3s linear infinite;
+      }
+      img.sugar-rain:nth-of-type(1) {
+        animation-delay: 1s;
+      }
+      img.sugar-rain:nth-of-type(2) {
+        animation-delay: 2s;
+      }
+      img.sugar-rain:nth-of-type(3) {
+        animation-delay: 1.5s;
+      }
+      img.sugar-rain:nth-of-type(4) {
+        animation-delay: 4.2s;
+      }
+      img.sugar-rain:nth-of-type(5) {
+        animation-delay: 0.1s;
+      }
+      img.sugar-rain:nth-of-type(6) {
+        animation-delay: 0.7s;
+      }
+      img.sugar-rain:nth-of-type(7) {
+        animation-delay: 2.5s;
+      }
+      img.sugar-rain:nth-of-type(8) {
+        animation-delay: 1s;
+      }
+      img.sugar-rain:nth-of-type(9) {
+        animation-delay: 0s;
+      }
+      @keyframes rainDrop {
+        0% {
+          transform: translateY(0) rotate(-20deg);
+        }
+        50% {
+          transform: translateY(60vw) rotate(0);
+        }
+        100% {
+          transform: translateY(120vw) rotate(20deg);
+        }
+      }
+      /* THIRD SECTION END */
+      /* FOURTH SECTION */
+      .that-one-company {
+        background-color: var(--orange);
+        padding-top: max(30px, 3.33vw);
+        position: relative;
+        overflow: hidden;
+        /* background-image: url(/wp-content/uploads/2025/04/that-one-company-bg.webp); */
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        z-index: 10;
+      }
+      .that-one-company .top-portion {
+        padding-inline: 6.94vw;
+      }
+      .that-one-company h2 {
+        text-align: center;
+      }
+      .that-one-company h2 img {
+        height: 0.9em;
+        width: auto;
+        vertical-align: middle;
+        display: inline-block;
+      }
+      .that-one-company h2 img.one-o {
+        padding-bottom: 2.6vw;
+      }
+      .that-one-company h2 img.company-o {
+        margin-inline: -4.8%;
+        scale: 1.4;
+        padding-bottom: 1.5625vw;
+      }
+      .that-one-company h4 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 35vw;
+        padding-left: 2.78vw;
+      }
+      .that-one-company h4 .typewriter-box {
+        display: inline-flex;
+        flex-direction: row;
+        white-space: pre;
+        rotate: -3deg;
+        transform-origin: top left;
+      }
+      .pouring-cup-container {
+        position: absolute;
+        right: -10%;
+        top: 50vw;
+        z-index: 10;
+      }
+      .pouring-leaf {
+        position: absolute;
+        left: 25%;
+        top: 20%;
+        max-width: max(40px, 7vw) !important;
+      }
+      .pouring-cup-container img:first-child,
+      .pouring-cup-container .cover-cup {
+        width: 30vw;
+      }
+      .pouring-cup-container .cover-cup {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .pouring-cup-container .stream-container {
+        position: absolute;
+        width: 7.8vw;
+        height: 59.5vw;
+        top: -39%;
+        left: -99%;
+        rotate: 60deg;
+        z-index: 2;
+      }
+      .pouring-cup-container .stream-container {
+        width: 7.5vw;
+      }
+      .that-one-company .bottom-portion h2 {
+        margin-top: 20.67vw;
+      }
+      .bottom-portion {
+        position: relative;
+      }
+      .bottom-portion .purple-card {
+        position: absolute;
+        width: 16.67vw;
+        aspect-ratio: 1;
+        top: 10vw;
+        right: -50vw;
+        transition: all 2s;
+        z-index: 20;
+      }
+      .that-one-company:has(.poured) .purple-card {
+        right: 10vw;
+        rotate: 8deg;
+      }
+      .bottom-boxes {
+        display: flex;
+        gap: 37px;
+        margin-top: 7.32vw;
+      }
+      .bottom-boxes > div {
+        width: 50%;
+      }
+      .bottom-boxes .yellow-box {
+        background-color: var(--yellow);
+        padding: 4.17vw 12.28vw 16vw 5.83vw;
+      }
+      .bottom-boxes .red-box {
+        background-color: var(--red);
+        margin-block: 9.65vw 7.71vw;
+        position: relative;
+      }
+      .bottom-boxes .red-box:after {
+        height: 7.71vw;
+        width: 70%;
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(images/yellow-pattern-under-red-box.webp);
+        transform: translateY(100%);
+      }
+      .bottom-boxes .red-box img {
+        position: absolute;
+      }
+      .bottom-boxes .red-box img:first-child {
+        width: 24vw;
+        top: -20%;
+        left: 34%;
+        animation: slowRotate 60s linear infinite;
+      }
+      @keyframes slowRotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(-360deg);
+        }
+      }
+      .bottom-boxes .red-box img:last-child {
+        right: -30vw;
+        top: 50%;
+        height: 68%;
+        transform: translateY(-50%);
+        transition: right 2s 1s;
+      }
+      .that-one-company:has(.poured) .bottom-boxes .red-box img:last-child {
+        right: -10vw;
+      }
+      img.pouring-photos {
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        object-fit: cover;
+        left: 0;
+      }
+      img.pouring-photos:not(.person) {
+        z-index: 10;
+      }
+      /* FOURTH SECTION END */
+      /* FIFTH SECTION */
+      .humbly-priced {
+        background: url(images/red-pattern.svg) #e14d39;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+      }
+      .humbly-priced .rotating-teh-tarik-container {
+        position: absolute;
+        height: 100%;
+        right: 0;
+        width: 50vw;
+        object-fit: contain;
+      }
+      .humbly-priced .rotating-teh-tarik {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+      }
+      .humbly-priced .text-content {
+        padding: max(60px, 6.46vw) 20.83vw 0 max(80px, 5.83vw);
+        margin-bottom: 12.85vw;
+      }
+      .humbly-priced h4 {
+        margin-bottom: 1vw;
+      }
+      .humbly-priced h2 img {
+        /* padding-bottom: 1.1vw; */
+        height: 0.9em;
+        width: auto;
+        vertical-align: middle;
+        display: inline-block;
+        animation: slowRotate 30s linear infinite;
+      }
+      .island-section {
+        position: relative;
+      }
+      .island-section .background {
+        height: 16.39vw;
+        animation: mountainShuffle 6s ease-in-out infinite reverse;
+      }
+      .island-section .foreground {
+        height: 10.42vw;
+        position: absolute;
+        bottom: 0;
+        animation: mountainShuffle 6s ease-in-out infinite;
+      }
+      @keyframes mountainShuffle {
+        0% {
+          transform: translateX(0px) scale(1);
+        }
+        25% {
+          transform: translateX(-8px) scale(1.01);
+        }
+        50% {
+          transform: translateX(0px) scale(1);
+        }
+        75% {
+          transform: translateX(10px) scale(1);
+        }
+        100% {
+          transform: translateX(0px) scale(1);
+        }
+      }
+      .island-section .text-box {
+        position: absolute;
+      }
+      .island-section .pink-box {
+        background-color: pink;
+        left: 13vw;
+        bottom: 7vw;
+        padding: 1.3vw 1.82vw;
+        max-width: 17.7vw;
+        rotate: -12deg;
+      }
+      .island-section .pink-box .typewriter-box {
+        rotate: -6deg;
+      }
+      .island-section .lightgreen-box {
+        top: -5vw;
+        right: 9vw;
+        background-color: #90cec7;
+        padding: 1.67vw 2.08vw 2.78vw;
+        display: flex;
+        flex-direction: column;
+        gap: 0.56vw;
+        max-width: 25vw;
+        rotate: -16deg;
+      }
+      .island-section .lightgreen-box div:has(.greenbox-text-content) {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.81vw;
+      }
+      .island-section .lightgreen-box .greenbox-text-content h4 {
+        margin-block: -6% 0;
+      }
+      .island-section .lightgreen-box img {
+        width: 6.42vw;
+      }
+      .island-section .yellow-box {
+        display: flex;
+        background-color: var(--yellow);
+        max-width: 28vw;
+        top: 10%;
+        rotate: 12deg;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: max(10px, 1.04vw);
+        padding: 2.43vw 2.78vw;
+      }
+      .island-section .yellow-box img {
+        width: 5.9vw;
+      }
+      /* FIFTH SECTION END */
+      /* SIXTH SECTION */
+      .television-section {
+        background-color: #ed9fa5;
+        background-image: url(images/television-bg.webp);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        overflow: hidden;
+      }
+      .television-section > h4 {
+        margin-block: 3.75vw;
+        text-align: center;
+      }
+      .television-frame {
+        height: 51.11vw;
+        padding: 2vw 32vw 5vw 12vw;
+        position: relative;
+      }
+      .television-frame::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 12vw;
+        transform: translateY(-95%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-image: url(images/television-antenna.webp);
+      }
+      .television-frame:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-size: cover;
+        width: 100%;
+        height: 51vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-image: url(images/television-frame.webp);
+      }
+      .cards-container {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+      .cards-container:after {
+        background-image: url(images/tv-filter.webp);
+        height: 100%;
+        width: 100%;
+        content: "";
+        position: absolute;
+        opacity: 0.3;
+        background-size: cover;
+      }
+      .television-card {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        width: fit-content;
+        position: absolute;
+      }
+      .television-card:nth-child(1) {
+        top: 10%;
+        left: 12%;
+        rotate: -2deg;
+      }
+      .television-card:nth-child(2) {
+        bottom: 60%;
+        right: 2%;
+        rotate: 5deg;
+      }
+      .television-card:nth-child(3) {
+        bottom: 48%;
+        left: 25%;
+        rotate: -5deg;
+      }
+      .television-card:nth-child(4) {
+        bottom: 35%;
+        right: -5%;
+        rotate: 15deg;
+      }
+      .television-card:nth-child(5) {
+        bottom: 25%;
+        left: 10%;
+        rotate: 10deg;
+      }
+      .television-card:nth-child(6) {
+        bottom: 5%;
+        right: 5%;
+        rotate: -5deg;
+      }
+      .television-card:nth-child(7) {
+        bottom: 0;
+        left: 20%;
+        rotate: -19deg;
+      }
+      .television-card h4 {
+        padding: 1.04vw 2.08vw;
+        text-align: center;
+      }
+      .television-card img {
+        object-fit: cover;
+        height: max(30px, 3.78vw);
+      }
+      /* SIXTH SECTION END */
+      /* SEVENTH SECTION */
+      .drink-like-no-other {
+        overflow: hidden;
+      }
+      .drink-heading {
+        text-align: center;
+        margin-block: 4.17vw 2.78vw;
+      }
+      .drink-like-no-other .bottom-portion {
+        position: relative;
+        display: flex;
+      }
+      .drink-like-no-other .bottom-portion > div {
+        flex: 1;
+        padding: 3.19vw 4.44vw 11.6vw;
+      }
+      .drink-like-no-other .bottom-portion .green-box {
+        background-color: #009949;
+      }
+      .drink-like-no-other .bottom-portion .green-box h3 {
+        padding-left: 1.39vw;
+      }
+      .drink-like-no-other .bottom-portion .pattern-box {
+        background-color: #009949;
+        background-image: url(images/yellow-pattern.svg);
+        background-size: 100%;
+        position: relative;
+      }
+      .drink-like-no-other .bottom-portion .pattern-box img {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        left: 0;
+      }
+      .drink-like-no-other .bottom-portion .red-box {
+        background-color: #d6322f;
+      }
+      .drink-like-no-other .bottom-portion img {
+        position: absolute;
+      }
+      .drink-like-no-other .bottom-portion .floating-cup {
+        left: calc(50% - 14.5vw);
+        width: 29vw;
+        bottom: 0;
+      }
+      .drink-like-no-other .bottom-portion .floating-cup-leaf {
+        left: 45%;
+        bottom: 10%;
+        transform: translateX(-50%) rotate(-20deg);
+        transition: all 0.5s;
+        width: 22vw;
+      }
+      .drink-like-no-other .bottom-portion .floating-cup-starfish {
+        right: 45%;
+        bottom: 30%;
+        transform: translateX(50%) rotate(-20deg);
+        transition: all 0.5s;
+        width: 9.4vw;
+      }
+      .drink-like-no-other.landed .bottom-portion .floating-cup-leaf {
+        left: 42%;
+        bottom: 20%;
+        transform: translateX(-50%) rotate(-30deg);
+      }
+      .drink-like-no-other.landed .bottom-portion .floating-cup-starfish {
+        right: 42%;
+        bottom: 38%;
+        transform: translateX(50%) rotate(-10deg);
+      }
+      /* SEVENTH SECTION END */
+      /* EIGHTH SECTION */
+      .gold-standard {
+        background-color: #c17f33;
+      }
+      .gold-standard .top-portion {
+        padding: max(30px, 3.47vw) 5.83vw;
+      }
+      .gold-standard .top-portion .typewriter-box {
+        min-width: 10vw;
+      }
+      .gold-standard .top-portion .typewriter-box.yellow {
+        rotate: -3deg;
+      }
+      .gold-standard .top-portion .typewriter-box.beige {
+        left: 3vw;
+      }
+      .gold-standard .bottom-portion {
+        z-index: 1;
+        overflow: hidden;
+      }
+      .gold-standard .bottom-portion h2 {
+        padding: 4.03vw 5.11vw;
+      }
+      .gold-standard .bottom-portion .text-box .parallax-bg {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1.12;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-image: url(images/gold-standard-bg.webp);
+        background-size: cover;
+      }
+      .gold-standard .bottom-portion .text-box {
+        margin-left: 50vw;
+        max-width: 22.36vw;
+        margin-bottom: 30vw;
+      }
+      .gold-standard .bottom-portion .text-box .typewriter-box {
+        rotate: -3deg;
+        margin-bottom: 2vw;
+        align-items: center;
+        gap: 1vw;
+      }
+      .gold-standard .bottom-portion .text-box .typewriter-box:after {
+        content: "";
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(images/mouth-vector.webp);
+        width: max(24px, 2.64vw);
+        height: max(32px, 3.4vw);
+        order: -1;
+      }
+      /* EIGHTH SECTION END */
+      /* NINTH SECTION */
+      .five-gen {
+        padding: 4.17vw 0 5.56vw;
+        background-image: url(images/five-gen-bg.webp);
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        min-height: 100lvh;
+      }
+      .five-gen > h6 {
+        text-align: center;
+        margin-bottom: max(8vh, 4vw);
+        margin-bottom: max(8lvh, 4vw);
+      }
+      .staggered-cards-container,
+      .staggered-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 31.67vw;
+        text-align: center;
+      }
+      .staggered-card {
+        position: absolute;
+        text-align: center;
+        display: flex;
+        width: 24.58vw;
+        border-radius: 10px;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+      }
+      .staggered-card h4 {
+        padding: 2.22vw 1.81vw 0;
+      }
+      .staggered-card:nth-child(1) {
+        rotate: -5deg;
+      }
+      .staggered-card:nth-child(2) {
+        rotate: -4deg;
+      }
+      .staggered-card:nth-child(3) {
+        rotate: -3deg;
+      }
+      .staggered-card:nth-child(4) {
+        rotate: -2deg;
+      }
+      .staggered-card:nth-child(5) {
+        rotate: -1deg;
+      }
+      /* .staggered-card:nth-child(6) {
+} */
+      .staggered-card:nth-child(7) {
+        rotate: 1deg;
+      }
+      .staggered-card:nth-child(8) {
+        rotate: 2deg;
+      }
+      .staggered-card:nth-child(9) {
+        rotate: 3deg;
+      }
+      .staggered-card:nth-child(10) {
+        rotate: 4deg;
+      }
+      .staggered-card:nth-child(11) {
+        rotate: 5deg;
+      }
+      .staggered-card img:not(.footer) {
+        max-width: 70%;
+        max-height: 70%;
+      }
+      .staggered-card img.footer {
+        width: 100%;
+      }
+      /* NINTH SECTION END */
+      /* TENTH SECTION */
+      .proudly-malaysian {
+        overflow: hidden;
+      }
+      .proudly-malaysian .top-portion {
+        position: relative;
+        background-color: #ed9fa5;
+        /* overflow-x: hidden; */
+        padding-bottom: 20vh;
+        padding-bottom: 20lvh;
+      }
+      .proudly-malaysian .top-portion .text-content {
+        padding: 5.14vw 6.11vw 0;
+      }
+      .proudly-malaysian .text-content h4 {
+        margin-bottom: 1.67vw;
+      }
+      .proudly-malaysian .head-with-eyeball {
+        opacity: 0;
+        pointer-events: none;
+        position: absolute !important;
+      }
+      .proudly-malaysian .line .head-with-eyeball {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .proudly-malaysian .head-with-eyeball > img {
+        height: 0.8em;
+      }
+      .head-with-eyeball .eyeball {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        position: absolute !important;
+        width: 1.8vw;
+        height: 1.8vw;
+        background: white;
+        border-radius: 50%;
+      }
+      .head-with-eyeball .left.eyeball {
+        left: 40%;
+        top: 46%;
+      }
+      .head-with-eyeball .right.eyeball {
+        left: 60%;
+        top: 46%;
+      }
+      .head-with-eyeball .iris {
+        width: 30%;
+        height: auto;
+        aspect-ratio: 1;
+        background-color: black;
+        border-radius: 50%;
+        transition: transform 0.3s ease-out;
+      }
+      .touching-hands {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        height: 100lvh;
+      }
+      .touching-hands .hand {
+        height: 62.36vw;
+        width: 50.1vw;
+        object-fit: contain;
+        top: 0;
+      }
+      .touching-hands .left.hand,
+      .touching-hands .left.foreground {
+        left: 0;
+      }
+      .touching-hands .right.hand,
+      .touching-hands .right.foreground {
+        right: 0;
+      }
+      .touching-hands .foreground {
+        position: absolute;
+        bottom: 0;
+        height: 10vw;
+      }
+      .touching-hands .left.foreground {
+        width: 34vw;
+      }
+      .touching-hands .right.foreground {
+        width: 42vw;
+      }
+      .touching-hands .touching-star {
+        left: 50%;
+        top: -5%;
+        position: absolute;
+        transform: translate(-50%, 20%) scale(0);
+        transform-origin: center;
+      }
+      .proudly-malaysian .bottom-portion {
+        margin-top: -35vh;
+        margin-top: -35lvh;
+      }
+      .proudly-malaysian .bottom-portion .text-content {
+        padding: 4vw 6vw;
+        display: flex;
+        gap: 2vw;
+      }
+      .proudly-malaysian .bottom-portion .text-content h6 {
+        max-width: 15vw;
+        z-index: 20;
+      }
+      .proudly-malaysian .bottom-portion .single-chilli {
+        position: absolute;
+        z-index: 10;
+        animation: spinningChilli 12s linear infinite;
+      }
+      @keyframes spinningChilli {
+        0% {
+          rotate: 0;
+        }
+        100% {
+          rotate: 360deg;
+        }
+      }
+      .proudly-malaysian .bottom-portion .single-chilli:nth-child(1) {
+        left: -10%;
+        top: 50%;
+        display: none;
+        width: 30vw;
+      }
+      .proudly-malaysian .bottom-portion .single-chilli:nth-child(2) {
+        right: 30%;
+        top: -10%;
+        width: 24vw;
+      }
+      .proudly-malaysian .bottom-portion .single-chilli:nth-child(3) {
+        right: 20%;
+        top: 10%;
+        width: 14vw;
+        scale: -1 1;
+      }
+      .proudly-malaysian .bottom-portion .single-chilli:nth-child(4) {
+        right: 5%;
+        top: 5%;
+        width: 14vw;
+      }
+      .proudly-malaysian .bottom-portion .exploding-lady {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        background-color: var(--red);
+      }
+      .proudly-malaysian .bottom-portion .mushroom-cloud {
+        width: 100%;
+        z-index: 2;
+        position: relative;
+      }
+      .proudly-malaysian .bottom-portion .flame {
+        position: absolute;
+        z-index: 0;
+        bottom: 0;
+        animation: flameFlicker 12s infinite ease-in-out;
+        transform-origin: bottom center;
+        object-fit: contain;
+      }
+      .proudly-malaysian .bottom-portion .left.flame {
+        left: 0;
+        width: 45vw;
+      }
+      .proudly-malaysian .bottom-portion .right.flame {
+        right: 0;
+        width: 50vw;
+      }
+      @keyframes flameFlicker {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        20% {
+          transform: scale(0.97);
+          opacity: 0.98;
+        }
+        50% {
+          transform: scale(1.05);
+          opacity: 0.94;
+        }
+        80% {
+          transform: scale(0.96);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      .lady-with-flame-container {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        z-index: 3;
+      }
+      .proudly-malaysian .bottom-portion .center.flame {
+        /* left: 50%; */
+        top: 0;
+        margin-top: -20%;
+        width: 50vw;
+        z-index: 1;
+        animation: flameFlicker 8s infinite ease-in-out;
+      }
+      .lady-with-flame-container .chilli-teh {
+        position: absolute;
+        width: 43vw;
+        /* rotate: -6deg; */
+        z-index: 2;
+      }
+      .lady-with-flame-container .middle-lady {
+        width: 65vw;
+        z-index: 3;
+      }
+      /* TENTH SECTION END */
+      /* ELEVENTH SECTION */
+      .teh-tarik-malaysian {
+        overflow: hidden;
+        background-color: var(--orange);
+      }
+      .teh-tarik-malaysian .top-pattern {
+        height: max(30px, 4vw);
+        width: 100%;
+        background-image: url(images/red-yellow-pattern.svg);
+        background-size: contain;
+        background-repeat: repeat;
+      }
+      .teh-tarik-malaysian > p {
+        max-width: 30vw;
+        margin: 2vw auto 5vw;
+        text-align: center;
+      }
+      .teh-tarik-malaysian .dining-teh-tarik,
+      .teh-tarik-malaysian .bottom-boxes {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        bottom: 0;
+      }
+      .teh-tarik-malaysian .bottom-boxes > div {
+        border: 1px solid black;
+      }
+      .teh-tarik-malaysian .bottom-boxes .pink-box {
+        background-color: var(--pink);
+        display: flex;
+      }
+      .teh-tarik-malaysian .bottom-boxes .pink-box h6 {
+        max-width: 13ch;
+        margin: 2.57vw 5vw 0 auto;
+      }
+      .teh-tarik-malaysian .dining-teh-tarik {
+        z-index: 3;
+        width: 80%;
+        left: 10%;
+        bottom: -8%;
+      }
+      /* .teh-tarik-malaysian:after {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  position: sticky;
+  left: 0;
+  top: 0;
+  display: block;
+  background-image: url(images/eating-on-teh-tarik.webp);
+} */
+      .teh-tarik-malaysian .container {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        height: 100lvh;
+        align-items: center;
+        position: relative;
+      }
+      .teh-tarik-malaysian svg {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        overflow: visible;
+        transform: translate(
+          0,
+          120%
+        ); /* Scaling to avoid seeing letter at the start and end */
+      }
+      .teh-tarik-malaysian textPath {
+        fill: currentColor;
+        letter-spacing: -0.05em;
+        text-transform: uppercase;
+      }
+      .bottom-boxes .yellow-box img {
+        display: none;
+      }
+      /* ELEVENTH SECTION END */
+      /* TWELVETH SECTION */
+      .malaysia-pride {
+        background-image: url(images/malaysia-pride-bg.webp);
+        background-size: cover;
+        background-position: center;
+        padding: 3.8vw 7vw;
+        position: relative;
+      }
+      .malaysia-pride h2.medium {
+        padding-bottom: 10vw;
+        position: relative;
+        z-index: 2;
+      }
+      .malaysia-pride h2.medium .line {
+        display: flex !important;
+        align-items: center;
+      }
+      .malaysia-pride .slant-card-container {
+        position: relative;
+      }
+      .malaysia-pride .slant-text {
+        width: fit-content;
+        padding: 0.9vw 1.11vw;
+      }
+      .malaysia-pride .green-text {
+        background-color: #009949;
+        rotate: -4.5deg;
+      }
+      .malaysia-pride .pink-text {
+        position: absolute;
+        right: -5vw;
+        top: 0;
+        rotate: 4.5deg;
+        background-color: #ed9fa5;
+      }
+      .malaysia-pride .purple-text {
+        background-color: #8085b4;
+        rotate: 2.5deg;
+        margin-left: 17.36vw;
+      }
+      .malaysia-pride img.buatan-malaysia {
+        display: none;
+        position: absolute;
+        height: 1.2em;
+      }
+      .malaysia-pride .foreground-cards {
+        position: absolute;
+      }
+      .malaysia-pride .foreground-cards.purple-woman {
+        display: none;
+        right: -20%;
+        bottom: -42%;
+        width: 51.18vw;
+      }
+      .malaysia-pride .foreground-cards.merchant-card {
+        display: none;
+        right: 20%;
+        bottom: -10%;
+        width: 20.83vw;
+      }
+      .malaysia-pride .foreground-cards.behind-the-back {
+        right: 40%;
+        bottom: -25%;
+        width: 33vw;
+      }
+      .malaysia-pride,
+      .its-official {
+        overflow-x: hidden;
+      }
+      h2.large.sliding:before {
+        content: "";
+        width: 100%;
+        height: 4.38vw;
+        background-image: url(images/long-red-pattern.webp);
+        background-size: cover;
+      }
+      .its-official {
+        z-index: 10;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        rotate: -3deg;
+        margin-block: -3vw;
+      }
+      img#official-logo {
+        width: 16vw;
+        position: absolute;
+        z-index: 1000;
+        top: 30%;
+        left: 64%;
+        rotate: 13deg;
+      }
+      h2.large.sliding {
+        position: relative;
+        width: fit-content;
+        z-index: 10;
+        white-space: nowrap;
+        padding-block: 3.13vw;
+        background-color: var(--yellow);
+        animation: scrollLeft 15s linear infinite;
+      }
+      /* TWELVETH SECTION END */
+      /* THIRTHEENTH SECTION */
+      .breaking-text-section .container {
+        height: 100%;
+        width: 100%;
+      }
+      .breaking-text-section {
+        background-color: #8085b4;
+        min-height: 100vh;
+        min-height: 100lvh;
+        position: relative;
+        overflow: hidden;
+      }
+      .breaking-texts-container {
+        text-align: center;
+        padding-block: 10vw;
+        left: 0;
+        min-height: 100vh;
+        min-height: 100lvh;
+        overflow: visible;
+      }
+      .breaking-texts-container > div {
+        display: flex;
+        justify-content: center;
+      }
+      .breaking-texts-container span {
+        position: relative;
+        display: inline-block;
+      }
+      .breaking-texts-container span:last-of-type {
+        transform-origin: bottom right;
+      }
+      .breaking-text-section .teh-tarik-with-cap {
+        position: absolute;
+        bottom: -53%;
+        left: calc(50vw - 13.5vw);
+        width: 27vw;
+      }
+      .breaking-text-section .breaking-image {
+        position: absolute;
+        bottom: -14vh;
+        bottom: -14lvh;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 13.89vw !important;
+      }
+      /* THIRTHEENTH SECTION END */
+      /* 14TH SECTION */
+      .into-the-world {
+        background-color: #90cec7;
+        overflow: hidden;
+      }
+      .into-the-world .top-portion {
+        position: relative;
+        text-align: center;
+        padding-block: 5.5vw;
+      }
+      .into-the-world .top-portion h3 {
+        padding-inline: 25vw;
+        margin-bottom: 1.5vw;
+      }
+      .into-the-world .top-portion h2,
+      .into-the-world .top-portion h3 {
+        position: relative;
+        z-index: 2;
+      }
+      .into-the-world .top-portion img {
+        position: absolute;
+      }
+      .into-the-world .top-portion img.starfish {
+        z-index: 0;
+        width: 12.3vw;
+        left: 10vw;
+        bottom: 5vw;
+      }
+      .into-the-world .top-portion img.leaf {
+        right: 8.33vw;
+        top: 6.94vw;
+        rotate: 30deg;
+        width: 12.85vw;
+        z-index: 2;
+      }
+      .into-the-world .bottom-portion {
+        display: flex;
+      }
+      .into-the-world .bottom-portion > div {
+        flex: 1;
+      }
+      .into-the-world .bottom-portion .yellow-box {
+        background-color: var(--yellow);
+      }
+      .into-the-world .bottom-portion .yellow-box h6 {
+        max-width: 25ch;
+        margin: 3.2vw 5.8vw 5.56vw;
+      }
+      .into-the-world .bottom-portion .yellow-box::after {
+        content: "";
+        display: block;
+        height: 6.94vw;
+        width: 100%;
+        border: 1px solid black;
+        background-image: url(images/darkblue-pattern.svg);
+        background-color: #90cec7;
+        background-size: cover;
+      }
+      .into-the-world .bottom-portion .red-box {
+        background-color: var(--red);
+      }
+      .into-the-world .bottom-portion .red-box h6 {
+        margin-left: auto;
+        max-width: 18ch;
+        margin: 3.2vw 5.8vw 0 auto;
+      }
+      .into-the-world .bottom-portion .red-box #spinning-cups {
+        position: absolute;
+        width: 80vw;
+        left: 50%;
+        bottom: -10vw;
+        transform: translate(-50%, 50%);
+        z-index: 2;
+        animation: cupsSlowRotate 30s linear infinite;
+      }
+      @keyframes cupsSlowRotate {
+        0% {
+          transform: translate(-50%, 50%) rotate(0deg);
+        }
+        100% {
+          transform: translate(-50%, 50%) rotate(-360deg);
+        }
+      }
+      .into-the-world .bottom-portion .red-box .card {
+        position: relative;
+        display: flex;
+        background-color: #f6d3b3;
+        width: fit-content;
+        rotate: -6deg;
+        margin-top: 4vw;
+        margin-left: auto;
+        z-index: 2;
+      }
+      .into-the-world .bottom-portion .red-box .card h4 {
+        margin: 1.04vw 1.1vw;
+        max-width: 18ch;
+      }
+      .into-the-world .bottom-portion .red-box .card::after {
+        content: "";
+        display: block;
+        width: max(50px, 5.28vw);
+        border: 1px solid black;
+        background-image: url(images/small-purple-pattern.svg);
+        background-color: var(--yellow);
+        background-size: cover;
+      }
+      /* 14TH SECTION END */
+      /* 15TH SECTION */
+      .three-cards-section {
+        position: relative;
+        overflow: hidden;
+      }
+      .three-cards-section .large-card {
+        height: 100vh;
+        height: 100lvh;
+        width: 100%;
+        padding-top: 2.64vw;
+        padding-inline: 9.38vw;
+      }
+      .three-cards-section .large-card h2 {
+        text-align: center;
+      }
+      .three-cards-section .green-card {
+        background-color: #33a357;
+      }
+      .three-cards-section .red-card {
+        position: absolute;
+        top: 0;
+        background-color: var(--red);
+        clip-path: circle(0% at 50% 100%);
+      }
+      .three-cards-section .yellow-card {
+        position: absolute;
+        top: 0;
+        background-color: var(--yellow);
+        clip-path: circle(0% at 50% 100%);
+        transition: clip-path ease-out 0.3s;
+      }
+      .three-cards-section .yellow-card.large-card h6 {
+        display: flex;
+        gap: 22vw;
+        justify-content: center;
+      }
+      .three-cards-section .props {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+      }
+      .three-cards-section .props .yellow-mountain {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 80vw;
+        object-fit: contain;
+      }
+      .three-cards-section .props .purple-mountain {
+        object-fit: contain;
+        position: absolute;
+        width: 70vw;
+        bottom: 0;
+        right: 0;
+      }
+      .three-cards-section .props .cup {
+        position: absolute;
+        left: 50%;
+        top: 57vh;
+        top: 57lvh;
+        transform: translate(-50%, 0);
+        min-width: 18.75vw;
+        height: 60vh;
+        height: 60lvh;
+        object-fit: contain;
+      }
+      .three-cards-section .props .props-images {
+        position: absolute;
+        animation: floatNatural 10s ease-in-out infinite;
+        transition: bottom 0.7s ease-in-out;
+      }
+      .three-cards-section .props .props-images.alternate {
+        animation: floatNatural 5s ease-in-out infinite;
+      }
+      @keyframes floatNatural {
+        0% {
+          transform: translateY(0px) rotate(0deg);
+        }
+        25% {
+          transform: translateY(-5px) rotate(1deg);
+        }
+        50% {
+          transform: translateY(-10px) rotate(0deg);
+        }
+        75% {
+          transform: translateY(-5px) rotate(-1deg);
+        }
+        100% {
+          transform: translateY(0px) rotate(0deg);
+        }
+      }
+      .three-cards-section .first.green-props {
+        right: 15.56vw;
+        bottom: 2.57vw;
+        rotate: -15deg;
+        width: max(140px, 14vw);
+      }
+      .three-cards-section .second.green-props {
+        left: 20vw;
+        bottom: 1vw;
+        width: max(130px, 13vw);
+      }
+      .three-cards-section .third.green-props {
+        left: 5vw;
+        bottom: 5vw;
+        rotate: -3deg;
+        width: max(40px, 4.17vw);
+      }
+      .three-cards-section .first.red-props {
+        right: 7vw;
+        bottom: -3.61vw;
+        width: max(100px, 9.8vw);
+      }
+      .three-cards-section .second.red-props {
+        right: 24vw;
+        bottom: 2.6vw;
+        width: max(100px, 10vw);
+      }
+      .three-cards-section .third.red-props {
+        left: 16vw;
+        bottom: 2.92vw;
+        width: max(150px, 15.6vw);
+      }
+      .three-cards-section .first.yellow-props {
+        right: 18.33vw;
+        bottom: 0;
+        width: max(100px, 10vw);
+      }
+      .three-cards-section .second.yellow-props {
+        left: 18vw;
+        bottom: 18.33vw;
+        width: max(50px, 5.07vw);
+      }
+      .three-cards-section .third.yellow-props {
+        left: 5vw;
+        bottom: 2vw;
+        width: max(70px, 7.6vw);
+        rotate: -23deg;
+      }
+      .three-cards-section.red-active .green-props,
+      .three-cards-section:not(.red-active) .red-props,
+      .three-cards-section.yellow-active .red-props,
+      .three-cards-section:not(.yellow-active) .yellow-props {
+        bottom: -100vh !important;
+        bottom: -100lvh !important;
+      }
+      /* 15TH SECTION END */
+      /* FOOTER */
+      footer {
+        background-color: white;
+        overflow: hidden;
+      }
+      footer .top-portion {
+        padding-inline: 2.8vw;
+      }
+      footer .footer-logo {
+        width: 93vw;
+        padding: 3vw;
+      }
+      footer .footer-menu {
+        display: flex;
+      }
+      footer .footer-menu > * {
+        padding: 1.1vw 1.5vw;
+        border: 1px solid black;
+      }
+      footer .footer-menu > .left-column {
+        width: 28vw;
+        background-color: #8085b4;
+        padding-left: 3vw;
+      }
+      footer .footer-menu > a {
+        position: relative;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        gap: 3.47vw;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+      footer .footer-menu > a:after {
+        content: "";
+        position: absolute;
+        bottom: 1.67vw;
+        right: 1.67vw;
+        width: 2.64vw;
+        height: 2.64vw;
+        background-image: url(images/plus-button.svg);
+        background-size: cover;
+        border-radius: 50%;
+        transition: rotate 0.3s;
+      }
+      footer .footer-menu > a:hover:after {
+        rotate: 45deg;
+      }
+      footer .footer-menu a img {
+        height: 4.51vw;
+        width: auto;
+      }
+      footer .footer-menu > a:last-child {
+        padding-right: 3vw;
+      }
+      footer .footer-menu .yellow {
+        background-color: var(--yellow);
+      }
+      footer .footer-menu .red {
+        background-color: var(--red);
+      }
+      footer .footer-menu .green {
+        background-color: #009949;
+      }
+      footer .bottom-portion {
+        display: flex;
+        padding: 1.04vw 6vw;
+        background-color: #f6d3b3;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.83vw;
+        z-index: 100;
+      }
+      footer .bottom-portion a {
+        font-weight: 800;
+      }
+      footer .bottom-portion .left {
+        display: flex;
+        gap: 1.67vw;
+        align-items: center;
+      }
+      footer .bottom-portion .left .social-media-icons {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+      footer .bottom-portion .left .social-media-icons img {
+        height: 1.11vw;
+        aspect-ratio: 1;
+      }
+      footer .bottom-portion .right {
+        display: flex;
+        gap: 1.67vw;
+      }
+      /* FOOTER END */
+      /* POPUPS */
+      a[data-popup] {
+        cursor: pointer;
+      }
+      .popup {
+        position: fixed;
+        transition: transform 0.3s;
+        z-index: 99;
+        width: 100vw;
+        min-height: 80vh;
+        min-height: 80lvh;
+        display: flex;
+      }
+      .popup#menu-button {
+        display: flex;
+        transform: translateX(100vw);
+        height: 100vh;
+        height: 100lvh;
+        padding-inline: 3.47vw;
+      }
+      .popup#menu-button h2 {
+        rotate: 90deg;
+        padding-right: 1vw;
+        top: -12vw;
+        width: fit-content;
+        left: 0;
+        white-space: nowrap;
+        position: absolute;
+        transform-origin: bottom left;
+        padding-bottom: 6vw;
+      }
+      .popup#menu-button > div {
+        transition: flex 0.3s;
+      }
+      .popup#menu-button > div:not(.inner-menu) {
+        position: relative;
+        /* width: calc(100% / 3); */
+        flex: 1;
+        cursor: pointer;
+      }
+      .popup#menu-button > div:not(.inner-menu).active {
+        flex: 1.5;
+      }
+      .popup#menu-button .inner-menu {
+        display: flex;
+        flex-direction: column;
+      }
+      .popup#menu-button .active.inner-menu {
+        flex: 2;
+      }
+      .popup#menu-button .inner-menu img {
+        display: none;
+        width: 100%;
+      }
+      .popup#menu-button .active.inner-menu img {
+        display: block;
+      }
+      .popup#menu-button > div:not(.inner-menu):after {
+        content: "";
+        display: block;
+        bottom: max(14px, 1.39vw);
+        right: max(35px, 2.78vw);
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+      }
+      .popup#menu-button .drinks,
+      .popup#menu-button .inner-menu[data-type="drinks"] {
+        background-color: var(--yellow);
+      }
+      .popup#menu-button .drinks:after {
+        background-image: url(images/footer-drink.webp);
+        width: max(70px, 7.4vw);
+        height: max(150px, 15vw);
+      }
+      .popup#menu-button .food,
+      .popup#menu-button .inner-menu[data-type="food"] {
+        background-color: #ed9fa5;
+      }
+      .popup#menu-button .food:after {
+        background-image: url(images/footer-plate.webp);
+        width: max(100px, 10.76vw);
+        height: max(70px, 7.22vw);
+      }
+      .popup#menu-button .snacks,
+      .popup#menu-button .inner-menu[data-type="snacks"] {
+        background-color: var(--red);
+      }
+      .popup#menu-button .snacks:after {
+        background-image: url(images/footer-toast.webp);
+        width: max(110px, 11.11vw);
+        height: max(70px, 7.22vw);
+      }
+      .active.popup#menu-button {
+        transform: translateX(0);
+      }
+      .popup .close-button {
+        width: max(90px, 9.38vw);
+        height: max(90px, 9.38vw);
+        border-radius: 50%;
+        background-image: url(images/close-button.svg);
+        background-size: cover;
+        flex: none;
+        cursor: pointer;
+      }
+      .popup .long-pattern {
+        position: absolute;
+        width: 100%;
+        height: 4.38vw;
+        left: 0;
+        bottom: 5vh;
+        bottom: 5lvh;
+      }
+      .popup#join-us,
+      .popup#contact-us,
+      .popup#cater-from-us {
+        padding: 3vw 5.83vw;
+        transform: translateY(100vh);
+        transform: translateY(100lvh);
+      }
+      .active.popup#join-us,
+      .active.popup#contact-us,
+      .active.popup#cater-from-us {
+        transform: translateY(20vh);
+        transform: translateY(20lvh);
+      }
+      .popup .left-portion {
+        padding-right: 15.56vw;
+      }
+      .popup .popup-email h6 {
+        margin-top: 1.39vw;
+        background-color: white;
+        padding: 0.56vw 0.83vw;
+        rotate: -1.5deg;
+        width: fit-content;
+        white-space: nowrap;
+      }
+      .popup .popup-email h6:before {
+        content: "";
+        background-image: url(images/white-top-arrow.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 1.46vw;
+        width: 2.08vw;
+        position: absolute;
+        display: block;
+        top: -1.39vw;
+        left: -1px;
+      }
+      .popup .right-portion {
+        padding-top: 1.39vw;
+        padding-right: 1.86vw;
+        margin-right: 3vw;
+      }
+      .popup .right-portion.accordion {
+        height: 60vh;
+        height: 60lvh;
+        overflow-y: scroll;
+        scrollbar-color: black transparent;
+      }
+      .popup .right-portion.accordion .title {
+        cursor: pointer;
+      }
+      .popup .right-portion.accordion li {
+        color: var(--raisin-black);
+      }
+      .popup#cater-from-us {
+        background-color: var(--yellow);
+      }
+      .popup#cater-from-us .right-portion {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+      }
+      .popup#join-us {
+        background-color: var(--red);
+      }
+      .popup#contact-us {
+        background-color: #009949;
+      }
+      .popup#join-us .accordion .title,
+      .popup#join-us .accordion .detail {
+        padding: 12px 16px;
+      }
+      .popup#join-us .accordion .title {
+        display: flex;
+        gap: 2.08vw;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .popup#join-us .accordion .active.title:before {
+        rotate: 45deg;
+      }
+      .popup#join-us .accordion .title:before {
+        content: "";
+        display: block;
+        height: max(1em, 1.04vw);
+        width: max(1em, 1.04vw);
+        order: 2;
+        flex: none;
+        background-image: url(images/accordion-plus.svg);
+        background-size: cover;
+        transition: rotate 0.3s;
+      }
+      .popup#join-us .accordion .title:not(:first-child) {
+        border-top: 2px solid black;
+      }
+      .popup .active.inner-menu {
+        width: 62.5vw;
+        overflow: scroll;
+        scrollbar-width: none;
+      }
+      /* POPUPS END */
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      @media (max-width: 1239px) {
+        .mobile-only {
+          display: block;
+        }
+        /* 1ST SECTION */
+        .left-sidebar,
+        .right-sidebar {
+          height: 8vw;
+        }
+        .right-sidebar {
+          transform: translateY(-100vw);
+        }
+        /* .bouncer {
+    max-width: none;
+    max-height: none;
+  } */
+        h1.hero-title {
+          margin-block: 12vw;
+        }
+        .pinned-hero img#main-teh-tarik,
+        .pinned-hero img#teh-tarik-front {
+          max-height: none;
+          width: 82vw;
+        }
+        .pinned-hero .monkey-container {
+          left: 60%;
+          z-index: -1;
+        }
+        .pinned-hero .monkey-container #monkey {
+          right: 9vw;
+          width: 18vw;
+        }
+        .pinned-hero #lcw {
+          bottom: 45%;
+          width: 30vw;
+        }
+        .pinned-hero #main-plant-right {
+          width: 85vw;
+        }
+        .pinned-hero #main-durian-left,
+        .pinned-hero #main-green-durian-left {
+          width: 100vw;
+        }
+        .pinned-hero #main-green-coconut {
+          width: 50vw;
+        }
+        .pinned-hero #motorbike {
+          width: 20vw;
+        }
+        /* 1ST SECTION END */
+        #teh-tarik-aneh {
+          max-width: none;
+        }
+        .pinned-horizontal-section .middle-section {
+          width: 80vw;
+        }
+        .pinned-horizontal-section .text-content {
+          padding: 10vw;
+        }
+        .unofficial-teh-tarik {
+          bottom: 20%;
+          right: 12vw;
+        }
+        .unofficial-teh-tarik img.unofficial-teh-tarik-img {
+          width: 48vw;
+        }
+        .national-importance {
+          min-height: max(850px, 100vh);
+          min-height: max(850px, 100lvh);
+        }
+        .national-importance .text-content {
+          padding: max(50px, 5.56vw) max(40px, 10.76vw);
+        }
+        .national-importance .yellow-mountain-container {
+          position: absolute;
+        }
+        .national-importance .yellow-mountain-container .motorbike {
+          top: 10%;
+        }
+        .humbly-priced {
+          height: 100vh;
+          height: 100lvh;
+        }
+        .island-section {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+        }
+        .island-section .text-box {
+          max-width: 220px;
+          padding: 30px;
+        }
+        .island-section .pink-box {
+          left: 23vw;
+          bottom: 50vh;
+          bottom: 50lvh;
+        }
+        .island-section .lightgreen-box {
+          right: 30%;
+          top: unset;
+          bottom: 7vh;
+          bottom: 7lvh;
+        }
+        .island-section .yellow-box {
+          top: unset;
+          bottom: 30vh;
+          bottom: 30lvh;
+        }
+        .humbly-priced .rotating-teh-tarik {
+          object-fit: cover;
+          right: -40px;
+        }
+        .television-section {
+          height: 100vh;
+          height: 100lvh;
+        }
+        .television-section > h4 {
+          margin-block: 14vh;
+          margin-block: 14lvh;
+        }
+        .drink-heading {
+          display: flex;
+          height: 40vh;
+          height: 40lvh;
+          flex-direction: column;
+          justify-content: center;
+          gap: 26px;
+        }
+        .drink-like-no-other .bottom-portion {
+          flex-direction: column;
+        }
+        .drink-like-no-other .bottom-portion .pattern-box {
+          order: -1;
+        }
+        .drink-like-no-other .bottom-portion > div {
+          display: flex;
+          align-items: center;
+          height: 24vh;
+          height: 24lvh;
+          flex: none;
+          padding: 0 20vw;
+        }
+        .drink-like-no-other .bottom-portion .floating-cup {
+          left: calc(50% - 27vw);
+          width: 54vw;
+          bottom: unset;
+          top: -26vh;
+          top: -26lvh;
+        }
+        .drink-like-no-other .bottom-portion .floating-cup-leaf,
+        .drink-like-no-other.landed .bottom-portion .floating-cup-leaf {
+          bottom: calc(10% + 60vh);
+          bottom: calc(10% + 60lvh);
+        }
+        .drink-like-no-other .bottom-portion .floating-cup-starfish,
+        .drink-like-no-other.landed .bottom-portion .floating-cup-starfish {
+          bottom: calc(30% + 60vh);
+          bottom: calc(30% + 60lvh);
+        }
+        .gold-standard .top-portion,
+        .gold-standard .bottom-portion h2 {
+          padding-inline: 20vw;
+        }
+        .gold-standard .bottom-portion .text-box .parallax-bg {
+          bottom: 0;
+          top: unset;
+        }
+        .five-gen {
+          padding-block: 30vh;
+          padding-block: 30lvh;
+        }
+        .staggered-cards-container,
+        .staggered-card {
+          height: 40vh;
+          height: 40lvh;
+        }
+        .staggered-card {
+          width: 35vw;
+        }
+        .staggered-card h4 {
+          padding: 20px 20px 0;
+        }
+        .proudly-malaysian .top-portion .text-content {
+          padding: 12vw 12vw 0;
+        }
+        .touching-hands .hand {
+          top: 17%;
+          position: absolute;
+        }
+        .touching-hands .touching-star {
+          top: 0;
+        }
+        .proudly-malaysian .bottom-portion .text-content {
+          position: relative;
+          z-index: 10;
+          padding: 4vw 20vw;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .proudly-malaysian .bottom-portion .text-content p {
+          max-width: 50%;
+        }
+        .teh-tarik-malaysian .dining-teh-tarik,
+        .teh-tarik-malaysian .bottom-boxes {
+          gap: 0;
+        }
+        .teh-tarik-malaysian .dining-teh-tarik {
+          display: none;
+        }
+        .teh-tarik-malaysian .bottom-boxes:before {
+          content: "";
+          width: 100%;
+          height: 30vh;
+          height: 30lvh;
+          background-image: url(images/eating-on-teh-tarik.webp);
+          background-size: cover;
+          position: absolute;
+          top: 0;
+          transform: translateY(-100%);
+        }
+        .bottom-boxes .yellow-box {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 5vw;
+        }
+        .bottom-boxes .yellow-box img {
+          width: 37vw;
+        }
+        .teh-tarik-malaysian .bottom-boxes .pink-box p {
+          margin: 20%;
+        }
+        .malaysia-pride {
+          padding-inline: 100px;
+        }
+        .malaysia-pride .slant-card-container {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+        .malaysia-pride .slant-text {
+          position: relative;
+          margin-left: 0;
+        }
+        .malaysia-pride .slant-text.pink-text {
+          rotate: 0deg;
+        }
+        .malaysia-pride h2.medium {
+          padding-bottom: 10vw;
+        }
+        .breaking-texts-container {
+          font-size: 10.42vw !important;
+          padding-block: 40vh;
+          padding-block: 40lvh;
+        }
+        .into-the-world .top-portion {
+          padding-bottom: 50vw;
+        }
+        .into-the-world .bottom-portion:before {
+          content: "";
+          background-image: url(images/spinning-cups.webp);
+          background-size: cover;
+          height: 80vw;
+          width: 80vw;
+          left: 50%;
+          top: 0;
+          transform: translate(-50%, -50%);
+          position: absolute;
+          animation: cupsSlowRotateCenter 30s linear infinite;
+        }
+        @keyframes cupsSlowRotateCenter {
+          0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+          }
+          100% {
+            transform: translate(-50%, -50%) rotate(-360deg);
+          }
+        }
+        .into-the-world .bottom-portion .red-box #spinning-cups {
+          display: none;
+        }
+        .into-the-world .bottom-portion {
+          flex-direction: column;
+        }
+        .into-the-world .bottom-portion > div {
+          z-index: 2;
+          padding-inline: 20vw;
+        }
+        .into-the-world .bottom-portion .yellow-box::after {
+          display: none;
+        }
+        .into-the-world .bottom-portion .red-box h6 {
+          margin: unset;
+        }
+        .into-the-world .bottom-portion h6 {
+          margin: 3.2vw 5.8vw 5.56vw !important;
+        }
+        .into-the-world .bottom-portion .red-box .card {
+          margin-bottom: 7vw;
+        }
+        .three-cards-section .large-card {
+          padding: 10vw 10vw 0;
+        }
+        .three-cards-section .props .cup {
+          width: 60vw;
+        }
+        .three-cards-section .props img:not(.cup) {
+          z-index: 2;
+        }
+        footer .footer-logo {
+          width: 100%;
+        }
+        footer .footer-menu {
+          display: grid;
+          grid-template: repeat(3, 1fr) / repeat(2, 50%);
+        }
+        footer .footer-menu .left-column {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          grid-row: span 3;
+          padding: 3vw 20px;
+        }
+        footer .bottom-portion {
+          display: none;
+        }
+        footer .footer-menu > a {
+          aspect-ratio: 1.3;
+          padding: 3vw;
+        }
+        footer .footer-menu > a:after {
+          right: max(40px, 7vw);
+          height: max(30px, 15%);
+          width: auto;
+          aspect-ratio: 1;
+          bottom: 3vw;
+        }
+        footer .footer-menu a img {
+          height: max(55px, 30%);
+        }
+        footer .footer-menu .left-column .mobile-only {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+        }
+        footer .footer-menu .left-column .mobile-only .center {
+          margin-block: auto 20px;
+        }
+        footer .footer-menu .left-column .mobile-only .right {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+        .social-media-icons {
+          display: flex;
+          gap: 14px;
+          margin-block: 20px;
+        }
+        footer .footer-menu .social-media-icons a img {
+          height: 30px;
+        }
+        .popup#join-us,
+        .popup#contact-us,
+        .popup#cater-from-us {
+          padding: 40px 100px;
+          transform: translateY(100vh);
+          transform: translateY(100lvh);
+          flex-direction: column;
+          gap: 50px;
+        }
+        .popup .long-pattern {
+          bottom: 0;
+        }
+        .popup .close-button {
+          position: absolute;
+          top: 40px;
+          right: 100px;
+        }
+        .popup#menu-button {
+          flex-direction: column;
+        }
+        .popup#menu-button h2 {
+          padding: 30px 60px;
+          rotate: 0deg;
+          top: 0;
+        }
+        .popup .active.inner-menu {
+          width: 100%;
+        }
+        .popup#menu-button .active.inner-menu {
+          flex: 4;
+        }
+      }
+      @media (max-width: 767px) {
+        .sidebars {
+          display: none;
+        }
+        .mobile-menus.sidebars {
+          display: block;
+          height: 100vh;
+          height: 100dvh;
+          pointer-events: none;
+        }
+        .mobile-menus.sidebars .left-sidebar,
+        .mobile-menus.sidebars .right-sidebar {
+          rotate: 0deg;
+          transform: translateY(0);
+          width: 100vw;
+          pointer-events: all;
+        }
+        .mobile-menus.sidebars .right-sidebar {
+          bottom: 0;
+          top: unset;
+        }
+        .mobile-menus.sidebars .right-sidebar p {
+          padding: 10px;
+        }
+        .mobile-menus.sidebars .left-sidebar a {
+          padding: 10px;
+          line-height: 1;
+          height: 100%;
+          border-left: 2px solid;
+        }
+        .popup#menu-button {
+          padding: 5.5vw 0;
+        }
+        .phone-only {
+          display: block;
+        }
+        h1.hero-title {
+          margin-block: 100px;
+        }
+        h1,
+        h2.large {
+          font-size: 14vw;
+          letter-spacing: 0;
+        }
+        h2,
+        .breaking-texts-container,
+        .teh-tarik-malaysian #textpath {
+          letter-spacing: 0;
+        }
+        .left-sidebar img:first-child {
+          height: 100%;
+        }
+        .left-sidebar,
+        .right-sidebar {
+          height: 42px;
+        }
+        .pinned-hero .monkey-container {
+          bottom: 16vh;
+          bottom: 16lvh;
+        }
+        .pinned-hero #main-durian-left,
+        .pinned-hero #main-green-durian-left {
+          width: 160vw;
+          left: -50vw;
+        }
+        .pinned-hero #main-plant-right {
+          width: 145vw;
+        }
+        .pinned-hero #tapir {
+          bottom: 20vh;
+          bottom: 20lvh;
+        }
+        #sugar1 {
+          top: -110%;
+          left: 50vw;
+        }
+        #sugar8 {
+          top: -100%;
+          left: 16vw;
+        }
+        .pinned-hero img#main-teh-tarik,
+        .pinned-hero img#teh-tarik-front {
+          scale: 1.2;
+        }
+        #motion-path {
+          scale: 2;
+        }
+        .pinned-horizontal-section .text-content {
+          padding: 90px 40px 0;
+        }
+        .pinned-horizontal-section .typewriter-box {
+          max-width: none;
+          /* padding-bottom: 200px; */
+          background-size: 50%;
+          background-position: bottom right;
+        }
+        .pinned-horizontal-section small {
+          margin-top: 10vh;
+          margin-top: 10lvh;
+        }
+        .pinned-horizontal-section .middle-section {
+          width: 70vh;
+          width: 70lvh;
+        }
+        .unofficial-teh-tarik {
+          bottom: 10vh;
+          bottom: 10lvh;
+        }
+        .national-importance .text-content {
+          padding-inline: 20px;
+          padding-bottom: 50px;
+        }
+        img.hornbill-logo {
+          right: 0;
+          width: 130px;
+          top: 70px;
+        }
+        @keyframes rainDrop {
+          0% {
+            transform: translateY(0) rotate(-20deg);
+          }
+          50% {
+            transform: translateY(60vh) rotate(0);
+            transform: translateY(60lvh) rotate(0);
+          }
+          100% {
+            transform: translateY(120vh) rotate(20deg);
+            transform: translateY(120lvh) rotate(20deg);
+          }
+        }
+        .national-importance .hornbill-container {
+          width: 100vw;
+          height: 110vw;
+        }
+        .national-importance .yellow-mountain {
+          width: 160vw;
+        }
+        .sugar-rain {
+          top: -20vh;
+          top: -20lvh;
+        }
+        .national-importance .hornbill-bg {
+          width: 72vw;
+          top: -120%;
+        }
+        .that-one-company {
+          display: flex;
+          flex-direction: column;
+        }
+        .that-one-company .top-portion {
+          padding-inline: 20px;
+        }
+        .that-one-company h4 {
+          max-width: 78vw;
+        }
+        .pouring-cup-container {
+          top: 300px;
+          right: -30%;
+        }
+        .that-one-company .bottom-portion h2 {
+          margin-top: 50vw;
+        }
+        .bottom-boxes {
+          display: flex;
+          margin-top: 450px;
+          gap: 0;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          z-index: 20;
+        }
+        .bottom-boxes > div {
+          width: 100%;
+          height: 30vh;
+          height: 30lvh;
+          margin: 0 !important;
+        }
+        .bottom-boxes .yellow-box {
+          display: none;
+        }
+        .teh-tarik-malaysian .bottom-boxes .pink-box h6 {
+          margin: auto;
+        }
+        img.pouring-photos {
+          bottom: 30vh;
+          bottom: 30lvh;
+          width: 200vw;
+          left: -50%;
+        }
+        .pouring-cup-container .stream-container {
+          width: 16.5vw;
+        }
+        .pouring-cup-container img:first-child,
+        .pouring-cup-container .cover-cup {
+          width: 35vw;
+        }
+        .bottom-boxes .red-box img:first-child {
+          width: 54vw;
+          top: 10%;
+          left: 10%;
+        }
+        .bottom-portion .purple-card {
+          width: 120px;
+          top: 25%;
+        }
+        .humbly-priced {
+          height: auto;
+        }
+        .humbly-priced .text-content {
+          padding-inline: 20px;
+        }
+        .island-section {
+          position: relative;
+          margin-top: 480px;
+        }
+        .island-section .pink-box {
+          bottom: 40vh;
+          bottom: 40lvh;
+        }
+        .island-section .yellow-box {
+          bottom: 24vh;
+          bottom: 24lvh;
+        }
+        .television-section {
+          height: 70vh;
+          height: 70lvh;
+          /* background-image: url(/wp-content/uploads/2025/04/television-mobile-bg.webp); */
+        }
+        .television-frame {
+          scale: 1.3;
+          left: 5%;
+        }
+        .television-card h4 {
+          font-size: 4vw;
+        }
+        .drink-like-no-other .bottom-portion .floating-cup-starfish {
+          transform-origin: right;
+        }
+        .drink-like-no-other .bottom-portion .floating-cup-starfish,
+        .drink-like-no-other .bottom-portion .floating-cup-leaf {
+          bottom: 56lvh !important;
+          transform: translateX(50%) rotate(-10deg) !important;
+          scale: 0;
+          transition: scale 0.3s;
+        }
+        .drink-like-no-other .bottom-portion .floating-cup-leaf {
+          right: 12% !important;
+          width: 110px !important;
+          left: unset !important;
+          rotate: 90deg !important;
+        }
+        .drink-like-no-other .bottom-portion .floating-cup-starfish {
+          left: 0% !important;
+          width: 100px !important;
+        }
+        .drink-like-no-other.landed .bottom-portion .floating-cup-leaf,
+        .drink-like-no-other.landed .bottom-portion .floating-cup-starfish {
+          bottom: inherit;
+          left: inherit;
+          transform: none;
+          scale: 1;
+        }
+        .drink-like-no-other .bottom-portion .floating-cup {
+          top: -18%;
+          height: 40vh;
+          object-fit: contain;
+          width: 100%;
+          object-position: center;
+          left: 0;
+        }
+        .drink-like-no-other .bottom-portion .green-box {
+          z-index: 2;
+        }
+        .drink-like-no-other .bottom-portion .pattern-box img {
+          bottom: -40px;
+        }
+        .drink-like-no-other .bottom-portion > div {
+          padding-inline: 20px;
+        }
+        .gold-standard .top-portion h4 {
+          font-size: 3vw;
+          letter-spacing: 0;
+        }
+        .gold-standard .top-portion,
+        .gold-standard .bottom-portion h2 {
+          padding-inline: 20px;
+        }
+        .gold-standard .bottom-portion .text-box {
+          margin-left: 20px;
+          max-width: 60vw;
+          margin-bottom: 30vh;
+          margin-bottom: 30lvh;
+        }
+        .five-gen {
+          background-image: url(images/five-gen-mobile-bg.webp);
+        }
+        .staggered-card {
+          width: auto;
+          aspect-ratio: 0.7;
+        }
+        .proudly-malaysian .head-with-eyeball {
+          display: none !important;
+        }
+        .proudly-malaysian .top-portion {
+          padding-bottom: 0;
+        }
+        .touching-hands .touching-star {
+          transform: translate(-50%, -4%) scale(0.1);
+        }
+        .proudly-malaysian .bottom-portion .text-content {
+          padding-inline: 20px;
+        }
+        .proudly-malaysian .bottom-portion .text-content h6 {
+          max-width: none;
+        }
+        .teh-tarik-malaysian > p {
+          max-width: 50vw;
+          margin: 22vw auto;
+        }
+        .teh-tarik-malaysian .bottom-boxes {
+          margin-top: 200px;
+          flex-direction: row;
+        }
+        .teh-tarik-malaysian .bottom-boxes:before {
+          background-position: 30%;
+        }
+        .teh-tarik-malaysian .container {
+          height: 70vh;
+          height: 70lvh;
+        }
+        .teh-tarik-malaysian #textpath {
+          font-size: 300px;
+        }
+        .malaysia-pride {
+          padding-inline: 50px;
+          overflow: hidden;
+          background-position: 20%;
+        }
+        .malaysia-pride .foreground-cards.behind-the-back {
+          right: unset;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 90vw;
+          margin-bottom: -20vw;
+          position: relative;
+        }
+        .breaking-text-section {
+          min-height: 0;
+        }
+        .breaking-texts-container {
+          font-size: 8.5vw !important;
+          padding-block: 30vh;
+          padding-block: 30lvh;
+          min-height: 0;
+        }
+        .breaking-text-section .teh-tarik-with-cap {
+          width: 37vw;
+          left: calc(50vw - 18.5vw);
+        }
+        .breaking-text-section .breaking-image {
+          max-width: 80px !important;
+        }
+        .into-the-world .top-portion {
+          padding-block: 60px 300px;
+        }
+        .into-the-world .top-portion h3 {
+          font-size: 20px;
+          text-wrap-style: pretty;
+          margin-bottom: 20px;
+        }
+        .into-the-world .bottom-portion:before {
+          width: 130vw;
+          height: 130vw;
+        }
+        .three-cards-section .large-card {
+          padding: 100px 20px 0;
+        }
+        .three-cards-section .large-card h2 {
+          font-size: 50px;
+        }
+        .three-cards-section .yellow-card.large-card h6 {
+          gap: 4px;
+        }
+        footer .footer-menu .left-column h3 {
+          font-size: 24px;
+        }
+        footer .footer-menu .left-column .mobile-only .center {
+          font-size: 10px;
+        }
+        footer .footer-menu > a {
+          padding-right: 20px;
+          aspect-ratio: unset;
+        }
+        .popup .close-button {
+          top: 0;
+          right: 40px;
+        }
+        .popup#join-us,
+        .popup#contact-us,
+        .popup#cater-from-us {
+          padding-inline: 60px;
+        }
+        .popup .right-portion {
+          max-height: 40vh;
+          max-height: 40lvh;
+          overflow-y: scroll;
+        }
+        footer .top-portion {
+          padding-inline: 0;
+        }
+        footer .footer-menu > a:after {
+          right: 20px;
+        }
+        footer .footer-menu {
+          margin-bottom: 40px;
+        }
+      }
+    </style>
   </head>
-
-
-
-
   <body>
-<!-- Audio -->
-<audio id="bg-music" autoplay loop muted>
-  <source src="./videos/sound.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+    <div class="popup" id="cater-from-us">
+      <div class="left-portion">
+        <h3>CATER FROM US</h3>
 
-<!-- Toggle Button -->
-<button id="sound-toggle" style="
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: rgba(0,0,0,0.6);
-    color: white;
-    border: none;
-    padding: 12px 18px;
-    font-size: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 999;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
-    transition: all 0.3s ease;
-">
-  🔇
-</button>
+        <h6>
+          <a class="popup-email" href="/cdn-cgi/l/email-protection#6e1d071e1d1b1e1e011c1a2e1a0b061a0f1c0705000f1a070100400d0103">SIPSUPPORT@<br class="phone-only">
+            TEHTARIKNATION.COM</a>
+        </h6>
+      </div>
 
-<script>
-  const bgMusic = document.getElementById("bg-music");
-  const toggleBtn = document.getElementById("sound-toggle");
+      <div class="right-portion">
+        <h5>
+          Whatever the occasion, one thing's for sure: everyone needs a
+          great cup of Teh Tarik.
+        </h5>
 
-  // Ensure playback starts muted
-  bgMusic.play().catch(err => {
-    console.log("Autoplay blocked:", err);
-  });
+        <p>
+          Family gatherings? Aunties and uncles will confirm ask where you got
+          it from. Weddings, parties, launches, open houses—if people are
+          coming together, Teh Tarik deserves a seat at the table.
+        </p>
 
-  // Toggle mute/unmute with button
-  toggleBtn.addEventListener("click", () => {
-    if (bgMusic.muted) {
-      bgMusic.muted = false;
-      bgMusic.volume = 0.7; // nice volume
-      toggleBtn.textContent = "🔊";
-      bgMusic.play();
-    } else {
-      bgMusic.muted = true;
-      toggleBtn.textContent = "🔇";
-    }
-  });
-</script>
+        <p>
+          We bring the same full-flavoured, no-shortcuts Teh Tarik you know and
+          love—ready to serve, fresh, and fuss-free. Hot or iced. Cup or
+          bottle. Small teams to big crowds. We've got you.
+        </p>
 
+        <p>Let's make your event taste better.</p>
+      </div>
 
+      <div class="close-button"></div>
+      <img alt="" class="long-pattern" src="images/long-red-pattern.webp">
+    </div>
 
+    <div class="popup" id="join-us">
+      <div class="left-portion">
+        <h3>JOIN US</h3>
 
-   
-  
+        <h6>
+          <a class="popup-email" href="/cdn-cgi/l/email-protection#bdced4cdcec8cdcdd2cfc9fdc9d8d5c9dccfd4d6d3dcc9d4d2d393ded2d0">SIPSUPPORT@<br class="phone-only">
+            TEHTARIKNATION.COM</a>
+        </h6>
+      </div>
+
+      <div class="right-portion accordion" data-lenis-prevent="">
+        <h5 class="title">IT GOES WITHOUT SAYING</h5>
+
+        <div class="detail">
+          Benefits:
+          <ul>
+            <li>Competitive Salary</li>
+            <li>Bonus, Incentives</li>
+            <li>Training & Development</li>
+            <li>Medical Benefits</li>
+          </ul>
+        </div>
+
+        <h5 class="title">WHO SHARES THEIR WINS WITH YOU?</h5>
+
+        <div class="detail">
+          Profit sharing*<br>
+          *Deserving Employees who meet performance criteria are eligible to
+          participate in a profit-sharing scheme.
+        </div>
+
+        <h5 class="title">WHO THINKS ABOUT YOUR FUTURE?</h5>
+
+        <div class="detail">
+          We will actively work with you on a personal career plan that charts
+          your career progression.
+        </div>
+
+        <h5 class="title">COME TO WORK HAPPY</h5>
+
+        <div class="detail">
+          <ul>
+            <li>Simple Structure</li>
+            <li>Uncomplicated People</li>
+          </ul>
+        </div>
+
+        <h5 class="title">GROW, AS THE COMPANY GROWS</h5>
+
+        <div class="detail">
+          Opportunities to try out different things abound as the company grows.
+        </div>
+      </div>
+
+      <div class="close-button"></div>
+      <img alt="" class="long-pattern" src="images/long-yellow-purple-pattern.svg">
+    </div>
+
+    <div class="popup" id="contact-us">
+      <div class="left-portion">
+        <h3>CONTACT US</h3>
+
+        <h6>
+          <a class="popup-email" href="/cdn-cgi/l/email-protection#97e4fee7e4e2e7e7f8e5e3d7e3f2ffe3f6e5fefcf9f6e3fef8f9b9f4f8fa">SIPSUPPORT@<br class="phone-only">
+            TEHTARIKNATION.COM</a>
+        </h6>
+      </div>
+
+      <div class="right-portion">
+        <h5>1 Utama Outlet</h5>
+
+        <div>
+          1 Utama Shopping Centre, Lot SK102, Second Floor, Lebuh Bandar Utama,
+          Bandar Utama, 47800 Petaling Jaya, Selangor.<br>
+          (Old Wing, 2nd floor, between Popular Bookstore and AEON)
+        </div>
+      </div>
+
+      <div class="close-button"></div>
+      <img alt="" class="long-pattern" src="images/long-blue-pattern.svg">
+    </div>
+
     <div class="popup" id="menu-button">
       <div class="menu-container drinks">
         <h2 class="medium no-anim">DRINKS</h2>
@@ -116,9 +3295,8 @@
 
     <div class="sidebars">
       <div class="left-sidebar">
-        <img alt="" src="images/lisab.png" width="70px" height="50px">
-       <p style="font-size: 50px; font-weight: bold;">Baawa!</p>
-
+        <img alt="" src="images/ttn-logo.svg">
+        <p>MALAYSIA’S MILK TEA SPECIALIST</p>
 
         <div class="lightgreen-yellow-bg"></div>
       </div>
@@ -131,15 +3309,15 @@
 
         <div class="lightgreen-yellow-bg"></div>
 
-         <div class="yellow-lightgreen-bg"></div>
+        <div class="lightblue-purple-bg"></div>
 
-        <div class="yellow-lightgreen-bg"></div>
+        <div class="pink-purple-bg"></div>
       </div>
     </div>
 
     <div class="mobile-menus sidebars">
       <div class="left-sidebar">
-        <div class="lightgreen-yellow-bg"></div>
+        <img alt="" src="images/ttn-logo.svg">
 
         <div class="lightgreen-yellow-bg"></div>
         <a data-popup="menu-button">MENU</a>
@@ -147,31 +3325,26 @@
       </div>
 
       <div class="right-sidebar">
-     <p style="font-size: 40px; font-weight: bold;">Baawa!</p>
+        <p>MALAYSIA’S MILK TEA SPECIALIST</p>
+
+        <div class="yellow-lightgreen-bg"></div>
 
         <div class="lightgreen-yellow-bg"></div>
 
-        <div class="lightgreen-yellow-bg"></div>
+        <div class="lightblue-purple-bg"></div>
 
-       <div class="lightgreen-yellow-bg"></div>
-
-       <div class="lightgreen-yellow-bg"></div>
+        <div class="pink-purple-bg"></div>
       </div>
     </div>
 
     <div class="pinned-hero">
-    
-      <br>
-          <br>
-  <img src="images/lisab.png" alt="Lisabi" 
-     style="display:block; padding-top:40px; margin:0 auto; width:120px; max-width:30%; height:auto;">
-
-
+      <h1 class="hero-title">
+         TEH TARIK TEH TARIK TEH TARIK TEH TARIK TEH TARIK TEH TARIK
+      </h1>
       <img alt="" id="main-circle" src="images/hero-banner-circle.webp">
       <div class="left-bg-container">
         <img alt="" class="mountains" id="main-durian-left" src="images/hero-durian-left.webp">
         <img alt="" class="mountains" id="myvi" src="images/myvi.webp">
-        
       </div>
       <img alt="" class="mountains" id="main-plant-right" src="images/hero-plant-right.webp">
       <div class="monkey-container">
@@ -187,7 +3360,7 @@
         <img alt="" id="teh-tarik-front" src="images/a.png">
         <img alt="" id="monkey" src="images/monkey.webp">
       </div>
-      <img alt="" class="mountains" id="lcw" src="images/c.png">
+      <img alt="" class="mountains" id="lcw" src="images/lcw.gif">
       <img alt="" class="mountains" id="main-green-durian-left" src="images/hero-green-durian.webp">
       <img alt="" class="mountains" id="main-green-coconut" src="images/main-green-coconut.webp">
       <img alt="" class="mountains" id="motorbike" src="images/motorbike.webp">
@@ -206,727 +3379,667 @@
       </svg>
     </div>
 
-
-  
-
-
-
-
-
-
-
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Galindo&display=swap" rel="stylesheet">
-
-<section style="
-        min-height: 100vh;
-        padding: 50px 20px;
-        background: url('./images/front.png') center/cover no-repeat;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-    ">
-    
-    <!-- Festival headline -->
-    <div style="
-        position: relative;
-        z-index: 5;
-        text-align: center;
-        margin-bottom: 40px;
-        max-width: 1000px;
-    ">
-        <h1 style="
-            font-family: 'Galindo', sans-serif;
-            font-size: clamp(2rem, 4vw, 3.5rem);
-            color: white;
-            text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
-            line-height: 1.3;
-        ">
-            Celebrate Courage, Heritage &  <br>
-           Unity.
-        </h1>
-    </div>
-
-    <!-- Festival video -->
-    <div style="
-        position: relative;
-        z-index: 5;
-        margin-bottom: 60px;
-        max-width: 900px;
-        width: 100%;
-        border-radius: 25px;
-        overflow: hidden;
-        box-shadow: 0 15px 40px rgba(0,0,0,0.5);
-        animation: float 6s ease-in-out infinite;
-    ">
-        <video autoplay muted loop playsinline style="
-            width: 100%;
-            height: clamp(600px, 80vh, 450px); /* responsive height */
-            object-fit: cover;
-            display: block;
-            border-radius: 25px;
-        ">
-            <source src="./videos/a.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-
-    <!-- Main content container (your cards) -->
-    <div style="
-        display: flex;
-        gap: 27px;
-        max-width: 1400px;
-        width: 100%;
-        position: relative;
-        z-index: 3;
-        flex-wrap: wrap;
-        justify-content: center;
-    ">
-        <!-- Your Volunteers, Vendors, and Artists cards stay the same here -->
-    </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <style>
-
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style-type: none;
-}
-:root {
-  --bg: #f1efff;
-  --primary: #044e10;
-  --border: #d8d513;
-}
-
-body {
-  background: var(--bg);
-}
-.container {
-  max-width: 1440px;
-  padding: 0 10px;
-  margin: 0 auto;
-}
-.swiper {
-  width: 100%;
-  height: 550px;
-  margin: 25px 0;
-}
-.swiper-slide {
-  width: 370px;
-  height: 500px;
-}
-.swiper-slide img {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  border: 2px solid transparent;
-}
-.swiper-slide-active img {
-  border: 2px solid var(--border);
-}
-.swiper-pagination {
-  position: absolute;
-  bottom: 0;
-}
-.mySwiper .swiper-pagination .swiper-pagination-bullet-active {
-  background: var(--primary);
-}
-@media (max-width: 500px) {
-  .swiper {
-    height: 450px;
-  }
-  .swiper-slide {
-    width: 300px;
-    height: 400px;
-  }
-}
-
-
-    </style>
-
-
-
-
-
-
-<!-- Bounce & Scatter Images Container -->
-<div style="
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 60px 0;
-    position: relative;
-">
-    <img src="images/l.webp" alt="L" class="animate-image" style="height:80px;">
-    <img src="images/i.webp" alt="I" class="animate-image" style="height:80px;">
-    <img src="images/ss.webp" alt="SS" class="animate-image" style="height:80px;">
-    <img src="images/a.webp" alt="A" class="animate-image" style="height:80px;">
-    <img src="images/b.webp" alt="B" class="animate-image" style="height:80px;">
-    <img src="images/ii.webp" alt="II" class="animate-image" style="height:80px;">
-</div>
-
-<style>
-.animate-image {
-    animation: jumpScatter 1s ease forwards, hoverBounce 2s ease-in-out 1s infinite alternate;
-    transform: translateY(-100px) translateX(0) scale(0.5);
-}
-
-/* Stagger start times and scatter offset */
-.animate-image:nth-child(1) { animation-delay: 0s, 1s; }
-.animate-image:nth-child(2) { animation-delay: 0.2s, 1.2s; transform: translateX(10px); }
-.animate-image:nth-child(3) { animation-delay: 0.4s, 1.4s; transform: translateX(-10px); }
-.animate-image:nth-child(4) { animation-delay: 0.6s, 1.6s; transform: translateX(5px); }
-.animate-image:nth-child(5) { animation-delay: 0.8s, 1.8s; transform: translateX(-5px); }
-.animate-image:nth-child(6) { animation-delay: 1s, 2s; transform: translateX(0px); }
-
-/* Jump + Scatter animation */
-@keyframes jumpScatter {
-    0% {
-        transform: translateY(-100px) scale(0.5);
-    }
-    40% {
-        transform: translateY(20px) translateX(var(--scatter, 0px)) scale(1.1);
-    }
-    60% {
-        transform: translateY(-10px) translateX(var(--scatter, 0px)) scale(0.95);
-    }
-    100% {
-        transform: translateY(0) translateX(var(--scatter, 0px)) scale(1);
-    }
-}
-
-/* Gentle hover bounce after landing */
-@keyframes hoverBounce {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }
-    100% { transform: translateY(0); }
-}
-
-/* Responsive for mobile */
-@media (max-width: 768px) {
-    .animate-image {
-        height: 50px !important; /* smaller height on mobile */
-    }
-}
-</style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Add Google Fonts in head -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-<div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;padding:50px;gap:40px;font-family:'Poppins',sans-serif;">
-
-  <!-- Left Column: Heading + Image -->
-  <div style="
-      flex: 1 1 100%;
-      max-width: 360px;
-      display: flex;
-      gap: 20px;
-  ">
-    <img src="images/13.jpeg" alt="Lisabi Festival" style="
-        width: 100%;
-        border-radius: 15px;
-        flex-grow: 1;
-        object-fit: cover;
-    ">
-  </div>
-
-  <!-- Right Column: Auto-typing Content -->
-  <div id="auto-type-container" style="
-      flex: 1 1 100%;
-      max-width: 800px;
-      background: linear-gradient(rgba(0, 54, 0, 0.5), rgba(0, 41, 0, 0.5)), url('images/front.png') center/cover no-repeat;
-      color: #fff;
-      padding: 30px;
-      border-radius: 20px;
-      font-size: clamp(1rem,1.5vw,1.1rem);
-      line-height: 1.5;
-      text-align: justify;
-      white-space: pre-wrap;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      min-height: 100%;
-      position: relative;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-      font-family:'Poppins',sans-serif;
-  ">
-      <span id="typed-text"></span><span id="cursor" style="font-weight:bold; font-size:1.2em;">✍️</span>
-  </div>
-
-</div>
-
-<script>
-const paragraphs = [
-`Welcome to Lisabi Festival, an annual celebration of the rich history and cultural heritage of Abeokuta and the Yoruba people. This festival honors the legendary warrior-king Lisabi, who fought for freedom and unity.`,
-`Lisabi Festival is more than a historical commemoration — it’s a vibrant showcase of music, dance, storytelling, and traditional rituals. From lively drum performances to cultural exhibitions, this festival bridges generations and celebrates the spirit of community.`,
-`Join us in exploring a world where history comes alive, culture is celebrated, and tradition meets contemporary festivity.`
-];
-
-const typedTextEl = document.getElementById("typed-text");
-const cursorEl = document.getElementById("cursor");
-
-let paraIndex = 0;
-let charIndex = 0;
-
-function typeParagraph() {
-    if(paraIndex < paragraphs.length){
-        const currentPara = paragraphs[paraIndex];
-        if(charIndex < currentPara.length){
-            typedTextEl.innerHTML += currentPara.charAt(charIndex);
-            charIndex++;
-            setTimeout(typeParagraph, 15); // typing speed
-        } else {
-            charIndex = 0;
-            paraIndex++;
-            if(paraIndex < paragraphs.length){
-                typedTextEl.innerHTML += "\n\n";
-            } else {
-                // All typing done, hide cursor
-                cursorEl.style.display = "none";
-            }
-            setTimeout(typeParagraph, 200);
-        }
-    }
-}
-
-// Blink cursor while typing
-const cursorInterval = setInterval(() => {
-    if(cursorEl.style.display !== "none"){
-        cursorEl.style.visibility = cursorEl.style.visibility === 'visible' ? 'hidden' : 'visible';
-    }
-}, 500);
-
-typeParagraph();
-</script>
-
-<style>
-/* Desktop side-by-side layout */
-@media (min-width: 768px) {
-    div[style*="flex-wrap:wrap"] {
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: stretch;
-    }
-    div[style*="max-width: 500px"] {
-        flex: 1 1 40%; /* left column */
-    }
-    #auto-type-container {
-        flex: 1 1 55%; /* right column */
-    }
-}
-</style>
-
-
-
-<br>
-
-<br>
-<br>
-<br>
-
-
-<h2 style="
-      text-align: center;
-      font-family: 'Galindo', sans-serif;
-      font-size: clamp(1.4rem,5vw,1.4rem);
-      color: #2b1b0e;
-      margin-bottom: 40px;
-      font-weight: bold;
-      letter-spacing: 1px; /* small spacing between letters */
-  ">
-    FEEL THE SPIRIT OF <span style="color:#ffcb03;">LISABI </span> <span style="color:#1a3f00;"> FESTIVAL</span>
-</h2>
-
-
-
-
-    <section id="movie-slider">
-      <div class="container">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper" id="swiper-wrapper">
-            <!-- Slides will be injected here by Javascript -->
+    <div class="overflow-container">
+      <div class="pinned-horizontal-section">
+        <div class="left-section">
+          <div class="text-content">
+            <h4>Recognized on</h4>
+
+            <div class="typewriter-box">
+              <h3>UNESCO’s Intangible Cultural Heritage List...</h3>
+              <small><a href="https://ich.unesco.org/en/RL/breakfast-culture-in-malaysia-dining-experience-in-a-multi-ethnic-society-02113" target="_blank">https://ich.unesco.org/en/RL/breakfast-culture-in-malaysia-dining-experience-in-a-multi-ethnic-society-02113</a></small>
+            </div>
           </div>
-          <div class="swiper-pagination"></div>
+        </div>
+        <img alt="" id="teh-tarik-aneh" src="images/teh-tarik-aneh.webp">
+        <div class="middle-section"></div>
+
+        <div class="right-section">
+          <div class="text-content">
+            <h4>and called</h4>
+
+            <h2>“THE UNOFFICIAL NATIONAL DRINK OF MALAYSIA”</h2>
+
+            <h4>by the BBC and others.</h4>
+            <small><a href="https://ich.unesco.org/en/RL/breakfast-culture-in-malaysia-dining-experience-in-a-multi-ethnic-society-02113" target="_blank">https://ich.unesco.org/en/RL/breakfast-culture-in-malaysia-dining-experience-in-a-multi-ethnic-society-02113</a></small>
+          </div>
+
+          <div class="unofficial-teh-tarik">
+            <img alt="" class="unofficial-teh-tarik-img" src="images/unofficial-teh-tarik.webp">
+            <img alt="" class="rotating" src="images/yellow-red-unity-circle.webp">
+          </div>
         </div>
       </div>
-    </section>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-   <script>
-
-    document.addEventListener("DOMContentLoaded", async () => {
-  try {
-    const response = await fetch("images.json");
-    const movies = await response.json();
-    const swiperWrapper = document.getElementById("swiper-wrapper");
-    movies.forEach((movie) => {
-      const Slide = document.createElement("div");
-      Slide.classList.add("swiper-slide");
-      Slide.innerHTML = `<img src="${movie.url}" alt="${movie.title}" />`;
-      swiperWrapper.appendChild(Slide);
-    });
-
-    // Initialize Swiper
-    const swiper = new Swiper(".mySwiper", {
-      effect: "coverflow",
-      grabCursor: true,
-      slidesPerView: "auto",
-      loop: true,
-      centeredSlides: true,
-      centeredSlidesBounds: true,
-      updateOnWindowResize: true,
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 100,
-        modifier: 2.79,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        // dynamicBullets: true,
-      },
-    });
-    // Add click functionality
-    swiper.slides.forEach((slide) => {
-      slide.onclick = () => {
-        swiper.slideToLoop(slide.dataset.swiperSlideIndex);
-        swiper.update();
-      };
-    });
-    // Handle issue with the last slide click
-    swiper.on("slideChangeTransitionEnd", () => {
-      if (swiper.isEnd) {
-        swiper.loopFix();
-        swiper.update();
-      }
-    });
-  } catch (error) {
-    console.error("Error fetching images", error);
-  }
-});
-
-   </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- SECTION 2: About Lisabi -->
-<section class="lisabi-legacy" style="position:relative; background:url('images/back.png') center/cover no-repeat; padding:100px 20px; color:#fff; overflow:hidden;">
-  
-  <!-- Overlay -->
-  <div style="background:url('images/back.png') center/cover no-repeat;  position:absolute; inset:0; z-index:1;"></div>
-  
-  <div class="legacy-container" style="position:relative; z-index:2; display:flex; flex-wrap:wrap; align-items:center; gap:40px; max-width:1200px; margin:0 auto;">
-    
-    <!-- Left Visual -->
-    <div class="legacy-visual" style="flex:1 1 400px; text-align:center;">
-      <img src="images/lis.png" alt="Lisabi Warrior" style="max-width:100%; border-radius:20px; box-shadow:0 8px 30px rgba(0,0,0,0.5);">
     </div>
-    
-    <!-- Right Content -->
-    <div class="legacy-content" style="flex:1 1 500px;">
-      <h2 style="font-family:'Cinzel', serif; font-size:clamp(2rem,4vw,3rem); margin-bottom:20px; color:#ffcb03; animation:fadeDown 1s ease forwards;">
-        Lisabi — History & Legacy
+
+    <div class="national-importance">
+      <img alt="" class="sugar-rain size-1 speed-2" src="images/sugar-1.webp" style="left: 12%">
+      <img alt="" class="sugar-rain size-2 speed-1" src="images/sugar-2.webp" style="left: 40%">
+      <img alt="" class="sugar-rain size-1 speed-3" src="images/sugar-1.webp" style="left: 73%">
+      <div class="text-content">
+        <h5>Given its national importance,</h5>
+
+        <h2>
+          WHERE CAN YOU FIND A REALLY, REALLY GREAT
+          <img alt="" src="images/national-importance-flower.webp">
+          TEH TARIK?
+        </h2>
+      </div>
+      <img alt="" class="national-green-mountain" src="images/national-green-mountain.webp">
+      <img alt="" class="sugar-rain size-1 speed-1" src="images/sugar-1.webp" style="left: 6%">
+      <img alt="" class="sugar-rain size-1 speed-3" src="images/sugar-2.webp" style="left: 43%">
+      <img alt="" class="sugar-rain size-2 speed-2" src="images/sugar-1.webp" style="left: 77%">
+      <img alt="" class="national-blue-mountain" src="images/national-blue-mountain.webp">
+      <div class="yellow-mountain-container">
+        <img alt="" class="hornbill-bg" src="images/hornbill-bg.svg">
+        <div class="hornbill-container">
+          <h6 id="right-here" class="typewriter-box">Right here!</h6>
+          <img alt="" class="hornbill" src="images/hornbill-no-beak.webp">
+          <img alt="" class="hornbill-beak" src="images/hornbill-beak.gif">
+          <img alt="" class="hornbill-logo" src="images/ttn-logo-beige.svg">
+        </div>
+        <img alt="" class="yellow-mountain" src="images/yellow-mountain-no-banner.webp">
+        <img alt="" class="motorbike" src="images/motorbike.webp">
+      </div>
+      <img alt="" class="sugar-rain size-2 speed-3" src="images/sugar-1.webp" style="left: 20%; z-index: 10">
+      <img alt="" class="sugar-rain size-2 speed-2" src="images/sugar-2.webp" style="left: 63%; z-index: 10">
+      <img alt="" class="sugar-rain size-1 speed-1" src="images/sugar-1.webp" style="left: 87%; z-index: 10">
+    </div>
+
+    <div class="that-one-company">
+      <div class="top-portion">
+        <h2 class="large">
+          WE'RE THAT
+          <span><img alt="" class="one-o" src="images/that-one-company-circle.svg">NE</span>
+          <span>C<img alt="" class="company-o" src="images/that-one-company-flower.webp">MPANY</span>
+        </h2>
+
+        <h4>
+          that is crazy enough to still do it the hard-
+          <span class="typewriter-box small">and dare we say- the right</span>
+          way.
+        </h4>
+      </div>
+
+      <div class="bottom-portion" style="height: auto">
+        <img alt="" class="purple-card" src="images/purple-8-11-5.webp">
+        <h2>
+          WE BLEND OUR<br>
+          OWN TEA!
+        </h2>
+
+        <div class="bottom-boxes">
+          <div class="yellow-box">
+            <h4>
+              In that 1 cup of Teh Tarik is more than
+              <span class="typewriter-box red inline">80 years</span> of
+              passion, expertise and dedication in making the best cup of teh
+              tarik.
+            </h4>
+          </div>
+
+          <div class="red-box">
+            <img alt="" src="images/hero-banner-circle.webp">
+            <img alt="" src="images/full-tiger.webp">
+          </div>
+        </div>
+      </div>
+      <img alt="" class="pouring-photos person" src="images/poured-person.webp">
+      <div class="pouring-cup-container">
+        <img alt="" src="images/pouring-cup.webp">
+        <img alt="" class="pouring-leaf" id="pouring-leaf-1" src="images/pouring-leaf-1.webp">
+        <img alt="" class="pouring-leaf" id="pouring-leaf-2" src="images/pouring-leaf-2.webp">
+        <img alt="" class="pouring-leaf" id="pouring-leaf-3" src="images/india-flag.webp">
+        <img alt="" class="pouring-leaf" id="pouring-leaf-4" src="images/pouring-leaf-4.webp">
+        <img alt="" class="pouring-leaf" id="pouring-leaf-5" src="images/indonesia-flag.webp">
+        <img alt="" class="pouring-leaf" id="pouring-leaf-6" src="images/pouring-leaf-6.webp">
+        <img alt="" class="pouring-leaf" id="pouring-leaf-7" src="images/argentina-flag.webp">
+        <img alt="" class="pouring-leaf" id="pouring-leaf-8" src="images/pouring-leaf-8.webp">
+        <img alt="" class="pouring-leaf" id="pouring-leaf-9" src="images/srilanka-flag.webp">
+        <img alt="" class="pouring-leaf" id="pouring-leaf-10" src="images/pouring-leaf-10.webp">
+        <img alt="" class="pouring-leaf" id="pouring-leaf-11" src="images/kenya-flag.webp">
+        <!-- <img src="/wp-content/uploads/2025/04/poured-teh.webp" class="poured-teh" alt=""  > -->
+        <div class="stream-container">
+          <svg class="svg-mask" preserveAspectRatio="xMidYMin slice" viewBox="0 0 108 857">
+            <defs>
+              <mask id="teh-stream-mask" maskUnits="userSpaceOnUse">
+                <path d="M54 0C44 160 64 400 52 857" fill="none" id="mask-path" stroke="white" stroke-width="250"></path>
+              </mask>
+            </defs>
+            <style type="text/css">
+              .poured #mask-path {
+                stroke-dashoffset: 0;
+                transition-duration: 2s;
+              }
+              #mask-path {
+                stroke-dasharray: 3000;
+                stroke-dashoffset: 3000;
+                transition: stroke-dashoffset 1s ease-in-out;
+              }
+            </style>
+            <!-- Image scales with SVG dimensions -->
+            <image height="100%" href="images/poured-teh.webp" mask="url(#teh-stream-mask)" preserveAspectRatio="xMidYMin slice" width="100%"></image>
+          </svg>
+        </div>
+        <img alt="" class="cover-cup" src="images/pouring-cup-cover.webp">
+      </div>
+      <img alt="" class="pouring-photos" src="images/poured-cup.webp">
+      <img alt="" class="pouring-photos" src="images/poured-hands.webp">
+    </div>
+
+    <div class="humbly-priced">
+      <div class="rotating-teh-tarik-container">
+        <img alt="" class="rotating-teh-tarik" src="images/humbly-priced-teh-tarik.webp">
+      </div>
+
+      <div class="text-content">
+        <h4>Our Teh Tarik, humbly-priced,</h4>
+
+        <h2 class="medium">
+          IS ACTUALLY A CITIZEN OF THE
+          <span>W<img src="images/green-red-circle.webp">RLD.</span>
+        </h2>
+      </div>
+
+      <div class="island-section">
+        <div class="pink-box text-box">
+          <p>
+            To achieve the perfect balance in aroma, body, mouthfeel, liquor
+            colour and taste, we
+          </p>
+
+          <h6 class="typewriter-box inline small">source and blend</h6>
+        </div>
+        <img alt="" class="background" src="images/bg-blue-mountain.webp">
+        <div class="lightgreen-box text-box">
+          <p>from</p>
+
+          <div>
+            <img alt="" src="images/five.webp">
+            <div class="greenbox-text-content">
+              <h4>countries</h4>
+
+              <p>
+                Sri Lanka, Assam (India), Java (Indonesia), Argentina and Kenya.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img alt="" class="foreground" src="images/fg-blue-mountain.webp">
+        <div class="yellow-box text-box">
+          <img alt="" src="images/eleven.webp">
+          <h4>
+            types<br>
+            of tea
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="television-section">
+      <h4>Yes, we are</h4>
+
+      <div class="television-frame">
+        <div class="cards-container">
+          <div class="television-card">
+            <h4 style="background-color: #8085b4">Experienced</h4>
+            <img alt="" src="images/experienced-card.webp">
+          </div>
+
+          <div class="television-card">
+            <h4 style="background-color: #d6322f">Obsessive</h4>
+            <img alt="" src="images/obsessive-card.webp">
+          </div>
+
+          <div class="television-card">
+            <h4 style="background-color: #90cec7">Honourable</h4>
+            <img alt="" src="images/honourable-card.webp">
+          </div>
+
+          <div class="television-card">
+            <h4 style="background-color: #f9c822">Hardworking</h4>
+            <img alt="" src="images/hardworking-card.webp">
+          </div>
+
+          <div class="television-card">
+            <h4 style="background-color: #009949">Craftsmen</h4>
+            <img alt="" src="images/craftsmen-card.webp">
+          </div>
+
+          <div class="television-card">
+            <h4 style="background-color: #f6d3b3">Heritage Lovers</h4>
+            <img alt="" src="images/heritage-card.webp">
+          </div>
+
+          <div class="television-card">
+            <h4 style="background-color: #ed9fa5">Experts</h4>
+            <img alt="" src="images/experts-card.webp">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="drink-like-no-other">
+      <div class="drink-heading">
+        <h4>
+          And we are sure of our mission!<br>
+          We’ll make:
+        </h4>
+
+        <h2 class="large hero-title">
+           A DRINK LIKE NO OTHER A DRINK LIKE NO OTHER
+        </h2>
+      </div>
+
+      <div class="bottom-portion">
+        <div class="green-box">
+          <h3>Teh Tarik needs to be great.</h3>
+        </div>
+
+        <div class="pattern-box">
+          <img alt="" src="images/pedestal.webp">
+        </div>
+
+        <div class="red-box">
+          <h6>
+            The way it coats your tongue, lingers in fragrance, and tells a
+            story of craftsmanship and care in every sip.
+          </h6>
+        </div>
+        <img alt="" class="floating-cup-starfish" src="images/floating-cup-starfish.webp">
+        <img alt="" class="floating-cup-leaf" src="images/floating-cup-leaf.webp">
+        <img alt="" class="floating-cup" src="images/teh-tarik-cup.webp">
+      </div>
+    </div>
+
+    <div class="gold-standard">
+      <div class="top-portion">
+        <h6>We’ll make a cup that has:</h6>
+
+        <h4>
+          <span class="typewriter-box yellow inline">a robust tea flavour that holds its own</span>
+        </h4>
+
+        <h4>
+          <span class="typewriter-box beige inline">a delicate floral and fruity fragrance</span>
+        </h4>
+
+        <h4>
+          <span class="typewriter-box yellow inline">a velvety, full-bodied mouthfeel</span>
+        </h4>
+
+        <h4>
+          <span class="typewriter-box beige inline">a lingering, satisfying aftertaste</span>
+        </h4>
+      </div>
+
+      <div class="bottom-portion">
+        <h2 class="medium">THIS IS THE GOLD STANDARD OF TEH TARIK.</h2>
+
+        <div class="text-box">
+          <img alt="" class="parallax-bg" src="images/gold-standard-bg.webp">
+          <p>This is the drink that makes you close your eyes and say,</p>
+
+          <h4><span class="typewriter-box inline">Now, this is it.</span></h4>
+
+          <p>
+            At Teh Tarik Nation, we pour not just tea—but history,
+            mastery, and a bit of rebellion—into every cup. Because enough
+            with the “okay lah” cups. It’s time for a Drink
+            Like No Other.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="five-gen">
+      <h6>5 generations later, we’re also...</h6>
+
+      <div class="staggered-cards-container">
+        <div class="staggered-card" style="background-color: #ed9fa5">
+          <h4>FUN</h4>
+          <img alt="" src="images/pink-guitar.webp"><img alt="" class="footer" src="images/fun-footer.svg">
+        </div>
+
+        <div class="staggered-card" style="background-color: #009949">
+          <h4>INNOVATIVE</h4>
+          <img alt="" src="images/pink-controller.webp"><img alt="" class="footer" src="images/innovative-footer.svg">
+        </div>
+
+        <div class="staggered-card" style="background-color: #f9c822">
+          <h4>FUNNY</h4>
+          <img alt="" src="images/monkey.webp"><img alt="" class="footer" src="images/funny-footer.svg">
+        </div>
+
+        <div class="staggered-card" style="background-color: #8085b4">
+          <h4>COLOURFUL</h4>
+          <img alt="" src="images/blue-van.webp"><img alt="" class="footer" src="images/colourful-footer.svg">
+        </div>
+
+        <div class="staggered-card" style="background-color: #90cec7">
+          <h4>WARM</h4>
+          <img alt="" src="images/keycap.webp"><img alt="" class="footer" src="images/warm-footer.svg">
+        </div>
+
+        <div class="staggered-card" style="background-color: #ff9620">
+          <h4>IRREVERENT</h4>
+          <img alt="" src="images/rollerskates.webp"><img alt="" class="footer" src="images/irreverent-footer.svg">
+        </div>
+
+        <div class="staggered-card" style="background-color: #f9c822">
+          <h4>ADVENTUROUS</h4>
+          <img alt="" src="images/lcw.webp"><img alt="" class="footer" src="images/adventurous-footer.svg">
+        </div>
+
+        <div class="staggered-card" style="background-color: #009949">
+          <h4>FORWARD THINKING</h4>
+          <img alt="" src="images/forward-vision.webp"><img alt="" class="footer" src="images/forward-footer.svg">
+        </div>
+
+        <div class="staggered-card" style="background-color: #ed9fa5">
+          <h4>CHEEKY</h4>
+          <img alt="" src="images/cheeky-pickle.webp"><img alt="" class="footer" src="images/cheeky-footer.svg">
+        </div>
+
+        <div class="staggered-card" style="background-color: #90cec7">
+          <h4>YOUNG AT HEART</h4>
+          <img alt="" src="images/skateboard-boy-rebel.webp"><img alt="" class="footer" src="images/young-footer.svg">
+        </div>
+
+        <div class="staggered-card" style="background-color: #d6322f">
+          <h4>REBEL WITH A CAUSE</h4>
+          <img alt="" src="images/rebel-cone.webp"><img alt="" class="footer" src="images/rebel-footer.svg">
+        </div>
+      </div>
+    </div>
+
+    <div class="proudly-malaysian">
+      <div class="top-portion">
+        <div class="text-content">
+          <h4>We're proudly Malaysian,</h4>
+
+          <h2 class="medium">BUT CURIOUS ABOUT</h2>
+
+          <div class="head-with-eyeball">
+            <img alt="" src="images/blue-head.webp">
+            <div class="left eyeball">
+              <div class="left iris"></div>
+            </div>
+
+            <div class="right eyeball">
+              <div class="left iris"></div>
+            </div>
+          </div>
+          EVERYWHERE ELSE
+        </div>
+
+        <div class="touching-hands">
+          <img alt="" class="hand left" src="images/left-hand-touch.webp">
+          <img alt="" class="hand right" src="images/right-hand-touch.webp">
+          <!-- <img
+            src="/wp-content/uploads/2025/04/left-hand-touch-foreground.webp"
+            alt=""
+             
+            class="foreground left"
+          />
+          <img
+            src="/wp-content/uploads/2025/04/right-hand-touch-foreground.webp"
+            alt=""
+             
+            class="foreground right"
+          /> -->
+          <svg class="touching-star" fill="none" height="532" viewBox="0 0 528 532" width="528" xmlns="http://www.w3.org/2000/svg">
+            <path d="M399.104 50.743L335.208 23.177L260.244 196.936L182.499 0.706808L117.135 26.7367L184.514 196.802L47.5949 137.732L19.9805 201.74L156.899 260.81L0.0252085 323.282L31.1232 401.774L201.07 334.096L141.897 471.256L205.792 498.822L264.966 361.662L332.345 531.728L397.709 505.698L330.33 335.632L485.505 402.578L513.119 338.57L357.945 271.624L527.892 203.947L511.105 142.475L326.02 220.145L399.104 50.743Z" fill="#F9C822"></path>
+          </svg>
+        </div>
+      </div>
+
+      <div class="bottom-portion">
+        <img alt="" class="single-chilli" src="images/single-chilli.webp">
+        <img alt="" class="single-chilli" src="images/single-chilli.webp">
+        <img alt="" class="single-chilli" src="images/single-chilli.webp">
+        <img alt="" class="single-chilli" src="images/single-chilli.webp">
+        <div class="text-content">
+          <h6>
+            Yes, we tarik with flair. But who says tradition can't take a
+            spicy detour?
+          </h6>
+
+          <h6>
+            We've been blending Teh Tarik for generations, obsessing over
+            every pull and pour.
+          </h6>
+
+          <h6>
+            But now? We're also playing with fire. (Literally. Maybe some
+            peppercorns. Maybe some chillies.)
+          </h6>
+        </div>
+
+        <div class="exploding-lady">
+          <img alt="" class="flame left" src="images/left-flame.webp">
+          <img alt="" class="flame right" src="images/right-flame.webp">
+          <img alt="" class="mushroom-cloud" src="images/mushroom-cloud.webp">
+          <div class="lady-with-flame-container">
+            <img alt="" class="flame center" src="images/center-flame.webp">
+            <img alt="" class="chilli-teh" src="images/chilli-teh.webp">
+            <img alt="" class="middle-lady" src="images/middle-lady.webp">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="teh-tarik-malaysian">
+      <div class="top-pattern"></div>
+
+      <p>
+        Even as we push forward, let’s not forget what this drink already
+        means to us all…
+      </p>
+      <img alt="" class="dining-teh-tarik" src="images/eating-on-teh-tarik.webp">
+      <div class="bottom-boxes">
+        <div class="yellow-box">
+          <img alt="" src="images/mamak-table.webp">
+        </div>
+
+        <div class="pink-box">
+          <h6>found in every warung, kopitiam, and mamak.</h6>
+        </div>
+      </div>
+      <!-- <h2>TEH TARIK IS MALAYSIA IN A CUP</h2> -->
+
+      <div class="pin-height">
+        <div class="container">
+          <svg fill="none" height="92" viewBox="0 0 1516 92" width="1516" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 92.0674C528.5 -28.9327 977.5 -32.4328 1516.5 92.0674" id="path" stroke="none"></path>
+            <text id="text">
+              <textPath id="textpath" startOffset="100%" text-anchor="start" xlink:href="#path">
+                TEH TARIK IS MALAYSIA IN A CUP
+              </textPath>
+            </text>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="malaysia-pride">
+      <div class="text-content">
+        <div class="slant-card-container">
+          <h4 class="green-text slant-text">No more diluted cups.</h4>
+
+          <h4 class="pink-text slant-text">
+            No more playing second to other drinks.
+          </h4>
+
+          <h4 class="purple-text slant-text">No more milk-overload.</h4>
+        </div>
+
+        <h2 class="medium">
+          TEH TARIK IS MALAYSIA'S<br>
+          <img alt="" class="buatan-malaysia" src="images/buatan-malaysia.webp"><span style="z-index: -1">PRIDE</span>
+        </h2>
+      </div>
+      <img alt="" class="foreground-cards purple-woman" src="images/purple-woman.webp">
+      <img alt="" class="foreground-cards merchant-card" src="images/merchant-card.webp">
+      <img alt="" class="foreground-cards behind-the-back" src="images/behind-the-back.webp">
+    </div>
+
+    <div class="its-official">
+      <img src="images/ttn-logo-beige.svg" id="official-logo" alt="">
+      <img alt="" src="images/long-red-pattern.webp">
+      <h2 class="large sliding no-anim">
+        AND NOW,IT'S OFFICIAL. AND NOW,IT'S OFFICIAL. AND NOW,IT'S
+        OFFICIAL. AND NOW,IT'S OFFICIAL.
       </h2>
-      
-      <h3 style="font-size:1.4rem; margin-bottom:10px;">Historical Background</h3>
-      <p style="line-height:1.8; margin-bottom:30px; font-size:1.1rem; opacity:0; animation:fadeIn 1.5s ease forwards 0.5s;">
-        Between <strong>1770–1780</strong>, Lisabi led the revolt against the Oyo Empire, uniting Egba farmers under the <strong>Egbe Aaro</strong>. 
-        His vision was of resilience, freedom, and dignity for his people. 
-        After the victory, he disappeared into the <strong>Igbo Lisabi Sacred Forest</strong>, where his spirit is believed to dwell.
-      </p>
-      
-      <h3 style="font-size:1.4rem; margin-bottom:10px;">Why It Matters</h3>
-      <p style="line-height:1.8; font-size:1.1rem; opacity:0; animation:fadeIn 1.5s ease forwards 1s;">
-        His enduring legacy lives on in the phrase <em>“Egba, omo Lisabi”</em> — a timeless reminder of 
-        <strong>unity, self-determination, and cultural pride</strong>. 
-        The Lisabi Festival is more than celebration; it is a bridge between heritage and modern identity.
-      </p>
     </div>
-  </div>
 
-  <!-- Floating Heritage Symbols -->
-  <img src="images/drum.png" class="floating-symbol" style="top:10%; left:5%;">
-  <img src="images/adire.png" class="floating-symbol" style="bottom:8%; right:8%;">
-  <img src="images/cowrie.png" class="floating-symbol" style="top:60%; right:15%;">
-</section>
-
-<style>
-.floating-symbol {
-  position:absolute;
-  width:80px;
-  opacity:0.7;
-  animation: float 6s ease-in-out infinite alternate;
-}
-@keyframes float {
-  from {transform:translateY(0);}
-  to {transform:translateY(-20px);}
-}
-@keyframes fadeDown {
-  from{opacity:0; transform:translateY(-30px);}
-  to{opacity:1; transform:translateY(0);}
-}
-@keyframes fadeIn { to{opacity:1;} }
-</style>
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Marquee Container -->
-<div style="
-    width: 100%;
-    overflow: hidden;
-    background-color: #f6f6f6;
-    padding: 20px 0;
-    position: relative;
-">
-    <div class="marquee-wrapper">
-        <div class="marquee-track">
-            <!-- Car -->
-            <img src="images/g.png" alt="Car" style="height:80px;">
-            <img src="images/g.png" alt="Car" style="height:80px;">
-            <!-- Gap -->
-            <div style="width:80px;"></div>
-            <!-- Bike -->
-            <img src="images/motorbike.webp" alt="Bike" style="height:80px;">
-            <img src="images/motorbike.webp" alt="Bike" style="height:80px;">
-            <!-- Repeat for seamless scroll -->
-            <img src="images/g.png" alt="Car" style="height:80px;">
-            <div style="width:80px;"></div>
-            <img src="images/motorbike.webp" alt="Bike" style="height:80px;">
-        </div>
+    <div class="breaking-text-section">
+      <div class="breaking-texts-container">
+        <span id="breaking-text-1">MALAYSIA:</span><br>
+        <span id="breaking-text-2">YOU </span><span id="breaking-text-3">CAN BE</span><br>
+        <span id="breaking-text-4">PROUD </span><span id="breaking-text-5">OF THIS</span><br>
+        <span id="breaking-text-6">TEH </span><span id="breaking-text-7">TARIK</span>
+      </div>
+      <img alt="" class="breaking-image first" src="images/breaking-text-image-1.webp">
+      <img alt="" class="breaking-image second" src="images/breaking-text-image-2.webp">
+      <img alt="" class="breaking-image third" src="images/breaking-text-image-3.webp">
+      <img alt="" class="breaking-image fourth" src="images/breaking-text-image-4.webp">
+      <img alt="" class="breaking-image fifth" src="images/breaking-text-image-5.webp" style="max-width: 16.67vw">
+      <img alt="" class="breaking-image sixth" src="images/breaking-text-image-6.webp">
+      <img alt="" class="breaking-image seventh" src="images/breaking-text-image-7.webp">
+      <img alt="" class="teh-tarik-with-cap" src="images/teh-tarik-with-cap.webp">
     </div>
-</div>
 
-<style>
-.marquee-wrapper {
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
+    <div class="into-the-world">
+      <div class="top-portion">
+        <img alt="" class="starfish" src="images/floating-cup-starfish.webp">
+        <h3>WE'LL POUR THIS VERY MALAYSIAN SOUL</h3>
 
-.marquee-track {
-    display: flex;
-    gap: 0px; /* no extra gap between images */
-    animation: marqueeRight 20s linear infinite;
-}
+        <h2 class="large">INTO THE WORLD.</h2>
+        <img alt="" class="leaf" src="images/pouring-leaf-6.webp">
+      </div>
 
-.marquee-track img, .marquee-track div {
-    display: block;
-}
-
-@keyframes marqueeRight {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(100%);
-    }
-}
-</style>
-
-    
-
-
-<br>
-<br>
-
-   <!-- Festival Schedule Heading -->
-<h2 class="festival-heading">
-  Festival Schedule & Highlights
-</h2>
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-.festival-heading {
-  font-family: 'Poppins', sans-serif;
-  font-size: clamp(1.8rem, 3vw, 2.5rem);
-  font-weight: 600;
-  color: #1a1a1a;
-  text-align: center;
-  letter-spacing: 1px;
-  margin-bottom: 30px;
-  position: relative;
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeSlideUp 1s ease forwards;
-}
-
-/* Subtle underline accent */
-.festival-heading::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 4px;
-  background: linear-gradient(90deg, #048d16, #ffcb03);
-  margin: 10px auto 0;
-  border-radius: 2px;
-}
-
-/* Animation */
-@keyframes fadeSlideUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-</style>
-
-
-<section style="padding:60px 20px; background:#ffffff; position:relative;">
-  <div style="max-width:1400px; margin:0 auto; display:flex; flex-wrap:wrap; gap:30px; justify-content:center; align-items:flex-start; position:relative;">
-
-    <!-- Left Column: Map -->
-    <!-- Left Column: Map -->
-<div style="flex:1 1 450px; display:flex; justify-content:center; position:relative; margin-top:60px;">
-  <img src="images/map.png" alt="Festival Map" style="width:100%; border-radius:20px; object-fit:cover; box-shadow:0 6px 20px rgba(0,0,0,0.2);">
-</div>
-
-
-    <!-- Right Column: Schedule -->
-    <div style="flex:1 1 500px; display:flex; flex-direction:column; gap:15px;">
-
-   
-
-      <!-- Day Boxes -->
-      <div style="display:flex; flex-direction:column; gap:10px;">
-
-        <!-- Day 1 -->
-        <div style="display:flex; flex-direction:column; justify-content:center; gap:5px; background:  url('images/front.png') center/cover no-repeat; color:#fff; padding:15px 20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.15); min-height:140px;">
-          <h3 style="margin:0; font-weight:bold;">Day 1: Opening Ceremony</h3>
-          <p style="margin:0; font-size:0.9rem;">Historic gun salute, drumming, and storytelling sessions at Olumo Rock. Reconnect with Abeokuta’s roots while enjoying the iconic view.</p>
+      <div class="bottom-portion">
+        <div class="yellow-box">
+          <h6>
+            Silky smooth, bold, fragrant — crafted without artificial
+            colouring or flavouring—the world deserves to know what real
+            Teh Tarik tastes like.
+          </h6>
+          <!-- <img src="/wp-content/uploads/2025/04/darkblue-pattern.svg" alt=""> -->
         </div>
 
-        <!-- Day 2 -->
-        <div style="display:flex; flex-direction:column; justify-content:center; gap:5px; background: url('images/back.png')  center/cover no-repeat; color:#fff; padding:15px 20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.15); min-height:140px;">
-          <h3 style="margin:0; font-weight:bold;">Day 2: Palace Visit & Youth Mobilization</h3>
-          <p style="margin:0; font-size:0.9rem;">Participate in youth-led palace cleaning and community mobilization. Experience Yoruba rites and historical Igbo Lisabi insights.</p>
+        <div class="red-box">
+          <h6>
+            When the world asks, “What is really, really great milk
+            tea?”
+          </h6>
+          <img alt="" id="spinning-cups" src="images/spinning-cups.webp">
+          <div class="card">
+            <h4>They'll taste our cup and say, “This.”</h4>
+          </div>
         </div>
-
-        <!-- Day 3 -->
-        <div style="display:flex; flex-direction:column; justify-content:center; gap:5px; background: url('images/bw.png') center/cover no-repeat; color:#2b1b0e; padding:15px 20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.15); min-height:140px;">
-          <h3 style="margin:0; font-weight:bold;">Day 3: Cultural Exhibitions & Competitions</h3>
-          <p style="margin:0; font-size:0.9rem;">Games, quiz finals, exhibitions, and seminars exploring Abeokuta’s art, culture, and cuisine.</p>
-        </div>
-
-        <!-- Day 4 -->
-        <div style="display:flex; flex-direction:column; justify-content:center; gap:5px; background: url('images/lem.png') center/cover no-repeat; color:#fff; padding:15px 20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.15); min-height:140px;">
-          <h3 style="margin:0; font-weight:bold;">Day 4: Processions & Musical Performances</h3>
-          <p style="margin:0; font-size:0.9rem;">Grand processions from Igbo Lisabi to Olumo Rock with drummers, dancers, masquerades, and evening Afrobeat concerts.</p>
-        </div>
-
-        <!-- Day 5 -->
-        <div style="display:flex; flex-direction:column; justify-content:center; gap:5px; background:  url('images/gg.png') center/cover no-repeat; color:#fff; padding:15px 20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.15); min-height:140px;">
-          <h3 style="margin:0; font-weight:bold;">Day 5: Closing Gala & Heritage Celebration</h3>
-          <p style="margin:0; font-size:0.9rem;">Afro-fusion concert, storytelling, awards, crafts, and culinary delights at Central Market. Farewell ceremonies for diaspora and locals alike.</p>
-        </div>
-
       </div>
     </div>
-  </div>
 
-  <!-- Optional Floating Decorations -->
-  <img src="images/lisab.png" alt="Drum" style="position:absolute; top:10px; left:10px; width:60px; opacity:0.8;">
-  <img src="images/lisab.png" alt="Mask" style="position:absolute; bottom:20px; right:20px; width:80px; opacity:0.8;">
-</section>
+    <div class="three-cards-section">
+      <div class="green-card large-card">
+        <h2 class="medium">
+          WE'RE<br>
+          TEH TARIK MASTERS.
+        </h2>
+      </div>
 
-<style>
-@media (max-width:768px){
-  .event-map-container {
-    flex-direction: column;
-    gap:25px;
-  }
-}
-</style>
+      <div class="red-card large-card">
+        <h2 class="medium">WE'RE CHAMPIONS OF TEH TARIK.</h2>
+      </div>
 
+      <div class="yellow-card large-card">
+        <h2 class="medium">WE'LL MAKE TEH TARIK GREAT AGAIN!</h2>
 
+        <h6><span>(without</span><span>tariffs!)</span></h6>
+      </div>
 
+      <div class="props">
+        <img alt="" class="purple-mountain" src="images/purple-mountain.webp">
+        <img alt="" class="first green-props props-images" src="images/pink-controller.webp">
+        <img alt="" class="first red-props props-images" src="images/hibiscus.webp">
+        <img alt="" class="second red-props props-images" src="images/skateboard-boy.webp">
+        <img alt="" class="first yellow-props props-images" src="images/palm-tree.webp">
+        <img alt="" class="yellow-mountain" src="images/yellow-mountains.webp">
+        <img alt="" class="second green-props props-images alternate" src="images/green-guitar.webp">
+        <img alt="" class="third green-props props-images" src="images/red-cone.webp">
+        <img alt="" class="third red-props props-images" src="images/blue-van.webp">
+        <img alt="" class="second yellow-props props-images" src="images/pickleball.webp">
+        <img alt="" class="third yellow-props props-images" src="images/green-paddle.webp">
+        <img alt="" class="cup" src="images/last-section-cup.webp">
+      </div>
+    </div>
 
+    <footer>
+      <div class="top-portion">
+        <img alt="" class="footer-logo" src="images/ttn-logo.svg">
+        <div class="footer-menu">
+          <div class="left-column">
+            <h3>THE NATION'S DRINK</h3>
 
+            <div class="mobile-only">
+              <div class="left">
+                <div class="social-media-icons">
+                  <a href="https://www.facebook.com/profile.php?id=61573978376928/" target="_blank"><img alt="" src="images/fb-icon.svg"></a>
+                  <a href="https://www.instagram.com/tehtarik_nation" target="_blank"><img alt="" src="images/ig-icon.svg"></a>
+                </div>
+                <a href="/cdn-cgi/l/email-protection#2b58425b585e5b5b44595f6b5f4e435f4a594240454a5f42444505484446">SIPSUPPORT@<br class="phone-only">
+                  TEHTARIKNATION.COM
+                </a>
+              </div>
 
+              <div class="center">
+                Gentle Rebel Sdn Bhd (1453176-X). Copyright & Trademark
+                Notices © 2025. Teh Tarik Nation. All Rights Reserved.
+              </div>
 
+              <div class="right">
+                <!-- <a href="/">PRIVACY POLICY</a>
+                <a href="/">COOKIES POLICY</a> -->
+              </div>
+            </div>
+          </div>
 
-    
+          <a class="yellow" data-popup="cater-from-us">
+            <h4>CATER FROM US</h4>
+            <img alt="" src="images/footer-tongue.webp">
+          </a>
+          <a class="red" data-popup="join-us">
+            <h4>JOIN US</h4>
+            <img alt="" src="images/footer-heart.webp"></a>
+          <a class="green" data-popup="contact-us">
+            <h4>CONTACT US</h4>
+            <img alt="" src="images/footer-starfish.webp"></a>
+        </div>
+      </div>
+
+      <div class="bottom-portion">
+        <div class="left">
+          <div class="social-media-icons">
+            <a href="https://www.facebook.com/profile.php?id=61573978376928/" target="_blank"><img alt="" src="images/fb-icon.svg"></a>
+            <a href="https://www.instagram.com/tehtarik_nation" target="_blank"><img alt="" src="images/ig-icon.svg"></a>
+          </div>
+          <a href="/cdn-cgi/l/email-protection#c9baa0b9babcb9b9a6bbbd89bdaca1bda8bba0a2a7a8bda0a6a7e7aaa6a4"><span class="__cf_email__" data-cfemail="50031900030500001f020410041518041102191b1e1104191f1e7e131f1d">[email protected]</span>
+          </a>
+        </div>
+
+        <div class="center">
+          Gentle Rebel Sdn Bhd (1453176-X). Copyright & Trademark Notices
+          © 2025. Teh Tarik Nation. All Rights Reserved.
+        </div>
+
+        <div class="right">
+          <!-- <a href="/">PRIVACY POLICY</a>
+          <a href="/">COOKIES POLICY</a> -->
+        </div>
+      </div>
+    </footer>
     <script data-cfasync="false" src="js/email-decode.min.js"></script><script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/gsap.min.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
@@ -934,9 +4047,1005 @@ typeParagraph();
     <script src="https://unpkg.com/split-type"></script>
     <script src="js/lenis.min.js"></script>
     <script src="js/core.js"></script>
-     <script src="js/index.js"></script>
     <script>
+      // GSAP & LENIS INIT
+      gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
+      if (window.innerWidth > 1240) {
+        const lenis = new Lenis();
+
+        lenis.on("scroll", ScrollTrigger.update);
+
+        gsap.ticker.add((time) => {
+          lenis.raf(time * 1000);
+        });
+
+        gsap.ticker.lagSmoothing(0);
+      }
+
+      // GLOBAL ANIMATIONS
+      $(function () {
+        const observer = new IntersectionObserver(
+          (entries, obs) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const heading = entry.target;
+
+                // Split the heading into lines
+                const splitText = new SplitType(heading, { types: "lines" });
+                const lines = splitText.lines;
+
+                // Animate with GSAP
+                gsap.fromTo(
+                  lines,
+                  {
+                    y: 30,
+                    rotation: 30,
+                  },
+                  {
+                    y: 0,
+                    rotation: 0,
+                    // autoAlpha: 1,
+                    ease: "easeInOutExpo",
+                    duration: 0.6,
+                    stagger: 0.05,
+                  }
+                );
+
+                // Unobserve after animation is triggered once
+                obs.unobserve(heading);
+              }
+            });
+          },
+          {
+            threshold: 0, // Adjust as needed
+          }
+        );
+
+        // Apply to all h1 and h2 elements
+        document.querySelectorAll("h1, h2:not(.no-anim)").forEach((heading) => {
+          observer.observe(heading);
+        });
+      });
+      $(function () {
+        const observer = new IntersectionObserver(
+          (entries, obs) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const element = entry.target;
+                const $element = $(element);
+
+                // Prevent retriggering
+                if (
+                  !$element.hasClass("typewriter-initialized") &&
+                  $element.is(":not(#right-here)")
+                ) {
+                  $element.addClass("typewriter-initialized active"); // Add active class
+
+                  const originalText = $element.text();
+                  $element.text("");
+
+                  const typewriter = new Typewriter(element, {
+                    cursor: "|",
+                  });
+
+                  typewriter
+                    .changeDelay(40)
+                    .typeString(originalText)
+                    .pauseFor(1000)
+                    .callFunction(() => {
+                      const cursor = element.querySelector(
+                        ".Typewriter__cursor"
+                      );
+                      if (cursor) {
+                        cursor.style.display = "none";
+                      }
+                    })
+                    .start();
+                }
+
+                obs.unobserve(element); // Stop observing once triggered
+              }
+            });
+          },
+          {
+            threshold: 0.1, // Trigger when 10% of element is visible
+          }
+        );
+
+        $(".typewriter-box h3, span.typewriter-box, h6.typewriter-box").each(
+          function () {
+            observer.observe(this);
+          }
+        );
+      });
+      // GLOBAL ANIMATIONS END
+
+      let resizeTimeout;
+
+      function debounceResize(callback, delay = 300) {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(callback, delay);
+      }
+
+      function killAllAnimations() {
+        // Kill all ScrollTriggers
+        ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+
+        // Kill all GSAP tweens and timelines
+        gsap.globalTimeline.clear();
+        gsap.killTweensOf("*");
+
+        // Optional: remove classes or reset styles if needed
+        document
+          .querySelectorAll(
+            ".typewriter-initialized, .active, .landed, .poured"
+          )
+          .forEach((el) => {
+            el.classList.remove(
+              "typewriter-initialized",
+              "active",
+              "landed",
+              "poured"
+            );
+          });
+      }
+
+      window.addEventListener("resize", () => {
+        debounceResize(() => {
+          if (window.innerWidth > 1240) {
+            // killAllAnimations(); // Uncomment if needed
+            window.location.reload(); // Or reinitialize scripts
+          }
+        }, 300);
+      });
+
+      // FIRST SECTION ANIMATIONS
+      $(function () {
+        // Create pin for the hero section
+        ScrollTrigger.create({
+          trigger: ".pinned-hero",
+          start: "top top",
+          end: "+=1000",
+          pin: true,
+        });
+
+        // Make the SVG visible and sized appropriately
+        const svg = document.getElementById("motion-path");
+        svg.setAttribute("width", "100vw");
+        svg.setAttribute("height", "90%");
+        svg.setAttribute("viewBox", "0 0 1500 500"); // Adjusted to encompass all paths
+
+        // Configuration for sugar animations
+        const sugarAnimations = [
+          {
+            element: "#sugar2",
+            path: "#sugar-curve-1",
+            delay: -0.2, // Delayed start
+          },
+          {
+            element: "#sugar3",
+            path: "#sugar-curve-2",
+            delay: -0.2,
+          },
+          {
+            element: "#sugar4",
+            path: "#sugar-curve-2",
+            delay: 0,
+          },
+          {
+            element: "#sugar5",
+            path: "#sugar-curve-3",
+            delay: -0.15,
+          },
+          {
+            element: "#sugar6",
+            path: "#sugar-curve-3",
+            delay: 0.1, // Delayed start after sugar5
+          },
+          {
+            element: "#sugar7",
+            path: "#sugar-curve-4",
+            delay: 0, // Delayed start after sugar5
+          },
+        ];
+
+        // Set up animations for each sugar element
+        sugarAnimations.forEach((config) => {
+          const element = document.querySelector(config.element);
+
+          // Hide initially
+          gsap.set(element, {
+            scale: 0.8, // Optional: Scale the sugar images if needed
+            autoAlpha: 0,
+          });
+
+          // Calculate delay based on scroll progress
+          const delayedStart = `top+=${config.delay * 1000} top`;
+
+          // Create animation timeline with individual scroll trigger for each element
+          const tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".pin-spacer:has(.pinned-hero)",
+              start: delayedStart, // Different start position based on delay
+              end: "+=600",
+              scrub: true,
+            },
+          });
+
+          // Fade in
+          tl.to(element, {
+            autoAlpha: 1,
+            duration: 0.1,
+          });
+
+          // Animate along the path from beginning to end
+          tl.to(
+            element,
+            {
+              motionPath: {
+                path: config.path,
+                align: config.path,
+                start: 0, // Always start at beginning of path
+                end: 1, // End at end of path
+                alignOrigin: [0.5, 0.5],
+              },
+              ease: "none",
+              duration: 0.8,
+            },
+            0
+          );
+        });
+      });
+      // TEH TARIK SHAKE
+      // $(function () {
+      //   const tehTarikImage = $(".monkey-container");
+      //   const shakeTween = gsap.to(tehTarikImage, {
+      //     duration: 2,
+      //     keyframes: [
+      //       { rotation: 1, transformOrigin: "center bottom" },
+      //       { rotation: -1, transformOrigin: "center bottom" },
+      //       { rotation: 0, transformOrigin: "center bottom" },
+      //     ],
+      //     repeat: -1,
+      //     repeatDelay: 0,
+      //     ease: "none",
+      //     paused: true,
+      //   });
+
+      //   let scrollStopTimeout = null;
+      //   const scrollStopDelay = 150;
+
+      //   const scrollTarget = typeof lenis.on === "function" ? lenis : $(window);
+      //   scrollTarget.on("scroll", function () {
+      //     if (!shakeTween.isActive()) {
+      //       shakeTween.play();
+      //     }
+      //     if (scrollStopTimeout !== null) {
+      //       clearTimeout(scrollStopTimeout);
+      //     }
+      //     scrollStopTimeout = setTimeout(
+      //       () => shakeTween.pause(),
+      //       scrollStopDelay
+      //     );
+      //   });
+      // });
+      $(function () {
+        const $target = $(".monkey-container");
+
+        // Set transformOrigin once (no need to repeat it in every keyframe)
+        gsap.set($target, { transformOrigin: "center bottom" });
+
+        const shakeTween = gsap.to($target, {
+          duration: 2,
+          keyframes: [{ rotation: 1 }, { rotation: -1 }, { rotation: 0 }],
+          repeat: -1,
+          repeatDelay: 0,
+          ease: "none",
+          paused: true,
+        });
+
+        let scrollStopTimeout = null;
+        const scrollStopDelay = 150;
+
+        function onScroll() {
+          // Only call play() when it isn't already animating
+          if (!shakeTween.isActive()) shakeTween.play();
+
+          if (scrollStopTimeout) clearTimeout(scrollStopTimeout);
+          scrollStopTimeout = setTimeout(() => {
+            // Pause after scrolling stops for a bit
+            shakeTween.pause();
+          }, scrollStopDelay);
+        }
+
+        // Safe Lenis detection (avoids ReferenceError if lenis is undefined)
+        const hasLenis =
+          typeof window !== "undefined" &&
+          typeof window.lenis !== "undefined" &&
+          window.lenis &&
+          typeof window.lenis.on === "function";
+
+        if (hasLenis) {
+          window.lenis.on("scroll", onScroll);
+        } else {
+          // Passive listener for better performance
+          window.addEventListener("scroll", onScroll, { passive: true });
+        }
+
+        // Optional: pause when tab is hidden (saves cycles)
+        document.addEventListener("visibilitychange", () => {
+          if (document.hidden) {
+            shakeTween.pause();
+          }
+        });
+      });
+
+      $(function () {
+        function animateParallax(id, xAmount, yAmount, rotation) {
+          gsap.to(id, {
+            x: xAmount,
+            y: yAmount,
+            rotate: rotation,
+            scale: "1.03",
+            scrollTrigger: {
+              trigger: ".pin-spacer:has(.pinned-hero)",
+              start: "top top",
+              end: "+=1300",
+              scrub: true,
+            },
+            ease: "easeOutExpo",
+          });
+        }
+
+        animateParallax("#main-durian-left", "2vw");
+        animateParallax("#main-green-durian-left", "1.5vw");
+        animateParallax("#main-plant-right", "-5vw");
+        animateParallax("#main-green-coconut", "-2vw");
+        animateParallax("#lcw", "-3vw", "-5vw");
+        animateParallax("#motorbike", "10vw", "0");
+        animateParallax("#tapir", "10vw", "8vh", "0.5rad");
+        // animateParallax("#myvi", "-5vw", "5%", "0");
+        animateParallax("#sugar1", "-15vw", "120vh", "0");
+        animateParallax("#sugar8", "10vw", "100vh", "0");
+      });
+
+      gsap.to("#myvi", {
+        x: "-5vw",
+        y: "5%",
+        rotation: 0,
+        duration: 2.5, // 2.5s forward + 2.5s back = 5s total
+        repeat: -1,
+        yoyo: true,
+        ease: "easeOutExpo",
+        overwrite: true, // in case anything tries to animate it elsewhere
+      });
+      // FIRST SECTION ANIMATIONS END
+      // SECOND SECTION ANIMATIONS
+      $(document).ready(function () {
+        // Initialize the horizontal scroll
+        function initHorizontalScroll() {
+          const $container = $(".overflow-container");
+          const $pinnedSection = $(".pinned-horizontal-section");
+          const totalWidth = $pinnedSection.outerWidth() - $(window).width();
+
+          // Create a ScrollTrigger for the main horizontal scroll
+          let scrollTrigger = ScrollTrigger.create({
+            trigger: $container[0],
+            start: "top top",
+            end: `+=${totalWidth}`,
+            pin: true,
+            scrub: 1,
+            anticipatePin: 1,
+            invalidateOnRefresh: true,
+            onUpdate: (self) => {
+              // Move the pinned section horizontally
+              gsap.set($pinnedSection, {
+                x: -totalWidth * self.progress,
+              });
+
+              // Move #teh-tarik-aneh right by 30vw as scroll progresses
+              gsap.set("#teh-tarik-aneh", {
+                x: 35 * self.progress + "vw",
+              });
+            },
+          });
+        }
+        initHorizontalScroll();
+      });
+      // SECOND SECTION ANIMATIONS END
+      // THIRD SECTION ANIMATIONS
+      $(function () {
+        function animateParallax(id, xAmount, yAmount, rotate) {
+          gsap.to(id, {
+            x: xAmount,
+            y: yAmount,
+            rotation: rotate,
+            scale: "1.1",
+            scrollTrigger: {
+              trigger: ".national-importance",
+              start: "top top",
+              end: "50% 30%",
+              scrub: true,
+            },
+            ease: "easeOutExpo",
+          });
+        }
+
+        animateParallax(".national-green-mountain", "-15vw");
+        animateParallax(".national-blue-mountain", "14vw");
+        animateParallax(
+          ".yellow-mountain-container .motorbike",
+          "220%",
+          "-120%",
+          "-10deg"
+        );
+        ScrollTrigger.create({
+          trigger: ".national-importance",
+          start: "50% 90%", // When top of element hits bottom 20% of viewport
+          toggleClass: { targets: ".national-importance", className: "active" },
+          markers: false, // Set to true for debugging
+          onEnter: () => $(".national-importance").addClass("active"),
+          onLeaveBack: () => $(".national-importance").removeClass("active"),
+        });
+      });
+      // THIRD SECTION ANIMATIONS END
+      // FOURTH SECTION ANIMATIONS
+      $(function () {
+        function movingLeaves(id, xAmount, yAmount) {
+          gsap.from(id, {
+            x: xAmount,
+            y: yAmount,
+            rotate: "30deg",
+            scale: "1.1",
+            scrollTrigger: {
+              trigger: ".pouring-cup-container",
+              start: "top 80%",
+              end: "bottom 50%",
+              scrub: true,
+            },
+            ease: "easeInOutExpo",
+          });
+        }
+
+        // Animate leaves
+        movingLeaves("#pouring-leaf-1", "-53vw", "-43vw");
+        movingLeaves("#pouring-leaf-2", "-48vw", "-64.5vw");
+        movingLeaves("#pouring-leaf-3", "-36vw", "-47.5vw");
+        movingLeaves("#pouring-leaf-4", "-23vw", "-35vw");
+        movingLeaves("#pouring-leaf-5", "-20vw", "-27vw");
+        movingLeaves("#pouring-leaf-6", "-16.3vw", "-32.8vw");
+        movingLeaves("#pouring-leaf-7", "-5vw", "-46vw");
+        movingLeaves("#pouring-leaf-8", "-3vw", "-28vw");
+        movingLeaves("#pouring-leaf-9", "7.5vw", "-37.5vw");
+        movingLeaves("#pouring-leaf-10", "13vw", "-38vw");
+        movingLeaves("#pouring-leaf-11", "18vw", "-44vw");
+
+        // Delay control for class toggle
+        let canAddPoured = true;
+        let pouredRemovedAt = null;
+
+        const cupTween = gsap.fromTo(
+          ".pouring-cup-container",
+          {
+            rotate: -24,
+            transformOrigin: "bottom left",
+          },
+          {
+            rotate: -55,
+            ease: "easeInOutExpo",
+            scrollTrigger: {
+              trigger: ".pouring-cup-container",
+              start: "bottom 90%",
+              end: "bottom 50%",
+              scrub: true,
+              onUpdate: (self) => {
+                const el = document.querySelector(".stream-container");
+
+                if (self.progress === 1) {
+                  const now = Date.now();
+                  // Wait 1s after removal before re-adding
+                  if (
+                    canAddPoured &&
+                    (!pouredRemovedAt || now - pouredRemovedAt >= 1000)
+                  ) {
+                    el.classList.add("poured");
+                  }
+                }
+
+                if (self.progress < 1 && el.classList.contains("poured")) {
+                  el.classList.remove("poured");
+                  pouredRemovedAt = Date.now();
+                  canAddPoured = false;
+                  // Unlock re-adding after 1s
+                  setTimeout(() => {
+                    canAddPoured = true;
+                  }, 1000);
+                }
+              },
+            },
+          }
+        );
+      });
+      // FOURTH SECTION ANIMATIONS END
+      // FIFTH SECTION ANIMATIONS
+      $(function () {
+        const floatSettings = [
+          {
+            selector: ".humbly-priced .pink-box",
+            y: "-1vw",
+            x: "2vw",
+            rotation: -1.5,
+          },
+          {
+            selector: ".humbly-priced .yellow-box",
+            y: "1vw",
+            x: "-1vw",
+            rotation: -12,
+          },
+          {
+            selector: ".humbly-priced .lightgreen-box",
+            y: "-0.5vw",
+            x: "1.5vw",
+            rotation: -0.8,
+          },
+        ];
+        floatSettings.forEach((config) => {
+          const elements = $(config.selector);
+          elements.each(function () {
+            const el = $(this);
+            const floatAnim = gsap.to(el, {
+              y: `+=${config.y}`,
+              x: `+=${config.x}`,
+              rotation: `+=${config.rotation}`,
+              scale: 1.01,
+              repeat: -1,
+              yoyo: true,
+              ease: "sine.inOut",
+              duration: 3,
+              paused: true,
+            });
+            let scrollTimeout;
+            ScrollTrigger.create({
+              trigger: ".humbly-priced",
+              start: "top 80%",
+              end: "bottom top",
+              onUpdate: () => {
+                if (!floatAnim.isActive()) {
+                  floatAnim.play();
+                }
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(() => {
+                  floatAnim.pause();
+                }, 500);
+              },
+              onLeave: () => floatAnim.pause(),
+              onLeaveBack: () => floatAnim.pause(),
+            });
+          });
+        });
+      });
+      $(function () {
+        gsap.to(".rotating-teh-tarik", {
+          rotate: -15,
+          x: 2,
+          scale: 1.1,
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".humbly-priced",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: true,
+          },
+        });
+      });
+      // FIFTH SECTION ANIMATIONS END
+      // SIXTH SECTION ANIMATIONS
+      $(function () {
+        gsap.from(".television-card", {
+          y: "-56vw",
+          ease: "bounce.out",
+          duration: 1.5,
+          stagger: -0.2,
+          scrollTrigger: {
+            trigger: ".television-section",
+            start: "top bottom",
+            end: "bottom top",
+            toggleActions: "play none none none", // Play once on enter
+          },
+        });
+      });
+      // SIXTH SECTION ANIMATIONS END
+      // SEVENTH SECTION ANIMATIONS
+      $(function () {
+        const triggerSection = document.querySelector(".drink-like-no-other");
+        gsap.from("img.floating-cup", {
+          y: "-100vh",
+          ease: "easeIn",
+          duration: 1.5,
+          scrollTrigger: {
+            trigger: triggerSection,
+            start: "top bottom",
+            end: "bottom bottom",
+            scrub: true,
+            onUpdate: (self) => {
+              if (
+                self.progress === 1 &&
+                !triggerSection.classList.contains("landed")
+              ) {
+                triggerSection.classList.add("landed");
+              } else if (
+                self.progress < 1 &&
+                triggerSection.classList.contains("landed")
+              ) {
+                triggerSection.classList.remove("landed");
+              }
+            },
+          },
+        });
+      });
+      // SEVENTH SECTION ANIMATIONS END
+      // EIGHTH SECTION ANIMATIONS
+      $(function () {
+        const yValue = window.innerWidth < 1240 ? "20vh" : "80vh";
+
+        gsap.from(".gold-standard .bottom-portion .parallax-bg", {
+          y: yValue,
+          ease: "easeIn",
+          duration: 1.5,
+          scrollTrigger: {
+            trigger: ".gold-standard .bottom-portion",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: true,
+          },
+        });
+      });
+      // EIGHTH SECTION ANIMATIONS END
+      // NINTH SECTION ANIMATIONS
+      $(function () {
+        const yValue = window.innerWidth < 1240 ? 2 : 5;
+        const $cards = $(".staggered-card");
+        const totalCards = $cards.length;
+        const middleIndex = Math.floor(totalCards / 2);
+        const spacing = yValue; // horizontal spacing in vw
+        const scrollDistance = "+=5000";
+
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".five-gen",
+            start: "top top",
+            end: scrollDistance,
+            scrub: true,
+            pin: true,
+          },
+        });
+
+        $cards.each(function (i) {
+          const $card = $(this);
+          const offsetFromCenter = i - middleIndex;
+
+          // Generate a random y offset between -2vh and 2vh
+          const randomY = (Math.random() * 4 - 2).toFixed(2); // value between -2 and 2
+
+          tl.fromTo(
+            $card,
+            {
+              y: "100vh",
+              x: "0vw",
+            },
+            {
+              y: `${randomY}vh`,
+              x: `${offsetFromCenter * spacing}vw`,
+              duration: 1,
+              ease: "power5.in",
+            },
+            i * 0.7
+          );
+        });
+
+        gsap.fromTo(
+          ".staggered-cards-container",
+          {
+            y: "5%", // The `circles` div starts at 5% of its height on the y-axis
+          },
+          {
+            y: "-5%", // And ends at -5% of its height on the y-axis
+            ease: "none",
+            scrollTrigger: {
+              trigger: ".five-gen",
+              start: "top top",
+              end: scrollDistance,
+              scrub: true,
+            },
+          }
+        );
+      });
+      // NINTH SECTION ANIMATIONS END
+      // TENTH SECTION ANIMATIONS
+      $(function () {
+        const $eyeballs = $(".eyeball");
+
+        $(document).on("mousemove", function (e) {
+          $eyeballs.each(function () {
+            const $eye = $(this);
+            const $iris = $eye.find(".iris");
+
+            const eyeOffset = $eye.offset();
+            const eyeCenterX = eyeOffset.left + $eye.width() / 2;
+            const eyeCenterY = eyeOffset.top + $eye.height() / 2;
+
+            const dx = e.pageX - eyeCenterX;
+            const dy = e.pageY - eyeCenterY;
+
+            // Calculate angle and distance
+            const angle = Math.atan2(dy, dx);
+            const distance = Math.min(5, Math.hypot(dx, dy) / 10); // Limit how far the iris can go
+
+            const moveX = Math.cos(angle) * distance;
+            const moveY = Math.sin(angle) * distance;
+
+            $iris.css("transform", `translate(${moveX}px, ${moveY}px)`);
+          });
+        });
+      });
+      $(function () {
+        ScrollTrigger.create({
+          trigger: ".touching-hands",
+          start: "top top",
+          end: "+=1300",
+          scrub: true,
+        });
+        function moveHands(id, xAmount, yAmount, rotation) {
+          gsap.from(id, {
+            x: xAmount,
+            y: yAmount,
+            rotate: rotation,
+            scale: "1.03",
+            scrollTrigger: {
+              trigger: ".touching-hands",
+              start: "top 80%",
+              end: "top center",
+              scrub: true,
+            },
+            ease: "easeOutExpo",
+          });
+        }
+
+        moveHands(".left.hand", "-20vw");
+        moveHands(".right.hand", "20vw");
+
+        function scaleStar() {
+          const scrollSettings = {
+            trigger: ".touching-hands",
+            start: "top center",
+            end: "bottom bottom",
+            scrub: true,
+          };
+          gsap.to(".touching-star", {
+            scale: 14,
+            scrollTrigger: scrollSettings,
+            ease: "expo.in",
+          });
+          gsap.to(".touching-star path", {
+            fill: "#d6322f",
+            scrollTrigger: scrollSettings,
+            ease: "expo.in",
+          });
+        }
+        scaleStar();
+      });
+      $(function () {
+        const yValue = window.innerWidth < 1240 ? "-20vh" : "-40vh";
+        function chilliMoveY() {
+          gsap.to(".chilli-teh", {
+            y: yValue,
+            scrollTrigger: {
+              trigger: ".exploding-lady",
+              start: "center bottom",
+              end: "bottom bottom",
+              scrub: true,
+            },
+            ease: "easeInOutExpo",
+          });
+        }
+        chilliMoveY();
+      });
+      // TENTH SECTION ANIMATIONS END
+      // ELEVENTH SECTION ANIMATIONS
+      $(function () {
+        const root = document.querySelector(".teh-tarik-malaysian");
+
+        // Get the actual text content
+        const textPath = root.querySelector("#textpath");
+        const text = textPath.textContent.trim();
+
+        // Calculate text width using canvas
+        const textPathLength = getTextWidth(text) * 1;
+
+        // Calculate final offset percentage
+        const pathLength = root.querySelector("#path").getTotalLength();
+        const finalOffset = -((textPathLength * 100) / pathLength);
+
+        gsap.to(textPath, {
+          attr: { startOffset: finalOffset + "0%" }, // Here we are targeting an attribute value, not a CSS property
+          ease: "none", // Linear movement
+          scrollTrigger: {
+            trigger: ".teh-tarik-malaysian",
+            start: "top top",
+            end: "+=2000",
+            pin: ".teh-tarik-malaysian",
+            scrub: true, // Progresses with the scroll
+          },
+        });
+
+        // UTIL METHOD
+        function getTextWidth(text) {
+          const canvas =
+            getTextWidth.canvas ||
+            (getTextWidth.canvas = document.createElement("canvas"));
+          const context = canvas.getContext("2d");
+          const computedStyle = window.getComputedStyle(
+            document.querySelector("#textpath")
+          );
+          context.font = computedStyle.font;
+
+          return context.measureText(text).width;
+        }
+      });
+      // ELEVENTH SECTION ANIMATIONS END
+      // THIRTHEENTH SECTION ANIMATIONS
+      $(function () {
+        // Pin the whole section
+        const yValue = window.innerWidth < 1240 ? "-100vh" : "-70vh";
+        const pinning = window.innerWidth < 1240 ? false : true;
+        const positioning = window.innerWidth < 1240 ? "80% bottom" : "top top";
+        ScrollTrigger.create({
+          trigger: ".breaking-text-section",
+          start: positioning,
+          end: "+=500", // Adjust scroll range as needed
+          pin: pinning,
+          scrub: true,
+        });
+
+        const pairs = [
+          ["#breaking-text-1", "-20vw", "-30vh", -5, "center left"],
+          ["#breaking-text-2", "-25vw", "-15vh", -10, "bottom left"],
+          ["#breaking-text-3", "40vw", "-25vh", 5, "center"],
+          ["#breaking-text-4", "-20vw", "-10vh", -30, "center"],
+          ["#breaking-text-5", "20vw", "-15vh", 10, "center"],
+          ["#breaking-text-6", "-10vw", "-5vh", -50, "center"],
+          ["#breaking-text-7", "20vw", "-5vh", 30, "center"],
+          [".teh-tarik-with-cap", 0, yValue, 0, "center"],
+          [".first.breaking-image", "-40vw", "-20vh", 0, "center"],
+          [".second.breaking-image", "30vw", "-10vh", 0, "center"],
+          [".third.breaking-image", "-55vw", "-50vh", 0, "center"],
+          [".fourth.breaking-image", "25vw", "-110vh", 0, "center"],
+          [".fifth.breaking-image", "35vw", "-60vh", 0, "center"],
+          [".sixth.breaking-image", "-35vw", "-90vh", 0, "center"],
+          [".seventh.breaking-image", "0", "-110vh", 0, "center"],
+        ];
+
+        pairs.forEach(([selector, moveX, moveY, rotation, origin]) => {
+          gsap.to(selector, {
+            x: moveX,
+            y: moveY,
+            rotate: rotation,
+            transformOrigin: origin,
+            scrollTrigger: {
+              trigger: ".breaking-text-section",
+              start: positioning,
+              end: "+=500",
+              scrub: true,
+            },
+            ease: "power1.out",
+          });
+        });
+      });
+      // THIRTHEENTH SECTION ANIMATIONS END
+      // 15TH SECTION ANIMATIONS
+      $(function () {
+        ScrollTrigger.create({
+          trigger: ".three-cards-section",
+          start: "top top",
+          end: "+=2000",
+          pin: true,
+          pinSpacing: true,
+        });
+        gsap.to(".red-card", {
+          clipPath: "circle(150% at 50% 100%)",
+          ease: "power2.inOut",
+          scrollTrigger: {
+            trigger: ".pin-spacer:has(.three-cards-section)",
+            start: "top top",
+            end: "33% top",
+            scrub: true,
+            onUpdate: (self) => {
+              if (
+                self.progress >= 0.5 &&
+                !$(".three-cards-section").hasClass("red-active")
+              ) {
+                $(".three-cards-section").addClass("red-active");
+              } else if (
+                self.progress < 0.5 &&
+                $(".three-cards-section").hasClass("red-active")
+              ) {
+                $(".three-cards-section").removeClass("red-active");
+              }
+            },
+          },
+        });
+        gsap.to(".yellow-card", {
+          clipPath: "circle(150% at 50% 100%)",
+          ease: "power2.inOut",
+          scrollTrigger: {
+            trigger: ".pin-spacer:has(.three-cards-section)",
+            start: "33% top",
+            end: "66% top",
+            scrub: true,
+            onUpdate: (self) => {
+              if (
+                self.progress >= 0.5 &&
+                !$(".three-cards-section").hasClass("yellow-active")
+              ) {
+                $(".three-cards-section").addClass("yellow-active");
+              } else if (
+                self.progress < 0.5 &&
+                $(".three-cards-section").hasClass("yellow-active")
+              ) {
+                $(".three-cards-section").removeClass("yellow-active");
+              }
+            },
+          },
+        });
+      });
+      // 15TH SECTION ANIMATIONS END
+      // POPUP FUNCTION
+      $("a[data-popup]").on("click", function (e) {
+        e.preventDefault();
+        const targetId = $(this).data("popup");
+        const $targetPopup = $("#" + targetId);
+
+        // If the target is already active, remove it (toggle off)
+        if ($targetPopup.hasClass("active")) {
+          $targetPopup.removeClass("active");
+        } else {
+          // Otherwise, close all and activate the target
+          $(".popup").removeClass("active");
+          $targetPopup.addClass("active");
+        }
+      });
+
+      $(".close-button").on("click", function () {
+        $(".popup").removeClass("active");
+      });
+      $(document).ready(function () {
+        $(".accordion .detail").hide().first().show();
+        $(".accordion .title").first().addClass("active");
+        $(".accordion .title").on("click", function () {
+          const $currentDetail = $(this).next(".detail");
+          if ($currentDetail.is(":visible")) {
+            return;
+          }
+          $(".accordion .detail").slideUp();
+          $currentDetail.slideDown();
+          $(".accordion .title").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+      $(".menu-container").on("click", function () {
+        const type = $(this).attr("class").split(" ").pop(); // Get the type (drinks, food, snacks)
+        const $menu = $(`.inner-menu[data-type='${type}']`);
+
+        // Remove active from all containers and inner-menus
+        $(".menu-container, .inner-menu").removeClass("active");
+
+        // Add active to clicked container and its corresponding inner-menu
+        $(this).addClass("active");
+        $menu.addClass("active");
+      });
+
+      // POPUP FUNCTION END
     </script>
   
 
