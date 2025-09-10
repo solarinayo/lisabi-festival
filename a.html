@@ -263,7 +263,7 @@
     ">
         <video autoplay muted loop playsinline style="
             width: 100%;
-            height: clamp(200px, 45vh, 450px); /* responsive height */
+            height: clamp(600px, 80vh, 450px); /* responsive height */
             object-fit: cover;
             display: block;
             border-radius: 25px;
@@ -374,6 +374,218 @@ body {
 
 
     </style>
+
+
+
+
+
+
+<!-- Bounce & Scatter Images Container -->
+<div style="
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 60px 0;
+    position: relative;
+">
+    <img src="images/l.webp" alt="L" class="animate-image" style="height:80px;">
+    <img src="images/i.webp" alt="I" class="animate-image" style="height:80px;">
+    <img src="images/ss.webp" alt="SS" class="animate-image" style="height:80px;">
+    <img src="images/a.webp" alt="A" class="animate-image" style="height:80px;">
+    <img src="images/b.webp" alt="B" class="animate-image" style="height:80px;">
+    <img src="images/ii.webp" alt="II" class="animate-image" style="height:80px;">
+</div>
+
+<style>
+.animate-image {
+    animation: jumpScatter 1s ease forwards, hoverBounce 2s ease-in-out 1s infinite alternate;
+    transform: translateY(-100px) translateX(0) scale(0.5);
+}
+
+/* Stagger start times and scatter offset */
+.animate-image:nth-child(1) { animation-delay: 0s, 1s; }
+.animate-image:nth-child(2) { animation-delay: 0.2s, 1.2s; transform: translateX(10px); }
+.animate-image:nth-child(3) { animation-delay: 0.4s, 1.4s; transform: translateX(-10px); }
+.animate-image:nth-child(4) { animation-delay: 0.6s, 1.6s; transform: translateX(5px); }
+.animate-image:nth-child(5) { animation-delay: 0.8s, 1.8s; transform: translateX(-5px); }
+.animate-image:nth-child(6) { animation-delay: 1s, 2s; transform: translateX(0px); }
+
+/* Jump + Scatter animation */
+@keyframes jumpScatter {
+    0% {
+        transform: translateY(-100px) scale(0.5);
+    }
+    40% {
+        transform: translateY(20px) translateX(var(--scatter, 0px)) scale(1.1);
+    }
+    60% {
+        transform: translateY(-10px) translateX(var(--scatter, 0px)) scale(0.95);
+    }
+    100% {
+        transform: translateY(0) translateX(var(--scatter, 0px)) scale(1);
+    }
+}
+
+/* Gentle hover bounce after landing */
+@keyframes hoverBounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .animate-image {
+        height: 50px !important; /* smaller height on mobile */
+    }
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Add Google Fonts in head -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;padding:50px;gap:40px;font-family:'Poppins',sans-serif;">
+
+  <!-- Left Column: Heading + Image -->
+  <div style="
+      flex: 1 1 100%;
+      max-width: 360px;
+      display: flex;
+      gap: 20px;
+  ">
+    <img src="images/13.jpeg" alt="Lisabi Festival" style="
+        width: 100%;
+        border-radius: 15px;
+        flex-grow: 1;
+        object-fit: cover;
+    ">
+  </div>
+
+  <!-- Right Column: Auto-typing Content -->
+  <div id="auto-type-container" style="
+      flex: 1 1 100%;
+      max-width: 800px;
+      background: linear-gradient(rgba(0, 54, 0, 0.5), rgba(0, 41, 0, 0.5)), url('images/front.png') center/cover no-repeat;
+      color: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      font-size: clamp(1rem,1.5vw,1.1rem);
+      line-height: 1.5;
+      text-align: justify;
+      white-space: pre-wrap;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-height: 100%;
+      position: relative;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      font-family:'Poppins',sans-serif;
+  ">
+      <span id="typed-text"></span><span id="cursor" style="font-weight:bold; font-size:1.2em;">✍️</span>
+  </div>
+
+</div>
+
+<script>
+const paragraphs = [
+`Welcome to Lisabi Festival, an annual celebration of the rich history and cultural heritage of Abeokuta and the Yoruba people. This festival honors the legendary warrior-king Lisabi, who fought for freedom and unity.`,
+`Lisabi Festival is more than a historical commemoration — it’s a vibrant showcase of music, dance, storytelling, and traditional rituals. From lively drum performances to cultural exhibitions, this festival bridges generations and celebrates the spirit of community.`,
+`Join us in exploring a world where history comes alive, culture is celebrated, and tradition meets contemporary festivity.`
+];
+
+const typedTextEl = document.getElementById("typed-text");
+const cursorEl = document.getElementById("cursor");
+
+let paraIndex = 0;
+let charIndex = 0;
+
+function typeParagraph() {
+    if(paraIndex < paragraphs.length){
+        const currentPara = paragraphs[paraIndex];
+        if(charIndex < currentPara.length){
+            typedTextEl.innerHTML += currentPara.charAt(charIndex);
+            charIndex++;
+            setTimeout(typeParagraph, 15); // typing speed
+        } else {
+            charIndex = 0;
+            paraIndex++;
+            if(paraIndex < paragraphs.length){
+                typedTextEl.innerHTML += "\n\n";
+            } else {
+                // All typing done, hide cursor
+                cursorEl.style.display = "none";
+            }
+            setTimeout(typeParagraph, 200);
+        }
+    }
+}
+
+// Blink cursor while typing
+const cursorInterval = setInterval(() => {
+    if(cursorEl.style.display !== "none"){
+        cursorEl.style.visibility = cursorEl.style.visibility === 'visible' ? 'hidden' : 'visible';
+    }
+}, 500);
+
+typeParagraph();
+</script>
+
+<style>
+/* Desktop side-by-side layout */
+@media (min-width: 768px) {
+    div[style*="flex-wrap:wrap"] {
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+    div[style*="max-width: 500px"] {
+        flex: 1 1 40%; /* left column */
+    }
+    #auto-type-container {
+        flex: 1 1 55%; /* right column */
+    }
+}
+</style>
+
+
+
+<br>
+
+<br>
+<br>
+<br>
+
+
+<h2 style="
+      text-align: center;
+      font-family: 'Galindo', sans-serif;
+      font-size: clamp(1.4rem,5vw,1.4rem);
+      color: #2b1b0e;
+      margin-bottom: 40px;
+      font-weight: bold;
+      letter-spacing: 1px; /* small spacing between letters */
+  ">
+    FEEL THE SPIRIT OF <span style="color:#ffcb03;">LISABI </span> <span style="color:#1a3f00;"> FESTIVAL</span>
+</h2>
+
+
+
+
     <section id="movie-slider">
       <div class="container">
         <div class="swiper mySwiper">
@@ -466,49 +678,8 @@ body {
 
 
 
-    
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div style="display:flex;flex-wrap:wrap;justify-content: normal;align-items:flex-start;padding: 50px;">
-
-    <!-- Left Heading -->
-    <div style="flex: 1 1 60%;max-width: 67px;min-width: 58px;font-weight:bold;font-size:48px;line-height:1.2;color:#2b1b0e;margin-bottom:20px;">
-      FEEL THE <span style="color:#ff5c00;">RHYTHM</span>,<br>
-      EMBRACE THE CULTURE
-    </div>
-
-    <!-- Right Content Box -->
-    <div style="flex: 1 1 66%;max-width: 829px;min-width: 291px;background-color:#ff5c00;color:#fff;padding: 58px;border-radius:20px;font-size:18px;line-height:1.6;">
-      <p>
-        Welcome to Afro Music Fest, the ultimate celebration of the rich and diverse musical heritage of the African continent! 
-        Our festival is a vibrant, annual event dedicated to showcasing the best in traditional and contemporary Afrocaribbean music, dance, and culture.
-      </p>
-      <p>
-        AfroMusicFest is more than a music festival — it’s a celebration of Africa’s vibrant soul. From the infectious rhythms of Afrobeats to the soulful sounds of traditional drums, this festival is a tribute to the diverse and electrifying music of the African continent. Whether you’re a fan of high-energy performances or soothing melodies, AfroMusicFest is your ticket to unforgettable moments.
-      </p>
-      <p>
-        Dive into a world where music tells stories, dances bridge communities, and culture takes center stage.
-      </p>
-    </div>
-  </div>
 
 
 <!-- NEW SECTION 16: Our Heritage Story -->
@@ -564,6 +735,329 @@ body {
     </div>
   </div>
 </section>
+
+
+
+
+
+<!-- Marquee Container -->
+<div style="
+    width: 100%;
+    overflow: hidden;
+    background-color: #f6f6f6;
+    padding: 20px 0;
+    position: relative;
+">
+    <div class="marquee-wrapper">
+        <div class="marquee-track">
+            <!-- Car -->
+            <img src="images/g.png" alt="Car" style="height:80px;">
+            <img src="images/g.png" alt="Car" style="height:80px;">
+            <!-- Gap -->
+            <div style="width:80px;"></div>
+            <!-- Bike -->
+            <img src="images/motorbike.webp" alt="Bike" style="height:80px;">
+            <img src="images/motorbike.webp" alt="Bike" style="height:80px;">
+            <!-- Repeat for seamless scroll -->
+            <img src="images/g.png" alt="Car" style="height:80px;">
+            <div style="width:80px;"></div>
+            <img src="images/motorbike.webp" alt="Bike" style="height:80px;">
+        </div>
+    </div>
+</div>
+
+<style>
+.marquee-wrapper {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-track {
+    display: flex;
+    gap: 0px; /* no extra gap between images */
+    animation: marqueeRight 20s linear infinite;
+}
+
+.marquee-track img, .marquee-track div {
+    display: block;
+}
+
+@keyframes marqueeRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+</style>
+
+    
+
+
+<br>
+<br>
+
+   <!-- Festival Schedule Heading -->
+<h2 class="festival-heading">
+  Festival Schedule & Highlights
+</h2>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.festival-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 600;
+  color: #1a1a1a;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  position: relative;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideUp 1s ease forwards;
+}
+
+/* Subtle underline accent */
+.festival-heading::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #048d16, #ffcb03);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Animation */
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+
+
+<section style="padding:60px 20px; background:#ffffff; position:relative;">
+  <div style="max-width:1400px; margin:0 auto; display:flex; flex-wrap:wrap; gap:30px; justify-content:center; align-items:flex-start; position:relative;">
+
+    <!-- Left Column: Map -->
+    <!-- Left Column: Map -->
+<div style="flex:1 1 450px; display:flex; justify-content:center; position:relative; margin-top:60px;">
+  <img src="images/map.png" alt="Festival Map" style="width:100%; border-radius:20px; object-fit:cover; box-shadow:0 6px 20px rgba(0,0,0,0.2);">
+</div>
+
+
+    <!-- Right Column: Schedule -->
+    <div style="flex:1 1 500px; display:flex; flex-direction:column; gap:15px;">
+
+   
+
+      <!-- Day Boxes -->
+      <div style="display:flex; flex-direction:column; gap:10px;">
+
+        <!-- Day 1 -->
+        <div style="display:flex; flex-direction:column; justify-content:center; gap:5px; background:  url('images/front.png') center/cover no-repeat; color:#fff; padding:15px 20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.15); min-height:140px;">
+          <h3 style="margin:0; font-weight:bold;">Day 1: Opening Ceremony</h3>
+          <p style="margin:0; font-size:0.9rem;">Historic gun salute, drumming, and storytelling sessions at Olumo Rock. Reconnect with Abeokuta’s roots while enjoying the iconic view.</p>
+        </div>
+
+        <!-- Day 2 -->
+        <div style="display:flex; flex-direction:column; justify-content:center; gap:5px; background: url('images/back.png')  center/cover no-repeat; color:#fff; padding:15px 20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.15); min-height:140px;">
+          <h3 style="margin:0; font-weight:bold;">Day 2: Palace Visit & Youth Mobilization</h3>
+          <p style="margin:0; font-size:0.9rem;">Participate in youth-led palace cleaning and community mobilization. Experience Yoruba rites and historical Igbo Lisabi insights.</p>
+        </div>
+
+        <!-- Day 3 -->
+        <div style="display:flex; flex-direction:column; justify-content:center; gap:5px; background: url('images/bw.png') center/cover no-repeat; color:#2b1b0e; padding:15px 20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.15); min-height:140px;">
+          <h3 style="margin:0; font-weight:bold;">Day 3: Cultural Exhibitions & Competitions</h3>
+          <p style="margin:0; font-size:0.9rem;">Games, quiz finals, exhibitions, and seminars exploring Abeokuta’s art, culture, and cuisine.</p>
+        </div>
+
+        <!-- Day 4 -->
+        <div style="display:flex; flex-direction:column; justify-content:center; gap:5px; background: url('images/lem.png') center/cover no-repeat; color:#fff; padding:15px 20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.15); min-height:140px;">
+          <h3 style="margin:0; font-weight:bold;">Day 4: Processions & Musical Performances</h3>
+          <p style="margin:0; font-size:0.9rem;">Grand processions from Igbo Lisabi to Olumo Rock with drummers, dancers, masquerades, and evening Afrobeat concerts.</p>
+        </div>
+
+        <!-- Day 5 -->
+        <div style="display:flex; flex-direction:column; justify-content:center; gap:5px; background:  url('images/gg.png') center/cover no-repeat; color:#fff; padding:15px 20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.15); min-height:140px;">
+          <h3 style="margin:0; font-weight:bold;">Day 5: Closing Gala & Heritage Celebration</h3>
+          <p style="margin:0; font-size:0.9rem;">Afro-fusion concert, storytelling, awards, crafts, and culinary delights at Central Market. Farewell ceremonies for diaspora and locals alike.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional Floating Decorations -->
+  <img src="images/lisab.png" alt="Drum" style="position:absolute; top:10px; left:10px; width:60px; opacity:0.8;">
+  <img src="images/lisab.png" alt="Mask" style="position:absolute; bottom:20px; right:20px; width:80px; opacity:0.8;">
+</section>
+
+<style>
+@media (max-width:768px){
+  .event-map-container {
+    flex-direction: column;
+    gap:25px;
+  }
+}
+</style>
+
+
+
+
+
+<section style="padding:60px 20px; max-width: 1000px; margin: 0 auto;">
+
+  <!-- Section heading -->
+  <h2 style="
+      text-align:center;
+      font-size: clamp(2rem,4vw,3rem);
+      color:#2b1b0e;
+      font-weight:bold;
+      margin-bottom:50px;
+  ">
+    Festival Schedule & Highlights
+  </h2>
+
+  <!-- Weekly Schedule container -->
+  <div style="
+      display:flex;
+      flex-direction: column;
+      gap: 40px;
+  ">
+
+    <!-- Week/Highlight Item -->
+    <div style="display:flex; align-items:flex-start; gap:20px;">
+      <div style="
+          min-width:50px;
+          height:50px;
+          background-color:#ff5c00;
+          border-radius:50%;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          color:#fff;
+          font-weight:bold;
+          font-size:1.2rem;
+          flex-shrink:0;
+      ">1</div>
+      <div style="
+          flex:1;
+          background-color:#f6f6f6;
+          padding:20px;
+          border-radius:15px;
+          box-shadow:0 8px 20px rgba(0,0,0,0.1);
+      ">
+        <strong>Gun salute at Olumo Rock</strong>
+      </div>
+    </div>
+
+    <div style="display:flex; align-items:flex-start; gap:20px;">
+      <div style="
+          min-width:50px;
+          height:50px;
+          background-color:#ff5c00;
+          border-radius:50%;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          color:#fff;
+          font-weight:bold;
+          font-size:1.2rem;
+          flex-shrink:0;
+      ">2</div>
+      <div style="
+          flex:1;
+          background-color:#f6f6f6;
+          padding:20px;
+          border-radius:15px;
+          box-shadow:0 8px 20px rgba(0,0,0,0.1);
+      ">
+        Youth-led palace cleaning and mobilization
+      </div>
+    </div>
+
+    <div style="display:flex; align-items:flex-start; gap:20px;">
+      <div style="
+          min-width:50px;
+          height:50px;
+          background-color:#ff5c00;
+          border-radius:50%;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          color:#fff;
+          font-weight:bold;
+          font-size:1.2rem;
+          flex-shrink:0;
+      ">3</div>
+      <div style="
+          flex:1;
+          background-color:#f6f6f6;
+          padding:20px;
+          border-radius:15px;
+          box-shadow:0 8px 20px rgba(0,0,0,0.1);
+      ">
+        Ayo games, quiz finals, exhibitions, sports, and seminars
+      </div>
+    </div>
+
+    <div style="display:flex; align-items:flex-start; gap:20px;">
+      <div style="
+          min-width:50px;
+          height:50px;
+          background-color:#ff5c00;
+          border-radius:50%;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          color:#fff;
+          font-weight:bold;
+          font-size:1.2rem;
+          flex-shrink:0;
+      ">4</div>
+      <div style="
+          flex:1;
+          background-color:#f6f6f6;
+          padding:20px;
+          border-radius:15px;
+          box-shadow:0 8px 20px rgba(0,0,0,0.1);
+      ">
+        Processions to Igbo Lisabi and Olumo Rock, cultural performances, and concert-style culmination
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+@media (max-width: 768px) {
+    section div[style*="display:flex; align-items:flex-start; gap:20px;"] {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    section div[style*="min-width:50px; height:50px;"] {
+        margin-bottom:10px;
+    }
+}
+</style>
+
+
+
+
+
+
+
+
+
 
 
 
