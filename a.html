@@ -26,6 +26,54 @@
 
 
   <body>
+<!-- Audio -->
+<audio id="bg-music" autoplay loop muted>
+  <source src="./videos/sound.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<!-- Toggle Button -->
+<button id="sound-toggle" style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
+">
+  🔇
+</button>
+
+<script>
+  const bgMusic = document.getElementById("bg-music");
+  const toggleBtn = document.getElementById("sound-toggle");
+
+  // Ensure playback starts muted
+  bgMusic.play().catch(err => {
+    console.log("Autoplay blocked:", err);
+  });
+
+  // Toggle mute/unmute with button
+  toggleBtn.addEventListener("click", () => {
+    if (bgMusic.muted) {
+      bgMusic.muted = false;
+      bgMusic.volume = 0.7; // nice volume
+      toggleBtn.textContent = "🔊";
+      bgMusic.play();
+    } else {
+      bgMusic.muted = true;
+      toggleBtn.textContent = "🔇";
+    }
+  });
+</script>
+
 
 
 
@@ -167,6 +215,356 @@
 
 
 
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Galindo&display=swap" rel="stylesheet">
+
+<section style="
+        min-height: 100vh;
+        padding: 50px 20px;
+        background: url('./images/front.png') center/cover no-repeat;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    ">
+    
+    <!-- Festival headline -->
+    <div style="
+        position: relative;
+        z-index: 5;
+        text-align: center;
+        margin-bottom: 40px;
+        max-width: 1000px;
+    ">
+        <h1 style="
+            font-family: 'Galindo', sans-serif;
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            color: white;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+            line-height: 1.3;
+        ">
+            A FESTIVAL OF CULTURAL EXCHANGE <br>
+            BETWEEN AFRICA AND THE WORLD.
+        </h1>
+    </div>
+
+    <!-- Festival video -->
+    <div style="
+        position: relative;
+        z-index: 5;
+        margin-bottom: 60px;
+        max-width: 900px;
+        width: 100%;
+        border-radius: 25px;
+        overflow: hidden;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+        animation: float 6s ease-in-out infinite;
+    ">
+        <video autoplay muted loop playsinline style="
+            width: 100%;
+            height: clamp(200px, 45vh, 450px); /* responsive height */
+            object-fit: cover;
+            display: block;
+            border-radius: 25px;
+        ">
+            <source src="./videos/a.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Main content container (your cards) -->
+    <div style="
+        display: flex;
+        gap: 30px;
+        max-width: 1400px;
+        width: 100%;
+        position: relative;
+        z-index: 3;
+        flex-wrap: wrap;
+        justify-content: center;
+    ">
+        <!-- Your Volunteers, Vendors, and Artists cards stay the same here -->
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+:root {
+  --bg: #f1efff;
+  --primary: #044e10;
+  --border: #d8d513;
+}
+
+body {
+  background: var(--bg);
+}
+.container {
+  max-width: 1440px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.swiper {
+  width: 100%;
+  height: 550px;
+  margin: 25px 0;
+}
+.swiper-slide {
+  width: 370px;
+  height: 500px;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: 2px solid transparent;
+}
+.swiper-slide-active img {
+  border: 2px solid var(--border);
+}
+.swiper-pagination {
+  position: absolute;
+  bottom: 0;
+}
+.mySwiper .swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--primary);
+}
+@media (max-width: 500px) {
+  .swiper {
+    height: 450px;
+  }
+  .swiper-slide {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+
+    </style>
+    <section id="movie-slider">
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper" id="swiper-wrapper">
+            <!-- Slides will be injected here by Javascript -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+   <script>
+
+    document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    const response = await fetch("images.json");
+    const movies = await response.json();
+    const swiperWrapper = document.getElementById("swiper-wrapper");
+    movies.forEach((movie) => {
+      const Slide = document.createElement("div");
+      Slide.classList.add("swiper-slide");
+      Slide.innerHTML = `<img src="${movie.url}" alt="${movie.title}" />`;
+      swiperWrapper.appendChild(Slide);
+    });
+
+    // Initialize Swiper
+    const swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      slidesPerView: "auto",
+      loop: true,
+      centeredSlides: true,
+      centeredSlidesBounds: true,
+      updateOnWindowResize: true,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2.79,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        // dynamicBullets: true,
+      },
+    });
+    // Add click functionality
+    swiper.slides.forEach((slide) => {
+      slide.onclick = () => {
+        swiper.slideToLoop(slide.dataset.swiperSlideIndex);
+        swiper.update();
+      };
+    });
+    // Handle issue with the last slide click
+    swiper.on("slideChangeTransitionEnd", () => {
+      if (swiper.isEnd) {
+        swiper.loopFix();
+        swiper.update();
+      }
+    });
+  } catch (error) {
+    console.error("Error fetching images", error);
+  }
+});
+
+   </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="display:flex;flex-wrap:wrap;justify-content: normal;align-items:flex-start;padding: 50px;">
+
+    <!-- Left Heading -->
+    <div style="flex: 1 1 60%;max-width: 67px;min-width: 58px;font-weight:bold;font-size:48px;line-height:1.2;color:#2b1b0e;margin-bottom:20px;">
+      FEEL THE <span style="color:#ff5c00;">RHYTHM</span>,<br>
+      EMBRACE THE CULTURE
+    </div>
+
+    <!-- Right Content Box -->
+    <div style="flex: 1 1 66%;max-width: 829px;min-width: 291px;background-color:#ff5c00;color:#fff;padding: 58px;border-radius:20px;font-size:18px;line-height:1.6;">
+      <p>
+        Welcome to Afro Music Fest, the ultimate celebration of the rich and diverse musical heritage of the African continent! 
+        Our festival is a vibrant, annual event dedicated to showcasing the best in traditional and contemporary Afrocaribbean music, dance, and culture.
+      </p>
+      <p>
+        AfroMusicFest is more than a music festival — it’s a celebration of Africa’s vibrant soul. From the infectious rhythms of Afrobeats to the soulful sounds of traditional drums, this festival is a tribute to the diverse and electrifying music of the African continent. Whether you’re a fan of high-energy performances or soothing melodies, AfroMusicFest is your ticket to unforgettable moments.
+      </p>
+      <p>
+        Dive into a world where music tells stories, dances bridge communities, and culture takes center stage.
+      </p>
+    </div>
+  </div>
+
+
+<!-- NEW SECTION 16: Our Heritage Story -->
+<section class="heritage-story">
+  <div class="heritage-container">
+    <div class="heritage-bg">
+      <img src="images/heritage-pattern.webp" alt="Heritage Pattern" class="heritage-pattern">
+    </div>
+    
+    <div class="heritage-content">
+      <h1 class="heritage-title">80 YEARS OF<br>PERFECT BREWING</h1>
+      
+      <div class="timeline-container">
+        <div class="timeline-item" data-year="1940">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>The Beginning</h3>
+            <p>From humble street stalls to Malaysian hearts</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item" data-year="1970">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>The Perfection</h3>
+            <p>11 tea leaves sourced from 5 countries</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item" data-year="2000">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>The Innovation</h3>
+            <p>Modern techniques, traditional taste</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item" data-year="2024">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>The Nation</h3>
+            <p>Making Teh Tarik Great Again!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="floating-elements">
+      <img src="images/tea-leaf-1.webp" alt="Tea Leaf" class="floating-leaf leaf-1">
+      <img src="images/tea-leaf-2.webp" alt="Tea Leaf" class="floating-leaf leaf-2">
+      <img src="images/droplet.webp" alt="Milk Drop" class="floating-drop drop-1">
+      <img src="images/sugar-1.webp" alt="Sugar" class="floating-sugar sugar-heritage">
+    </div>
+  </div>
+</section>
+
 
 
 
@@ -228,6 +626,8 @@
             animation-delay: 2s;
             z-index: 2;
         "></div>
+
+        
         
         <!-- Main content container -->
         <div style="
@@ -558,278 +958,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <style>
-
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style-type: none;
-}
-:root {
-  --bg: #f1efff;
-  --primary: #044e10;
-  --border: #d8d513;
-}
-
-body {
-  background: var(--bg);
-}
-.container {
-  max-width: 1440px;
-  padding: 0 10px;
-  margin: 0 auto;
-}
-.swiper {
-  width: 100%;
-  height: 550px;
-  margin: 25px 0;
-}
-.swiper-slide {
-  width: 370px;
-  height: 500px;
-}
-.swiper-slide img {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  border: 2px solid transparent;
-}
-.swiper-slide-active img {
-  border: 2px solid var(--border);
-}
-.swiper-pagination {
-  position: absolute;
-  bottom: 0;
-}
-.mySwiper .swiper-pagination .swiper-pagination-bullet-active {
-  background: var(--primary);
-}
-@media (max-width: 500px) {
-  .swiper {
-    height: 450px;
-  }
-  .swiper-slide {
-    width: 300px;
-    height: 400px;
-  }
-}
-
-
-    </style>
-    <section id="movie-slider">
-      <div class="container">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper" id="swiper-wrapper">
-            <!-- Slides will be injected here by Javascript -->
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-   <script>
-
-    document.addEventListener("DOMContentLoaded", async () => {
-  try {
-    const response = await fetch("images.json");
-    const movies = await response.json();
-    const swiperWrapper = document.getElementById("swiper-wrapper");
-    movies.forEach((movie) => {
-      const Slide = document.createElement("div");
-      Slide.classList.add("swiper-slide");
-      Slide.innerHTML = `<img src="${movie.url}" alt="${movie.title}" />`;
-      swiperWrapper.appendChild(Slide);
-    });
-
-    // Initialize Swiper
-    const swiper = new Swiper(".mySwiper", {
-      effect: "coverflow",
-      grabCursor: true,
-      slidesPerView: "auto",
-      loop: true,
-      centeredSlides: true,
-      centeredSlidesBounds: true,
-      updateOnWindowResize: true,
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 100,
-        modifier: 2.79,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        // dynamicBullets: true,
-      },
-    });
-    // Add click functionality
-    swiper.slides.forEach((slide) => {
-      slide.onclick = () => {
-        swiper.slideToLoop(slide.dataset.swiperSlideIndex);
-        swiper.update();
-      };
-    });
-    // Handle issue with the last slide click
-    swiper.on("slideChangeTransitionEnd", () => {
-      if (swiper.isEnd) {
-        swiper.loopFix();
-        swiper.update();
-      }
-    });
-  } catch (error) {
-    console.error("Error fetching images", error);
-  }
-});
-
-   </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div style="display:flex;flex-wrap:wrap;justify-content: normal;align-items:flex-start;padding: 50px;">
-
-    <!-- Left Heading -->
-    <div style="flex: 1 1 60%;max-width: 67px;min-width: 58px;font-weight:bold;font-size:48px;line-height:1.2;color:#2b1b0e;margin-bottom:20px;">
-      FEEL THE <span style="color:#ff5c00;">RHYTHM</span>,<br>
-      EMBRACE THE CULTURE
-    </div>
-
-    <!-- Right Content Box -->
-    <div style="flex: 1 1 66%;max-width: 829px;min-width: 291px;background-color:#ff5c00;color:#fff;padding: 58px;border-radius:20px;font-size:18px;line-height:1.6;">
-      <p>
-        Welcome to Afro Music Fest, the ultimate celebration of the rich and diverse musical heritage of the African continent! 
-        Our festival is a vibrant, annual event dedicated to showcasing the best in traditional and contemporary Afrocaribbean music, dance, and culture.
-      </p>
-      <p>
-        AfroMusicFest is more than a music festival — it’s a celebration of Africa’s vibrant soul. From the infectious rhythms of Afrobeats to the soulful sounds of traditional drums, this festival is a tribute to the diverse and electrifying music of the African continent. Whether you’re a fan of high-energy performances or soothing melodies, AfroMusicFest is your ticket to unforgettable moments.
-      </p>
-      <p>
-        Dive into a world where music tells stories, dances bridge communities, and culture takes center stage.
-      </p>
-    </div>
-  </div>
-
-
-<!-- NEW SECTION 16: Our Heritage Story -->
-<section class="heritage-story">
-  <div class="heritage-container">
-    <div class="heritage-bg">
-      <img src="images/heritage-pattern.webp" alt="Heritage Pattern" class="heritage-pattern">
-    </div>
-    
-    <div class="heritage-content">
-      <h1 class="heritage-title">80 YEARS OF<br>PERFECT BREWING</h1>
-      
-      <div class="timeline-container">
-        <div class="timeline-item" data-year="1940">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>The Beginning</h3>
-            <p>From humble street stalls to Malaysian hearts</p>
-          </div>
-        </div>
-        
-        <div class="timeline-item" data-year="1970">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>The Perfection</h3>
-            <p>11 tea leaves sourced from 5 countries</p>
-          </div>
-        </div>
-        
-        <div class="timeline-item" data-year="2000">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>The Innovation</h3>
-            <p>Modern techniques, traditional taste</p>
-          </div>
-        </div>
-        
-        <div class="timeline-item" data-year="2024">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>The Nation</h3>
-            <p>Making Teh Tarik Great Again!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="floating-elements">
-      <img src="images/tea-leaf-1.webp" alt="Tea Leaf" class="floating-leaf leaf-1">
-      <img src="images/tea-leaf-2.webp" alt="Tea Leaf" class="floating-leaf leaf-2">
-      <img src="images/droplet.webp" alt="Milk Drop" class="floating-drop drop-1">
-      <img src="images/sugar-1.webp" alt="Sugar" class="floating-sugar sugar-heritage">
-    </div>
-  </div>
-</section>
 
 <!-- NEW SECTION 17: Ingredients Showcase -->
 <section class="ingredients-showcase">
