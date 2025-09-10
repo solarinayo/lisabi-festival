@@ -14,6 +14,12 @@
     <title>Lisabi Festival 26 | Celebrating Our Heritage</title>
 
  <link rel="stylesheet" href="./css/style.css">
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
 
 
@@ -154,21 +160,6 @@
 
 
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -562,6 +553,201 @@
             z-index: 2;
         "></div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+:root {
+  --bg: #f1efff;
+  --primary: #6e4bec;
+  --border: #200b4c;
+}
+
+body {
+  background: var(--bg);
+}
+.container {
+  max-width: 1440px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.swiper {
+  width: 100%;
+  height: 550px;
+  margin: 25px 0;
+}
+.swiper-slide {
+  width: 370px;
+  height: 500px;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: 2px solid transparent;
+}
+.swiper-slide-active img {
+  border: 2px solid var(--border);
+}
+.swiper-pagination {
+  position: absolute;
+  bottom: 0;
+}
+.mySwiper .swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--primary);
+}
+@media (max-width: 500px) {
+  .swiper {
+    height: 450px;
+  }
+  .swiper-slide {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+
+    </style>
+    <section id="movie-slider">
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper" id="swiper-wrapper">
+            <!-- Slides will be injected here by Javascript -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+   <script>
+
+    document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    const response = await fetch("images.json");
+    const movies = await response.json();
+    const swiperWrapper = document.getElementById("swiper-wrapper");
+    movies.forEach((movie) => {
+      const Slide = document.createElement("div");
+      Slide.classList.add("swiper-slide");
+      Slide.innerHTML = `<img src="${movie.url}" alt="${movie.title}" />`;
+      swiperWrapper.appendChild(Slide);
+    });
+
+    // Initialize Swiper
+    const swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      slidesPerView: "auto",
+      loop: true,
+      centeredSlides: true,
+      centeredSlidesBounds: true,
+      updateOnWindowResize: true,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2.79,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        // dynamicBullets: true,
+      },
+    });
+    // Add click functionality
+    swiper.slides.forEach((slide) => {
+      slide.onclick = () => {
+        swiper.slideToLoop(slide.dataset.swiperSlideIndex);
+        swiper.update();
+      };
+    });
+    // Handle issue with the last slide click
+    swiper.on("slideChangeTransitionEnd", () => {
+      if (swiper.isEnd) {
+        swiper.loopFix();
+        swiper.update();
+      }
+    });
+  } catch (error) {
+    console.error("Error fetching images", error);
+  }
+});
+
+   </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
