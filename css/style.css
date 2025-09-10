@@ -117,7 +117,7 @@
         margin: 0;
         font-family: "Niramit", sans-serif;
         color: var(--raisin-black);
-        background-color: var(--yellow);
+        background-color: var(white);
         overflow-x: hidden;
         --sb-track-color: white;
         --sb-thumb-color: var(--raisin-black);
