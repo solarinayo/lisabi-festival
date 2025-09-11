@@ -2195,6 +2195,20 @@
       .popup#menu-button .inner-menu[data-type="food"] {
         background-color: #ed9fa5;
       }
+
+
+        .popup#menu-button .vh,
+      .popup#menu-button .inner-menu[data-type="vh"] {
+        background-color: #470015;
+      }
+
+
+       .popup#menu-button .egbaliganza,
+      .popup#menu-button .inner-menu[data-type="egbaliganza"] {
+        background-color: #276100;
+      }
+
+
       .popup#menu-button .food:after {
         background-image: url(../images/footer-plate.webp);
         width: max(100px, 10.76vw);
